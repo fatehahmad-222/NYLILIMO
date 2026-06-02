@@ -6,7 +6,7 @@ const fleetVehicles = [
     name: "Cadillac Escalade ESV",
     category: "SUV",
     capacity: "6 Passengers",
-    image: "https://images.unsplash.com/photo-1686836015338-6db51fc71d9d?w=800&q=80",
+    image: "https://res.cloudinary.com/dgz6utv5q/image/upload/v1780417498/suv_lcvxgv.jpg",
     features: ["Premium Leather", "Privacy Partition", "Tinted Windows", "USB Charging"],
     description: "The ultimate luxury SUV for executive travel and group transportation."
   },
@@ -62,7 +62,7 @@ const fleetVehicles = [
     name: "Chrysler Pacifica",
     category: "Luxury Minivan",
     capacity: "6 Passengers",
-    image: "https://images.unsplash.com/photo-1533473359331-fd1a9df480f1?w=800&q=80",
+    image: "https://res.cloudinary.com/dgz6utv5q/image/upload/v1780417536/minivan_pqwokk.jpg",
     features: ["Family Friendly", "DVD Entertainment", "Stow 'n Go Seating", "USB Charging"],
     description: "Perfect for family airport transfers and group outings."
   }

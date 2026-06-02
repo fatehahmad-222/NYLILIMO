@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 export default function ServiceLayout({ 
   title, 
@@ -10,13 +11,24 @@ export default function ServiceLayout({
   children,
   breadcrumbs = []
 }) {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 300);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    
     <main className="bg-[#07070d] text-white font-['Cormorant_Garamond',serif] overflow-x-hidden">
       <div><Navbar /></div>
       
-      {/* Hero Section - With padding to clear the fixed navbar */}
-      <section className="relative min-h-[600px] flex items-start justify-center overflow-hidden ">
+      {/* Hero Section */}
+      <section className="relative min-h-[600px] flex items-start justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroImage})` }}
@@ -24,8 +36,8 @@ export default function ServiceLayout({
         <div className="absolute inset-0 bg-gradient-to-b from-[#07070d]/80 via-[#07070d]/60 to-[#07070d]" />
         <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-[#07070d]/40" />
         
-        {/* Content - Add padding-top to clear the navbar (top bar ~40px + main navbar ~80px = 120px total) */}
-          <div className="relative z-10 text-center px-4 max-w-4xl mx-auto" style={{ paddingTop: '160px' }}>          <h1 className="text-5xl md:text-7xl font-light mb-4 drop-shadow-lg ">{title}</h1>
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto" style={{ paddingTop: '160px' }}>
+          <h1 className="text-5xl md:text-7xl font-light mb-4 drop-shadow-lg">{title}</h1>
           <div className="w-20 h-px bg-[#b4913c] mx-auto mb-6" />
           <p className="text-white/80 text-lg font-['Montserrat',sans-serif] max-w-2xl mx-auto drop-shadow-md">
             {description}
@@ -79,6 +91,56 @@ export default function ServiceLayout({
 
       {/* Footer */}
       <FooterComponent />
+
+      {/* Scroll to Top Button — bottom left */}
+      <button
+        onClick={scrollToTop}
+        aria-label="Scroll to top"
+        style={{
+          position: "fixed",
+          bottom: "2rem",
+          right: "2rem",
+          zIndex: 50,
+          opacity: visible ? 1 : 0,
+          pointerEvents: visible ? "auto" : "none",
+          transition: "opacity 0.3s ease, transform 0.3s ease, background-color 0.2s ease",
+          transform: visible ? "translateY(0)" : "translateY(12px)",
+          width: "44px",
+          height: "44px",
+          border: "1px solid rgba(180, 145, 60, 0.5)",
+          background: "rgba(7, 7, 13, 0.85)",
+          backdropFilter: "blur(8px)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          cursor: "pointer",
+        }}
+        onMouseEnter={e => {
+          e.currentTarget.style.borderColor = "#b4913c";
+          e.currentTarget.style.background = "rgba(180, 145, 60, 0.12)";
+        }}
+        onMouseLeave={e => {
+          e.currentTarget.style.borderColor = "rgba(180, 145, 60, 0.5)";
+          e.currentTarget.style.background = "rgba(7, 7, 13, 0.85)";
+        }}
+      >
+        {/* Up arrow SVG */}
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 13V3M8 3L3 8M8 3L13 8"
+            stroke="#b4913c"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </button>
     </main>
   );
 }
@@ -194,7 +256,7 @@ function FooterComponent() {
 
         <div className="mt-14 pt-8 border-t border-white/8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-white/25 text-xs font-['Montserrat',sans-serif]">
-            © {new Date().getFullYear()} SKNYC Limo. All rights reserved.
+            © {new Date().getFullYear()} SKNYC Limo. All rights reserved. Designed by Nextgen Squad.
           </p>
           <div className="flex gap-6">
             {["Privacy Policy", "Terms of Service", "Cancellation Policy"].map((link) => (

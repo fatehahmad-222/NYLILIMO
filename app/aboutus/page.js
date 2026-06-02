@@ -503,7 +503,7 @@ export default function AboutPage() {
 
           <div className="mt-14 pt-8 border-t border-white/8 flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-white/25 text-xs font-['Montserrat',sans-serif]">
-              © {new Date().getFullYear()} SKNYC Limo. All rights reserved.
+              © {new Date().getFullYear()} SKNYC Limo. All rights reserved. Designed by Nextgen Squad.
             </p>
             <div className="flex gap-6">
               {["Privacy Policy", "Terms of Service", "Cancellation Policy"].map((link) => (
