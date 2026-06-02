@@ -47,7 +47,7 @@ const vehicles = [
     name: "Cadillac Escalade ESV",
     category: "SUV",
     capacity: "6 Passengers",
-    image: "https://images.unsplash.com/photo-1686836015338-6db51fc71d9d?w=800&q=80",
+    image: "https://res.cloudinary.com/dgz6utv5q/image/upload/v1780417498/suv_lcvxgv.jpg",
     features: ["Premium Leather", "Privacy Partition", "Tinted Windows"],
     href: "/fleet/escalade-esv",
   },
