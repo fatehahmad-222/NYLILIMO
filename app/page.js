@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
+import Scrolltotopbutton from "@/components/Scrolltotopbutton";
 
 /* DATA ---------------------------------------------- */
 const services = [
@@ -39,7 +40,6 @@ const services = [
     desc: "Keep a personal chauffeur at your disposal for the whole evening, event, or business day. Pure flexibility.",
     href: "/services/hourly",
   },
- 
 ];
 
 const vehicles = [
@@ -98,8 +98,7 @@ const worldClass = [
     title: "Professional Chauffeurs",
     desc: "Every driver is background-checked, licensed, and trained in VIP hospitality protocols. Black-suit service, always.",
     icon: "🎩",
-        color: "from-blue-900/40 to-indigo-900/20",
-
+    color: "from-blue-900/40 to-indigo-900/20",
     href: "/about/chauffeurs",
   },
   {
@@ -113,32 +112,28 @@ const worldClass = [
     title: "24/7 Availability",
     desc: "Round-the-clock dispatch and customer support, 365 days a year. We're always just one call away.",
     icon: "🕐",
-        color: "from-blue-900/40 to-indigo-900/20",
-
+    color: "from-blue-900/40 to-indigo-900/20",
     href: "/contact",
   },
   {
     title: "Luxury Fleet",
     desc: "From executive sedans to stretch limousines — our meticulously maintained fleet covers every occasion.",
     icon: "🚘",
-        color: "from-blue-900/40 to-indigo-900/20",
-
+    color: "from-blue-900/40 to-indigo-900/20",
     href: "/fleet",
   },
   {
     title: "Instant Online Booking",
     desc: "Book in under 2 minutes. Instant confirmation, digital receipts, and easy modification up to 24 hours before pickup.",
     icon: "⚡",
-        color: "from-blue-900/40 to-indigo-900/20",
-
+    color: "from-blue-900/40 to-indigo-900/20",
     href: "/booking",
   },
   {
     title: "Corporate Accounts",
     desc: "Streamlined billing, monthly statements, and dedicated account managers for businesses and frequent travelers.",
     icon: "🏢",
-        color: "from-blue-900/40 to-indigo-900/20",
-
+    color: "from-blue-900/40 to-indigo-900/20",
     href: "/corporate-accounts",
   },
 ];
@@ -175,7 +170,6 @@ export default function Home() {
 
       {/* ── HERO ── */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -183,11 +177,9 @@ export default function Home() {
               "url('https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1800&q=80')",
           }}
         />
-        {/* Overlays */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#07070d]/80 via-[#07070d]/60 to-[#07070d]" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#07070d]/70 via-transparent to-[#07070d]/40" />
 
-        {/* Decorative line */}
         <div className="absolute left-12 top-1/2 -translate-y-1/2 hidden xl:block">
           <div className="w-px h-64 bg-gradient-to-b from-transparent via-[#b4913c] to-transparent opacity-50" />
         </div>
@@ -220,7 +212,6 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Phone numbers */}
           <div className="mt-8 flex flex-col sm:flex-row gap-2 sm:gap-6 justify-center text-white/40 text-sm font-['Montserrat',sans-serif]">
             <a href="tel:+19176904576" className="hover:text-[#b4913c] transition-colors">
               +1 917-690-4576
@@ -231,8 +222,6 @@ export default function Home() {
             </a>
           </div>
         </div>
-
-        
       </section>
 
       {/* ── STATS ── */}
@@ -269,7 +258,6 @@ export default function Home() {
               className="group relative p-8 border border-white/8 bg-white/[0.02] hover:bg-[#b4913c]/5 hover:border-[#b4913c]/40 rounded-sm transition-all duration-300 overflow-hidden"
             >
               <div className="absolute top-0 left-0 w-0 group-hover:w-full h-px bg-gradient-to-r from-[#b4913c] to-transparent transition-all duration-500" />
-             
               <h3 className="text-xl mb-3 text-[#b4913c] group-hover:text-[#b4913c] transition-colors duration-300">
                 {service.title}
               </h3>
@@ -308,7 +296,6 @@ export default function Home() {
                 href={v.href}
                 className="group relative overflow-hidden rounded-sm border border-white/8 hover:border-[#b4913c]/40 transition-all duration-500"
               >
-                {/* Image */}
                 <div className="relative h-56 overflow-hidden">
                   <img
                     src={v.image}
@@ -316,13 +303,10 @@ export default function Home() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#07070d] via-[#07070d]/30 to-transparent" />
-                  {/* Category badge */}
                   <div className="absolute top-4 right-4 bg-[#b4913c] text-[#07070d] text-xs font-bold uppercase tracking-wider px-3 py-1 font-['Montserrat',sans-serif]">
                     {v.category}
                   </div>
                 </div>
-
-                {/* Content */}
                 <div className="p-6 bg-[#0d0d15]">
                   <div className="flex justify-between items-start mb-3">
                     <h3 className="text-xl group-hover:text-[#b4913c] transition-colors duration-300 leading-tight">
@@ -385,7 +369,6 @@ export default function Home() {
               className={`group relative p-8 rounded-sm bg-gradient-to-br ${item.color} border border-white/8 hover:border-[#b4913c]/40 transition-all duration-300 overflow-hidden`}
             >
               <div className="absolute top-0 right-0 w-24 h-24 rounded-full bg-[#b4913c]/5 -translate-y-8 translate-x-8 group-hover:scale-150 transition-transform duration-500" />
-           
               <h3 className="text-xl mb-3 group-hover:text-[#b4913c] transition-colors duration-300">
                 {item.title}
               </h3>
@@ -418,9 +401,7 @@ export default function Home() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-10 items-start">
-            {/* Left: Areas + Airports */}
             <div className="space-y-10">
-              {/* Areas */}
               <div>
                 <h3 className="text-sm uppercase tracking-[0.3em] text-[#b4913c] mb-5 font-['Montserrat',sans-serif]">
                   Service Areas
@@ -437,7 +418,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Airports */}
               <div>
                 <h3 className="text-sm uppercase tracking-[0.3em] text-[#b4913c] mb-5 font-['Montserrat',sans-serif]">
                   Airport Transfers
@@ -461,7 +441,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right: Map */}
             <div className="relative">
               <a
                 href="https://maps.google.com/?q=New+York+City,+NY"
@@ -474,9 +453,7 @@ export default function Home() {
                   src="https://res.cloudinary.com/dgz6utv5q/image/upload/v1780331064/mapimglimosknyc_xq64ej.png"
                   alt="SKNYC Limo Service Area Map"
                   className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500"
-                  
                 />
-                {/* Map overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#07070d]/60 via-transparent to-transparent" />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="bg-[#b4913c] text-[#07070d] px-6 py-3 font-bold uppercase tracking-widest text-sm font-['Montserrat',sans-serif]">
@@ -490,32 +467,22 @@ export default function Home() {
                 </div>
               </a>
 
-              {/* Address card */}
               <div className="mt-4 p-5 border border-[#b4913c]/20 bg-[#0d0d15] space-y-3">
                 <p className="text-[#b4913c] text-xs uppercase tracking-widest font-['Montserrat',sans-serif]">
                   Contact & Address
                 </p>
                 <p className="text-white/70 text-sm font-['Montserrat',sans-serif]">
-                   135 West 50th Street, Suite 1850<br />
+                  135 West 50th Street, Suite 1850<br />
                   New York, NY 10020
                 </p>
                 <div className="flex flex-col gap-1.5">
-                  <a
-                    href="tel:+19176904576"
-                    className="text-white/70 hover:text-[#b4913c] text-sm font-['Montserrat',sans-serif] transition-colors"
-                  >
-                     +1 917-690-4576
+                  <a href="tel:+19176904576" className="text-white/70 hover:text-[#b4913c] text-sm font-['Montserrat',sans-serif] transition-colors">
+                    +1 917-690-4576
                   </a>
-                  <a
-                    href="tel:+15164407666"
-                    className="text-white/70 hover:text-[#b4913c] text-sm font-['Montserrat',sans-serif] transition-colors"
-                  >
-                     +1 516-440-7666
+                  <a href="tel:+15164407666" className="text-white/70 hover:text-[#b4913c] text-sm font-['Montserrat',sans-serif] transition-colors">
+                    +1 516-440-7666
                   </a>
-                  <a
-                    href="mailto:reservations@sknyclimo.com"
-                    className="text-white/70 hover:text-[#b4913c] text-sm font-['Montserrat',sans-serif] transition-colors"
-                  >
+                  <a href="mailto:reservations@sknyclimo.com" className="text-white/70 hover:text-[#b4913c] text-sm font-['Montserrat',sans-serif] transition-colors">
                     ✉️ reservations@sknyclimo.com
                   </a>
                 </div>
@@ -568,11 +535,9 @@ export default function Home() {
       <footer className="bg-[#05050a] border-t border-[#b4913c]/15">
         <div className="max-w-7xl mx-auto px-4 py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-            {/* Brand */}
             <div className="lg:col-span-1">
               <div className="mb-5">
-                {/* Logo placeholder */}
-                <span className="text-3xl  font-light tracking-widest text-[#b4913c]">
+                <span className="text-3xl font-light tracking-widest text-[#b4913c]">
                   SKNYC
                   <span className="text-white/40 text-lg"> LIMO</span>
                 </span>
@@ -595,7 +560,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Services */}
             <div>
               <h4 className="text-sm uppercase tracking-[0.3em] text-[#b4913c] mb-5 font-['Montserrat',sans-serif]">
                 Services
@@ -603,10 +567,7 @@ export default function Home() {
               <ul className="space-y-2.5">
                 {services.slice(0, 7).map((s) => (
                   <li key={s.href}>
-                    <Link
-                      href={s.href}
-                      className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#b4913c] transition-colors"
-                    >
+                    <Link href={s.href} className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#b4913c] transition-colors">
                       {s.title}
                     </Link>
                   </li>
@@ -614,7 +575,6 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* Fleet */}
             <div>
               <h4 className="text-sm uppercase tracking-[0.3em] text-[#b4913c] mb-5 font-['Montserrat',sans-serif]">
                 Our Fleet
@@ -622,10 +582,7 @@ export default function Home() {
               <ul className="space-y-2.5">
                 {vehicles.map((v) => (
                   <li key={v.href}>
-                    <Link
-                      href={v.href}
-                      className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#b4913c] transition-colors"
-                    >
+                    <Link href={v.href} className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#b4913c] transition-colors">
                       {v.name}
                     </Link>
                   </li>
@@ -633,7 +590,6 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* Contact */}
             <div>
               <h4 className="text-sm uppercase tracking-[0.3em] text-[#b4913c] mb-5 font-['Montserrat',sans-serif]">
                 Contact
@@ -641,12 +597,12 @@ export default function Home() {
               <ul className="space-y-3 text-white/45 text-sm font-['Montserrat',sans-serif]">
                 <li>
                   <a href="tel:+19176904576" className="hover:text-[#b4913c] transition-colors">
-                     +1 917-690-4576
+                    +1 917-690-4576
                   </a>
                 </li>
                 <li>
                   <a href="tel:+15164407666" className="hover:text-[#b4913c] transition-colors">
-                     +1 516-440-7666
+                    +1 516-440-7666
                   </a>
                 </li>
                 <li>
@@ -655,11 +611,11 @@ export default function Home() {
                   </a>
                 </li>
                 <li className="leading-relaxed">
-                   135 West 50th Street, Suite 1850<br />
+                  135 West 50th Street, Suite 1850<br />
                   New York, NY 10020
                 </li>
                 <li className="text-emerald-400/80">
-                   Available 24/7 · 365 days/year
+                  Available 24/7 · 365 days/year
                 </li>
               </ul>
             </div>
@@ -683,6 +639,9 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Scroll to Top */}
+      <Scrolltotopbutton />
     </main>
   );
 }
