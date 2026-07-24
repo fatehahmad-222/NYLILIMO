@@ -185,7 +185,7 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto pt-28">
-          <p className="text-[#cd7f32] text-sm tracking-[0.4em] uppercase mb-6 font-['Montserrat',sans-serif]">
+          <p className="text-black text-sm tracking-[0.4em] uppercase mb-6 font-['Montserrat',sans-serif]">
             New York&apos;s Premier Limousine Service
           </p>
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-light leading-none mb-6 tracking-tight">
