@@ -1,5 +1,4 @@
 import ServiceLayout from "@/components/ServiceLayout";
-import Link from "next/link";
 
 const fleetVehicles = [
   {
@@ -79,14 +78,14 @@ export default function FleetPage() {
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {fleetVehicles.map((vehicle) => (
-            <Link key={vehicle.name} href={`/fleet/${vehicle.name.toLowerCase().replace(/ /g, '-')}`} className="group border border-white/8 hover:border-[#cd7f32]/40 transition-all overflow-hidden">
+            <div key={vehicle.name} className="group border border-white/8 hover:border-[#cd7f32]/40 transition-all overflow-hidden cursor-default">
               <div className="relative h-64 overflow-hidden">
-                <img src={vehicle.image} alt={vehicle.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src={vehicle.image} alt={vehicle.name} className="w-full h-full object-cover" />
                 <div className="absolute top-4 right-4 bg-[#cd7f32] text-[#0e0c0a] px-3 py-1 text-xs font-bold uppercase">{vehicle.category}</div>
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start mb-3">
-                  <h3 className="text-xl group-hover:text-[#cd7f32] transition-colors">{vehicle.name}</h3>
+                  <h3 className="text-xl">{vehicle.name}</h3>
                   <span className="text-white/40 text-sm">{vehicle.capacity}</span>
                 </div>
                 <p className="text-white/60 text-sm mb-4 font-['Montserrat',sans-serif]">{vehicle.description}</p>
@@ -96,7 +95,7 @@ export default function FleetPage() {
                   ))}
                 </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </div>
