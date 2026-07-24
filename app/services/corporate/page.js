@@ -16,7 +16,7 @@ export default function CorporatePage() {
         <div className="grid lg:grid-cols-2 gap-12 mb-20">
           <div>
             <h2 className="text-3xl font-light mb-4">Premium Business Travel Solutions</h2>
-            <div className="w-16 h-px bg-[#b4913c] mb-6" />
+            <div className="w-16 h-px bg-[#cd7f32] mb-6" />
             <p className="text-white/70 leading-relaxed mb-4 font-['Montserrat',sans-serif]">
               First impressions matter in business. SKNYC Limo provides executive-level 
               transportation that reflects your company's commitment to excellence. 
@@ -29,8 +29,8 @@ export default function CorporatePage() {
               SKNYC Limo for their transportation needs.
             </p>
           </div>
-          <div className="bg-[#0d0d15] p-6 border border-[#b4913c]/20">
-            <h3 className="text-xl mb-4 text-[#b4913c]">Corporate Benefits</h3>
+          <div className="bg-[#191512] p-6 border border-[#cd7f32]/20">
+            <h3 className="text-xl mb-4 text-[#cd7f32]">Corporate Benefits</h3>
             <ul className="space-y-3 text-white/70 font-['Montserrat',sans-serif]">
               <li className="flex items-center gap-3">📊 Monthly consolidated invoicing</li>
               <li className="flex items-center gap-3">👤 Dedicated account manager</li>
@@ -68,13 +68,13 @@ export default function CorporatePage() {
           ))}
         </div>
 
-        <div className="bg-gradient-to-r from-[#b4913c]/10 to-transparent p-8 border-l-4 border-[#b4913c]">
+        <div className="bg-gradient-to-r from-[#cd7f32]/10 to-transparent p-8 border-l-4 border-[#cd7f32]">
           <p className="text-white/80 italic font-['Montserrat',sans-serif]">
             "SKNYC has been our exclusive transportation partner for over 3 years. 
             Their professionalism and reliability are unmatched. Our executives 
             always arrive on time and in style."
           </p>
-          <p className="text-[#b4913c] mt-4 font-['Montserrat',sans-serif] text-sm">
+          <p className="text-[#cd7f32] mt-4 font-['Montserrat',sans-serif] text-sm">
             — Fortune 500 Executive
           </p>
         </div>

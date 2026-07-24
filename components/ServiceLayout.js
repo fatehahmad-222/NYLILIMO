@@ -24,7 +24,7 @@ export default function ServiceLayout({
   };
 
   return (
-    <main className="bg-[#07070d] text-white font-['Cormorant_Garamond',serif] overflow-x-hidden">
+    <main className="bg-[#0e0c0a] text-white font-['Cormorant_Garamond',serif] overflow-x-hidden">
       <div><Navbar /></div>
       
       {/* Hero Section */}
@@ -33,12 +33,12 @@ export default function ServiceLayout({
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroImage})` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#07070d]/80 via-[#07070d]/60 to-[#07070d]" />
-        <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-[#07070d]/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0e0c0a]/65 via-[#0e0c0a]/30 to-[#0e0c0a]/80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-[#0e0c0a]/30" />
         
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto" style={{ paddingTop: '160px' }}>
           <h1 className="text-5xl md:text-7xl font-light mb-4 drop-shadow-lg">{title}</h1>
-          <div className="w-20 h-px bg-[#b4913c] mx-auto mb-6" />
+          <div className="w-20 h-px bg-[#cd7f32] mx-auto mb-6" />
           <p className="text-white/80 text-lg font-['Montserrat',sans-serif] max-w-2xl mx-auto drop-shadow-md">
             {description}
           </p>
@@ -48,16 +48,16 @@ export default function ServiceLayout({
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex items-center gap-2 text-sm font-['Montserrat',sans-serif] text-white/40">
-          <Link href="/" className="hover:text-[#b4913c] transition-colors">Home</Link>
+          <Link href="/" className="hover:text-[#cd7f32] transition-colors">Home</Link>
           {breadcrumbs.map((crumb, idx) => (
             <span key={idx}>
               <span className="mx-2">/</span>
               {crumb.href ? (
-                <Link href={crumb.href} className="hover:text-[#b4913c] transition-colors">
+                <Link href={crumb.href} className="hover:text-[#cd7f32] transition-colors">
                   {crumb.name}
                 </Link>
               ) : (
-                <span className="text-[#b4913c]">{crumb.name}</span>
+                <span className="text-[#cd7f32]">{crumb.name}</span>
               )}
             </span>
           ))}
@@ -68,20 +68,20 @@ export default function ServiceLayout({
       {children}
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#09090f]">
+      <section className="py-20 bg-[#13110e]">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl md:text-4xl font-light mb-4">Ready to Experience Luxury?</h2>
-          <div className="w-16 h-px bg-[#b4913c] mx-auto mb-8" />
+          <div className="w-16 h-px bg-[#cd7f32] mx-auto mb-8" />
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/booking"
-              className="px-8 py-3 bg-[#b4913c] text-[#07070d] font-bold uppercase tracking-widest text-sm hover:bg-[#caa84d] transition-all duration-300 font-['Montserrat',sans-serif]"
+              className="px-8 py-3 bg-[#cd7f32] text-[#0e0c0a] font-bold uppercase tracking-widest text-sm hover:bg-[#e09545] transition-all duration-300 font-['Montserrat',sans-serif]"
             >
               Book Your Ride
             </Link>
             <a
               href="tel:+19176904576"
-              className="px-8 py-3 border border-[#b4913c]/50 text-[#b4913c] font-medium uppercase tracking-widest text-sm hover:border-[#b4913c] hover:bg-[#b4913c]/10 transition-all duration-300 font-['Montserrat',sans-serif]"
+              className="px-8 py-3 border border-[#cd7f32]/50 text-[#cd7f32] font-medium uppercase tracking-widest text-sm hover:border-[#cd7f32] hover:bg-[#cd7f32]/10 transition-all duration-300 font-['Montserrat',sans-serif]"
             >
               Call Now
             </a>
@@ -107,8 +107,8 @@ export default function ServiceLayout({
           transform: visible ? "translateY(0)" : "translateY(12px)",
           width: "44px",
           height: "44px",
-          border: "1px solid rgba(180, 145, 60, 0.5)",
-          background: "rgba(7, 7, 13, 0.85)",
+          border: "1px solid rgba(205, 127, 50, 0.5)",
+          background: "rgba(14, 12, 10, 0.85)",
           backdropFilter: "blur(8px)",
           display: "flex",
           alignItems: "center",
@@ -116,12 +116,12 @@ export default function ServiceLayout({
           cursor: "pointer",
         }}
         onMouseEnter={e => {
-          e.currentTarget.style.borderColor = "#b4913c";
-          e.currentTarget.style.background = "rgba(180, 145, 60, 0.12)";
+          e.currentTarget.style.borderColor = "#cd7f32";
+          e.currentTarget.style.background = "rgba(205, 127, 50, 0.12)";
         }}
         onMouseLeave={e => {
-          e.currentTarget.style.borderColor = "rgba(180, 145, 60, 0.5)";
-          e.currentTarget.style.background = "rgba(7, 7, 13, 0.85)";
+          e.currentTarget.style.borderColor = "rgba(205, 127, 50, 0.5)";
+          e.currentTarget.style.background = "rgba(14, 12, 10, 0.85)";
         }}
       >
         {/* Up arrow SVG */}
@@ -134,7 +134,7 @@ export default function ServiceLayout({
         >
           <path
             d="M8 13V3M8 3L3 8M8 3L13 8"
-            stroke="#b4913c"
+            stroke="#cd7f32"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -165,12 +165,12 @@ function FooterComponent() {
   ];
 
   return (
-    <footer className="bg-[#05050a] border-t border-[#b4913c]/15">
+    <footer className="bg-[#0a0806] border-t border-[#cd7f32]/15">
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="lg:col-span-1">
             <div className="mb-5">
-              <span className="text-3xl font-light tracking-widest text-[#b4913c]">
+              <span className="text-3xl font-light tracking-widest text-[#cd7f32]">
                 SKNYC
                 <span className="text-white/40 text-lg"> LIMO</span>
               </span>
@@ -185,7 +185,7 @@ function FooterComponent() {
                   href={`https://${social}.com/sknyclimo`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 border border-white/15 flex items-center justify-center text-white/40 hover:border-[#b4913c]/50 hover:text-[#b4913c] transition-all duration-200 capitalize text-xs font-['Montserrat',sans-serif]"
+                  className="w-9 h-9 border border-white/15 flex items-center justify-center text-white/40 hover:border-[#cd7f32]/50 hover:text-[#cd7f32] transition-all duration-200 capitalize text-xs font-['Montserrat',sans-serif]"
                 >
                   {social[0].toUpperCase()}
                 </a>
@@ -194,13 +194,13 @@ function FooterComponent() {
           </div>
 
           <div>
-            <h4 className="text-sm uppercase tracking-[0.3em] text-[#b4913c] mb-5 font-['Montserrat',sans-serif]">
+            <h4 className="text-sm uppercase tracking-[0.3em] text-[#cd7f32] mb-5 font-['Montserrat',sans-serif]">
               Services
             </h4>
             <ul className="space-y-2.5">
               {services.map((s) => (
                 <li key={s.href}>
-                  <Link href={s.href} className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#b4913c] transition-colors">
+                  <Link href={s.href} className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#cd7f32] transition-colors">
                     {s.title}
                   </Link>
                 </li>
@@ -209,13 +209,13 @@ function FooterComponent() {
           </div>
 
           <div>
-            <h4 className="text-sm uppercase tracking-[0.3em] text-[#b4913c] mb-5 font-['Montserrat',sans-serif]">
+            <h4 className="text-sm uppercase tracking-[0.3em] text-[#cd7f32] mb-5 font-['Montserrat',sans-serif]">
               Our Fleet
             </h4>
             <ul className="space-y-2.5">
               {vehicles.map((v) => (
                 <li key={v.href}>
-                  <Link href={v.href} className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#b4913c] transition-colors">
+                  <Link href={v.href} className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#cd7f32] transition-colors">
                     {v.name}
                   </Link>
                 </li>
@@ -224,28 +224,29 @@ function FooterComponent() {
           </div>
 
           <div>
-            <h4 className="text-sm uppercase tracking-[0.3em] text-[#b4913c] mb-5 font-['Montserrat',sans-serif]">
+            <h4 className="text-sm uppercase tracking-[0.3em] text-[#cd7f32] mb-5 font-['Montserrat',sans-serif]">
               Contact
             </h4>
             <ul className="space-y-3 text-white/45 text-sm font-['Montserrat',sans-serif]">
               <li>
-                <a href="tel:+19176904576" className="hover:text-[#b4913c] transition-colors">
+                <a href="tel:+19176904576" className="hover:text-[#cd7f32] transition-colors">
                   +1 917-690-4576
                 </a>
               </li>
               <li>
-                <a href="tel:+15164407666" className="hover:text-[#b4913c] transition-colors">
+                <a href="tel:+15164407666" className="hover:text-[#cd7f32] transition-colors">
                   +1 516-440-7666
                 </a>
               </li>
               <li>
-                <a href="mailto:reservations@sknyclimo.com" className="hover:text-[#b4913c] transition-colors">
+                <a href="mailto:reservations@sknyclimo.com" className="hover:text-[#cd7f32] transition-colors">
                   reservations@sknyclimo.com
                 </a>
               </li>
               <li className="leading-relaxed">
-                135 West 50th Street, Suite 1850<br />
-                New York, NY 10020
+                1421 Islip Ave STE 1037<br />
+                Central Islip, NY 11722-3941<br />
+                United States
               </li>
               <li className="text-emerald-400/80">
                 Available 24/7 · 365 days/year
@@ -263,7 +264,7 @@ function FooterComponent() {
               <Link
                 key={link}
                 href={`/${link.toLowerCase().replace(/ /g, "-")}`}
-                className="text-white/25 text-xs hover:text-[#b4913c] transition-colors font-['Montserrat',sans-serif]"
+                className="text-white/25 text-xs hover:text-[#cd7f32] transition-colors font-['Montserrat',sans-serif]"
               >
                 {link}
               </Link>

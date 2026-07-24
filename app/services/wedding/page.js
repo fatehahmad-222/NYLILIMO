@@ -15,7 +15,7 @@ export default function WeddingPage() {
         <div className="grid lg:grid-cols-2 gap-12 mb-20">
           <div>
             <h2 className="text-3xl font-light mb-4">Your Perfect Day Deserves Perfection</h2>
-            <div className="w-16 h-px bg-[#b4913c] mb-6" />SS
+            <div className="w-16 h-px bg-[#cd7f32] mb-6" />SS
             <p className="text-white/70 leading-relaxed mb-4 font-['Montserrat',sans-serif]">
               Your wedding day is one of the most important days of your life. 
               SKNYC Limo ensures that every transportation detail is handled 
@@ -29,8 +29,8 @@ export default function WeddingPage() {
               stretch limousines, luxury sedans, or party buses for your bridal party.
             </p>
           </div>
-          <div className="bg-[#0d0d15] p-6 border border-[#b4913c]/20">
-            <h3 className="text-xl mb-4 text-[#b4913c]">Wedding Package Includes</h3>
+          <div className="bg-[#191512] p-6 border border-[#cd7f32]/20">
+            <h3 className="text-xl mb-4 text-[#cd7f32]">Wedding Package Includes</h3>
             <ul className="space-y-3 text-white/70 font-['Montserrat',sans-serif]">
               <li className="flex items-center gap-3"> Complimentary champagne service</li>
               <li className="flex items-center gap-3"> Red carpet & ribbon decorations</li>
@@ -62,21 +62,21 @@ export default function WeddingPage() {
               <img src={vehicle.image} alt={vehicle.name} className="w-full h-64 object-cover" />
               <div className="p-6">
                 <h3 className="text-xl mb-2">{vehicle.name}</h3>
-                <p className="text-[#b4913c] text-sm mb-3">{vehicle.capacity}</p>
+                <p className="text-[#cd7f32] text-sm mb-3">{vehicle.capacity}</p>
                 <p className="text-white/50 text-sm">{vehicle.features}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="text-center bg-[#0d0d15] p-10">
+        <div className="text-center bg-[#191512] p-10">
           <h3 className="text-2xl font-light mb-4">Ready to Plan Your Grand Entrance?</h3>
           <p className="text-white/60 mb-6">Contact our wedding specialists for a customized quote.</p>
           <div className="flex gap-4 justify-center">
-            <a href="/booking" className="px-8 py-3 bg-[#b4913c] text-[#07070d] font-bold uppercase tracking-widest text-sm hover:bg-[#caa84d] transition-all font-['Montserrat',sans-serif]">
+            <a href="/booking" className="px-8 py-3 bg-[#cd7f32] text-[#0e0c0a] font-bold uppercase tracking-widest text-sm hover:bg-[#e09545] transition-all font-['Montserrat',sans-serif]">
               Request Quote
             </a>
-            <a href="tel:+19176904576" className="px-8 py-3 border border-[#b4913c]/50 text-[#b4913c] font-medium uppercase tracking-widest text-sm hover:border-[#b4913c] font-['Montserrat',sans-serif]">
+            <a href="tel:+19176904576" className="px-8 py-3 border border-[#cd7f32]/50 text-[#cd7f32] font-medium uppercase tracking-widest text-sm hover:border-[#cd7f32] font-['Montserrat',sans-serif]">
               Call Now
             </a>
           </div>

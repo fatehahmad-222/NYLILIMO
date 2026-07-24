@@ -15,7 +15,7 @@ export default function PointToPointPage() {
         <div className="grid lg:grid-cols-2 gap-12 mb-20">
           <div>
             <h2 className="text-3xl font-light mb-4">Reliable Point-to-Point Luxury</h2>
-            <div className="w-16 h-px bg-[#b4913c] mb-6" />
+            <div className="w-16 h-px bg-[#cd7f32] mb-6" />
             <p className="text-white/70 leading-relaxed mb-4 font-['Montserrat',sans-serif]">
               Need to get from Manhattan to the Hamptons? From Brooklyn to Jersey City? 
               SKNYC Limo provides premium point-to-point service for any two destinations 
@@ -27,8 +27,8 @@ export default function PointToPointPage() {
               and know exactly what you'll pay before you confirm.
             </p>
           </div>
-          <div className="bg-[#0d0d15] p-6 border border-[#b4913c]/20">
-            <h3 className="text-xl mb-4 text-[#b4913c]">Why Choose Point-to-Point?</h3>
+          <div className="bg-[#191512] p-6 border border-[#cd7f32]/20">
+            <h3 className="text-xl mb-4 text-[#cd7f32]">Why Choose Point-to-Point?</h3>
             <ul className="space-y-3 text-white/70 font-['Montserrat',sans-serif]">
               <li className="flex items-center gap-3"> No surge pricing - ever</li>
               <li className="flex items-center gap-3"> Any two destinations</li>
@@ -40,7 +40,7 @@ export default function PointToPointPage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-[#b4913c]/5 to-transparent p-8 rounded-sm">
+        <div className="bg-gradient-to-r from-[#cd7f32]/5 to-transparent p-8 rounded-sm">
           <h3 className="text-xl font-light mb-4 text-center">Popular Routes</h3>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
@@ -52,7 +52,7 @@ export default function PointToPointPage() {
               "Queens → Newark Airport"
             ].map((route) => (
               <div key={route} className="flex items-center gap-3 text-white/70 text-sm font-['Montserrat',sans-serif]">
-                <span className="text-[#b4913c]">→</span>
+                <span className="text-[#cd7f32]">→</span>
                 {route}
               </div>
             ))}

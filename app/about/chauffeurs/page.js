@@ -31,20 +31,20 @@ export default function ChauffeursPage() {
               "Vehicle familiarization and safety inspection",
               "Ongoing performance reviews and retraining"
             ].map((step, idx) => (
-              <div key={idx} className="flex items-center gap-4 p-4 border-l-2 border-[#b4913c] bg-white/[0.02]">
-                <span className="text-[#b4913c] font-bold">{idx + 1}</span>
+              <div key={idx} className="flex items-center gap-4 p-4 border-l-2 border-[#cd7f32] bg-white/[0.02]">
+                <span className="text-[#cd7f32] font-bold">{idx + 1}</span>
                 <span className="text-white/70">{step}</span>
               </div>
             ))}
           </div>
 
-          <div className="bg-[#b4913c]/10 p-6 border-l-4 border-[#b4913c]">
+          <div className="bg-[#cd7f32]/10 p-6 border-l-4 border-[#cd7f32]">
             <p className="text-white/80 italic font-['Montserrat',sans-serif]">
               "SKNYC chauffeurs are the most professional I've experienced. 
               From the crisp uniform to the door-to-door service, every detail 
               is perfect."
             </p>
-            <p className="text-[#b4913c] mt-3 text-sm">— Regular Client</p>
+            <p className="text-[#cd7f32] mt-3 text-sm">— Regular Client</p>
           </div>
         </div>
       </div>

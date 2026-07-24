@@ -15,7 +15,7 @@ export default function CorporateAccountsPage() {
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           <div>
             <h2 className="text-3xl font-light mb-4">Transportation Solutions for Business</h2>
-            <div className="w-16 h-px bg-[#b4913c] mb-6" />
+            <div className="w-16 h-px bg-[#cd7f32] mb-6" />
             <p className="text-white/70 leading-relaxed mb-4 font-['Montserrat',sans-serif]">
               SKNYC Limo partners with businesses of all sizes to provide reliable, 
               executive-level transportation. Our corporate accounts enjoy priority 
@@ -27,8 +27,8 @@ export default function CorporateAccountsPage() {
               that fits your business needs and budget.
             </p>
           </div>
-          <div className="bg-[#0d0d15] p-6 border border-[#b4913c]/20">
-            <h3 className="text-xl mb-4 text-[#b4913c]">Corporate Benefits</h3>
+          <div className="bg-[#191512] p-6 border border-[#cd7f32]/20">
+            <h3 className="text-xl mb-4 text-[#cd7f32]">Corporate Benefits</h3>
             <ul className="space-y-3 text-white/70 font-['Montserrat',sans-serif]">
               <li className="flex items-center gap-2">✓ Monthly consolidated invoicing</li>
               <li className="flex items-center gap-2">✓ Dedicated account manager</li>
@@ -45,13 +45,13 @@ export default function CorporateAccountsPage() {
           <div className="flex gap-4 justify-center flex-wrap">
             <Link
               href="/contact"
-              className="px-8 py-3 bg-[#b4913c] text-[#07070d] font-bold uppercase tracking-widest text-sm hover:bg-[#caa84d] transition-all font-['Montserrat',sans-serif]"
+              className="px-8 py-3 bg-[#cd7f32] text-[#0e0c0a] font-bold uppercase tracking-widest text-sm hover:bg-[#e09545] transition-all font-['Montserrat',sans-serif]"
             >
               Contact Sales
             </Link>
             <a
               href="tel:+19176904576"
-              className="px-8 py-3 border border-[#b4913c]/50 text-[#b4913c] font-medium uppercase tracking-widest text-sm hover:border-[#b4913c] hover:bg-[#b4913c]/10 transition-all font-['Montserrat',sans-serif]"
+              className="px-8 py-3 border border-[#cd7f32]/50 text-[#cd7f32] font-medium uppercase tracking-widest text-sm hover:border-[#cd7f32] hover:bg-[#cd7f32]/10 transition-all font-['Montserrat',sans-serif]"
             >
               Call Now
             </a>

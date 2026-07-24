@@ -15,7 +15,7 @@ export default function PromPage() {
         <div className="grid lg:grid-cols-2 gap-12 mb-20">
           <div>
             <h2 className="text-3xl font-light mb-4">Make Your Prom Night Unforgettable</h2>
-            <div className="w-16 h-px bg-[#b4913c] mb-6" />
+            <div className="w-16 h-px bg-[#cd7f32] mb-6" />
             <p className="text-white/70 leading-relaxed mb-4 font-['Montserrat',sans-serif]">
               Prom night is a milestone celebration. SKNYC Limo provides safe, 
               stylish transportation that lets you and your friends arrive in 
@@ -28,8 +28,8 @@ export default function PromPage() {
               trained in youth safety protocols, giving parents peace of mind.
             </p>
           </div>
-          <div className="bg-[#0d0d15] p-6 border border-[#b4913c]/20">
-            <h3 className="text-xl mb-4 text-[#b4913c]">Prom Package Features</h3>
+          <div className="bg-[#191512] p-6 border border-[#cd7f32]/20">
+            <h3 className="text-xl mb-4 text-[#cd7f32]">Prom Package Features</h3>
             <ul className="space-y-3 text-white/70 font-['Montserrat',sans-serif]">
               <li className="flex items-center gap-3"> Premium sound system with Bluetooth</li>
               <li className="flex items-center gap-3"> LED mood lighting</li>
@@ -63,15 +63,15 @@ export default function PromPage() {
             }
           ].map((pkg) => (
             <div key={pkg.capacity} className="p-6 border border-white/8 bg-white/[0.02] text-center">
-              <div className="text-3xl font-light text-[#b4913c] mb-2">{pkg.capacity}</div>
+              <div className="text-3xl font-light text-[#cd7f32] mb-2">{pkg.capacity}</div>
               <h3 className="text-lg mb-2">{pkg.vehicle}</h3>
-              <div className="text-2xl text-[#b4913c] mb-3">{pkg.price}</div>
+              <div className="text-2xl text-[#cd7f32] mb-3">{pkg.price}</div>
               <p className="text-white/50 text-sm">{pkg.features}</p>
             </div>
           ))}
         </div>
 
-        <div className="bg-[#b4913c]/10 p-8 border border-[#b4913c]/30">
+        <div className="bg-[#cd7f32]/10 p-8 border border-[#cd7f32]/30">
           <h3 className="text-xl font-light mb-4 text-center">Safety First</h3>
           <p className="text-white/70 text-center max-w-2xl mx-auto font-['Montserrat',sans-serif]">
             All our chauffeurs are fully licensed, insured, and background-checked. 

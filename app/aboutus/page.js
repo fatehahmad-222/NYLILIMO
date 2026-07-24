@@ -86,7 +86,7 @@ const stats = [
 
 export default function AboutPage() {
   return (
-    <main className="bg-[#07070d] text-white font-['Cormorant_Garamond',serif] overflow-x-hidden">
+    <main className="bg-[#0e0c0a] text-white font-['Cormorant_Garamond',serif] overflow-x-hidden">
       <Navbar />
 
       {/* ── HERO ── */}
@@ -98,26 +98,26 @@ export default function AboutPage() {
               "url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1800&q=80')",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#07070d]/75 via-[#07070d]/60 to-[#07070d]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#07070d]/60 via-transparent to-[#07070d]/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0e0c0a]/65 via-[#0e0c0a]/30 to-[#0e0c0a]/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0e0c0a]/45 via-transparent to-[#0e0c0a]/30" />
 
         {/* Decorative vertical line */}
         <div className="absolute left-12 top-1/2 -translate-y-1/2 hidden xl:block">
-          <div className="w-px h-64 bg-gradient-to-b from-transparent via-[#b4913c] to-transparent opacity-40" />
+          <div className="w-px h-64 bg-gradient-to-b from-transparent via-[#cd7f32] to-transparent opacity-40" />
         </div>
 
         <div
           className="relative z-10 text-center px-4 max-w-4xl mx-auto"
           style={{ paddingTop: "180px", paddingBottom: "80px" }}
         >
-          <p className="text-[#b4913c] text-xs tracking-[0.4em] uppercase mb-6 font-['Montserrat',sans-serif]">
+          <p className="text-[#cd7f32] text-xs tracking-[0.4em] uppercase mb-6 font-['Montserrat',sans-serif]">
             Our Story
           </p>
           <h1 className="text-6xl md:text-7xl font-light leading-none mb-6">
             About{" "}
-            <span className="text-[#b4913c] italic font-medium">SKNYC</span>
+            <span className="text-[#cd7f32] italic font-medium">SKNYC</span>
           </h1>
-          <div className="w-20 h-px bg-[#b4913c] mx-auto mb-8" />
+          <div className="w-20 h-px bg-[#cd7f32] mx-auto mb-8" />
           <p className="text-white/70 text-lg font-['Montserrat',sans-serif] font-light max-w-2xl mx-auto leading-relaxed">
             Fifteen years. Fifty thousand rides. One unwavering standard. This
             is the story of how a single promise became New York City's most
@@ -129,20 +129,20 @@ export default function AboutPage() {
       {/* ── BREADCRUMBS ── */}
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex items-center gap-2 text-sm font-['Montserrat',sans-serif] text-white/40">
-          <Link href="/" className="hover:text-[#b4913c] transition-colors">
+          <Link href="/" className="hover:text-[#cd7f32] transition-colors">
             Home
           </Link>
           <span className="mx-2">/</span>
-          <span className="text-[#b4913c]">About Us</span>
+          <span className="text-[#cd7f32]">About Us</span>
         </div>
       </div>
 
       {/* ── STATS ── */}
-      <section className="border-y border-[#b4913c]/20 bg-[#0a0a10]">
+      <section className="border-y border-[#cd7f32]/20 bg-[#110f0c]">
         <div className="max-w-6xl mx-auto px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
-              <div className="text-4xl md:text-5xl font-light text-[#b4913c] mb-2">
+              <div className="text-4xl md:text-5xl font-light text-[#cd7f32] mb-2">
                 {s.value}
               </div>
               <div className="text-white/50 text-xs tracking-widest uppercase font-['Montserrat',sans-serif]">
@@ -157,15 +157,15 @@ export default function AboutPage() {
       <section className="py-28 px-4 max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-[#b4913c] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
+            <p className="text-[#cd7f32] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
               Where It All Began
             </p>
             <h2 className="text-4xl md:text-5xl font-light mb-6 leading-tight">
               A City That Never Sleeps
               <br />
-              <span className="text-[#b4913c] italic">Deserves Better.</span>
+              <span className="text-[#cd7f32] italic">Deserves Better.</span>
             </h2>
-            <div className="w-16 h-px bg-[#b4913c] mb-8" />
+            <div className="w-16 h-px bg-[#cd7f32] mb-8" />
             <div className="space-y-5 text-white/65 font-['Montserrat',sans-serif] text-sm leading-relaxed font-light">
               <p>
                 In 2009, our founder Marcus Reid stood outside JFK Terminal 4
@@ -195,15 +195,15 @@ export default function AboutPage() {
             <img
               src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&q=80"
               alt="Luxury vehicle on NYC street"
-              className="absolute top-0 right-0 w-3/4 h-72 object-cover border border-[#b4913c]/20"
+              className="absolute top-0 right-0 w-3/4 h-72 object-cover border border-[#cd7f32]/20"
             />
             <img
               src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&q=80"
               alt="New York City skyline"
-              className="absolute bottom-0 left-0 w-2/3 h-64 object-cover border border-[#b4913c]/20"
+              className="absolute bottom-0 left-0 w-2/3 h-64 object-cover border border-[#cd7f32]/20"
             />
             {/* Gold accent block */}
-            <div className="absolute bottom-16 right-4 bg-[#b4913c] px-6 py-4 text-[#07070d]">
+            <div className="absolute bottom-16 right-4 bg-[#cd7f32] px-6 py-4 text-[#0e0c0a]">
               <p className="text-2xl font-light font-['Cormorant_Garamond',serif]">
                 "No one waits
               </p>
@@ -219,19 +219,19 @@ export default function AboutPage() {
       </section>
 
       {/* ── TIMELINE ── */}
-      <section className="py-28 bg-[#09090f]">
+      <section className="py-28 bg-[#13110e]">
         <div className="max-w-5xl mx-auto px-4">
           <div className="text-center mb-16">
-            <p className="text-[#b4913c] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
+            <p className="text-[#cd7f32] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
               Fifteen Years of Excellence
             </p>
             <h2 className="text-4xl md:text-5xl font-light mb-4">Our Journey</h2>
-            <div className="w-16 h-px bg-[#b4913c] mx-auto" />
+            <div className="w-16 h-px bg-[#cd7f32] mx-auto" />
           </div>
 
           <div className="relative">
             {/* Vertical line */}
-            <div className="absolute left-[80px] md:left-1/2 top-0 bottom-0 w-px bg-[#b4913c]/20" />
+            <div className="absolute left-[80px] md:left-1/2 top-0 bottom-0 w-px bg-[#cd7f32]/20" />
 
             <div className="space-y-12">
               {timeline.map((item, idx) => (
@@ -242,19 +242,19 @@ export default function AboutPage() {
                   }`}
                 >
                   {/* Year bubble — mobile always left, desktop center */}
-                  <div className="absolute left-[80px] md:left-1/2 -translate-x-1/2 w-14 h-14 bg-[#0d0d15] border border-[#b4913c]/50 flex items-center justify-center z-10">
-                    <span className="text-[#b4913c] text-xs font-bold font-['Montserrat',sans-serif] tracking-wider">
+                  <div className="absolute left-[80px] md:left-1/2 -translate-x-1/2 w-14 h-14 bg-[#191512] border border-[#cd7f32]/50 flex items-center justify-center z-10">
+                    <span className="text-[#cd7f32] text-xs font-bold font-['Montserrat',sans-serif] tracking-wider">
                       {item.year}
                     </span>
                   </div>
 
                   {/* Content card */}
                   <div
-                    className={`ml-[120px] md:ml-0 md:w-[calc(50%-40px)] p-6 border border-white/8 bg-white/[0.02] hover:border-[#b4913c]/30 transition-all duration-300 ${
+                    className={`ml-[120px] md:ml-0 md:w-[calc(50%-40px)] p-6 border border-white/8 bg-white/[0.02] hover:border-[#cd7f32]/30 transition-all duration-300 ${
                       idx % 2 === 0 ? "md:mr-[calc(50%+40px)]" : "md:ml-[calc(50%+40px)]"
                     }`}
                   >
-                    <h3 className="text-xl mb-2 text-[#b4913c]">{item.title}</h3>
+                    <h3 className="text-xl mb-2 text-[#cd7f32]">{item.title}</h3>
                     <p className="text-white/60 text-sm leading-relaxed font-['Montserrat',sans-serif] font-light">
                       {item.desc}
                     </p>
@@ -269,24 +269,24 @@ export default function AboutPage() {
       {/* ── VALUES ── */}
       <section className="py-28 px-4 max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-[#b4913c] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
+          <p className="text-[#cd7f32] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
             What Drives Us
           </p>
           <h2 className="text-4xl md:text-5xl font-light mb-4">
             The SKNYC Standard
           </h2>
-          <div className="w-16 h-px bg-[#b4913c] mx-auto" />
+          <div className="w-16 h-px bg-[#cd7f32] mx-auto" />
         </div>
 
         <div className="grid sm:grid-cols-2 gap-6">
           {values.map((v) => (
             <div
               key={v.title}
-              className="group p-8 border border-white/8 bg-white/[0.02] hover:border-[#b4913c]/40 hover:bg-[#b4913c]/5 transition-all duration-300 relative overflow-hidden"
+              className="group p-8 border border-white/8 bg-white/[0.02] hover:border-[#cd7f32]/40 hover:bg-[#cd7f32]/5 transition-all duration-300 relative overflow-hidden"
             >
-              <div className="absolute top-0 left-0 w-0 group-hover:w-full h-px bg-gradient-to-r from-[#b4913c] to-transparent transition-all duration-500" />
+              <div className="absolute top-0 left-0 w-0 group-hover:w-full h-px bg-gradient-to-r from-[#cd7f32] to-transparent transition-all duration-500" />
               <div className="text-3xl mb-4">{v.icon}</div>
-              <h3 className="text-xl mb-3 group-hover:text-[#b4913c] transition-colors duration-300">
+              <h3 className="text-xl mb-3 group-hover:text-[#cd7f32] transition-colors duration-300">
                 {v.title}
               </h3>
               <p className="text-white/55 text-sm leading-relaxed font-['Montserrat',sans-serif] font-light">
@@ -298,23 +298,23 @@ export default function AboutPage() {
       </section>
 
       {/* ── TEAM ── */}
-      <section className="py-28 bg-[#09090f]">
+      <section className="py-28 bg-[#13110e]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <p className="text-[#b4913c] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
+            <p className="text-[#cd7f32] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
               The People Behind the Promise
             </p>
             <h2 className="text-4xl md:text-5xl font-light mb-4">
               Meet the Team
             </h2>
-            <div className="w-16 h-px bg-[#b4913c] mx-auto" />
+            <div className="w-16 h-px bg-[#cd7f32] mx-auto" />
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {team.map((member) => (
               <div
                 key={member.name}
-                className="group border border-white/8 bg-white/[0.02] hover:border-[#b4913c]/30 transition-all duration-300 overflow-hidden"
+                className="group border border-white/8 bg-white/[0.02] hover:border-[#cd7f32]/30 transition-all duration-300 overflow-hidden"
               >
                 <div className="relative h-72 overflow-hidden">
                   <img
@@ -322,13 +322,13 @@ export default function AboutPage() {
                     alt={member.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#07070d] via-[#07070d]/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0e0c0a] via-[#0e0c0a]/20 to-transparent" />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl mb-1 group-hover:text-[#b4913c] transition-colors duration-300">
+                  <h3 className="text-xl mb-1 group-hover:text-[#cd7f32] transition-colors duration-300">
                     {member.name}
                   </h3>
-                  <p className="text-[#b4913c] text-xs tracking-widest uppercase font-['Montserrat',sans-serif] mb-4">
+                  <p className="text-[#cd7f32] text-xs tracking-widest uppercase font-['Montserrat',sans-serif] mb-4">
                     {member.role}
                   </p>
                   <p className="text-white/55 text-sm leading-relaxed font-['Montserrat',sans-serif] font-light">
@@ -350,17 +350,17 @@ export default function AboutPage() {
               "url('https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=1800&q=80')",
           }}
         />
-        <div className="absolute inset-0 bg-[#07070d]/88" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#07070d] via-transparent to-[#07070d]" />
+        <div className="absolute inset-0 bg-[#0e0c0a]/88" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0e0c0a] via-transparent to-[#0e0c0a]" />
 
         <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
-          <div className="text-[#b4913c] text-6xl font-light mb-6 opacity-40">"</div>
+          <div className="text-[#cd7f32] text-6xl font-light mb-6 opacity-40">"</div>
           <blockquote className="text-3xl md:text-4xl font-light leading-relaxed mb-8 text-white/90">
             Luxury isn't the vehicle. It's the certainty that someone
             thought of everything{" "}
-            <span className="text-[#b4913c] italic">before you had to.</span>
+            <span className="text-[#cd7f32] italic">before you had to.</span>
           </blockquote>
-          <div className="w-16 h-px bg-[#b4913c] mx-auto mb-6" />
+          <div className="w-16 h-px bg-[#cd7f32] mx-auto mb-6" />
           <p className="text-white/40 text-sm font-['Montserrat',sans-serif] tracking-widest uppercase">
             Marcus Reid — Founder, SKNYC Limo
           </p>
@@ -368,22 +368,22 @@ export default function AboutPage() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="py-20 bg-[#09090f]">
+      <section className="py-20 bg-[#13110e]">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl md:text-4xl font-light mb-4">
             Ready to Experience the Standard?
           </h2>
-          <div className="w-16 h-px bg-[#b4913c] mx-auto mb-8" />
+          <div className="w-16 h-px bg-[#cd7f32] mx-auto mb-8" />
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/booking"
-              className="px-8 py-3 bg-[#b4913c] text-[#07070d] font-bold uppercase tracking-widest text-sm hover:bg-[#caa84d] transition-all duration-300 font-['Montserrat',sans-serif]"
+              className="px-8 py-3 bg-[#cd7f32] text-[#0e0c0a] font-bold uppercase tracking-widest text-sm hover:bg-[#e09545] transition-all duration-300 font-['Montserrat',sans-serif]"
             >
               Book Your Ride
             </Link>
             <a
               href="tel:+19176904576"
-              className="px-8 py-3 border border-[#b4913c]/50 text-[#b4913c] font-medium uppercase tracking-widest text-sm hover:border-[#b4913c] hover:bg-[#b4913c]/10 transition-all duration-300 font-['Montserrat',sans-serif]"
+              className="px-8 py-3 border border-[#cd7f32]/50 text-[#cd7f32] font-medium uppercase tracking-widest text-sm hover:border-[#cd7f32] hover:bg-[#cd7f32]/10 transition-all duration-300 font-['Montserrat',sans-serif]"
             >
               Call Now
             </a>
@@ -392,12 +392,12 @@ export default function AboutPage() {
       </section>
 
       {/* ── FOOTER ── */}
-      <footer className="bg-[#05050a] border-t border-[#b4913c]/15">
+      <footer className="bg-[#0a0806] border-t border-[#cd7f32]/15">
         <div className="max-w-7xl mx-auto px-4 py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             <div className="lg:col-span-1">
               <div className="mb-5">
-                <span className="text-3xl font-light tracking-widest text-[#b4913c]">
+                <span className="text-3xl font-light tracking-widest text-[#cd7f32]">
                   SKNYC
                   <span className="text-white/40 text-lg"> LIMO</span>
                 </span>
@@ -413,7 +413,7 @@ export default function AboutPage() {
                     href={`https://${social}.com/sknyclimo`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-9 h-9 border border-white/15 flex items-center justify-center text-white/40 hover:border-[#b4913c]/50 hover:text-[#b4913c] transition-all duration-200 capitalize text-xs font-['Montserrat',sans-serif]"
+                    className="w-9 h-9 border border-white/15 flex items-center justify-center text-white/40 hover:border-[#cd7f32]/50 hover:text-[#cd7f32] transition-all duration-200 capitalize text-xs font-['Montserrat',sans-serif]"
                   >
                     {social[0].toUpperCase()}
                   </a>
@@ -422,7 +422,7 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <h4 className="text-sm uppercase tracking-[0.3em] text-[#b4913c] mb-5 font-['Montserrat',sans-serif]">
+              <h4 className="text-sm uppercase tracking-[0.3em] text-[#cd7f32] mb-5 font-['Montserrat',sans-serif]">
                 Services
               </h4>
               <ul className="space-y-2.5">
@@ -437,7 +437,7 @@ export default function AboutPage() {
                   <li key={s.href}>
                     <Link
                       href={s.href}
-                      className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#b4913c] transition-colors"
+                      className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#cd7f32] transition-colors"
                     >
                       {s.title}
                     </Link>
@@ -447,7 +447,7 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <h4 className="text-sm uppercase tracking-[0.3em] text-[#b4913c] mb-5 font-['Montserrat',sans-serif]">
+              <h4 className="text-sm uppercase tracking-[0.3em] text-[#cd7f32] mb-5 font-['Montserrat',sans-serif]">
                 Our Fleet
               </h4>
               <ul className="space-y-2.5">
@@ -462,7 +462,7 @@ export default function AboutPage() {
                   <li key={v.href}>
                     <Link
                       href={v.href}
-                      className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#b4913c] transition-colors"
+                      className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#cd7f32] transition-colors"
                     >
                       {v.name}
                     </Link>
@@ -472,29 +472,31 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <h4 className="text-sm uppercase tracking-[0.3em] text-[#b4913c] mb-5 font-['Montserrat',sans-serif]">
+              <h4 className="text-sm uppercase tracking-[0.3em] text-[#cd7f32] mb-5 font-['Montserrat',sans-serif]">
                 Contact
               </h4>
               <ul className="space-y-3 text-white/45 text-sm font-['Montserrat',sans-serif]">
                 <li>
-                  <a href="tel:+19176904576" className="hover:text-[#b4913c] transition-colors">
+                  <a href="tel:+19176904576" className="hover:text-[#cd7f32] transition-colors">
                     +1 917-690-4576
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+15164407666" className="hover:text-[#b4913c] transition-colors">
+                  <a href="tel:+15164407666" className="hover:text-[#cd7f32] transition-colors">
                     +1 516-440-7666
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:reservations@sknyclimo.com" className="hover:text-[#b4913c] transition-colors">
+                  <a href="mailto:reservations@sknyclimo.com" className="hover:text-[#cd7f32] transition-colors">
                     reservations@sknyclimo.com
                   </a>
                 </li>
                 <li className="leading-relaxed">
-                  135 West 50th Street, Suite 1850
+                  1421 Islip Ave STE 1037
                   <br />
-                  New York, NY 10020
+                  Central Islip, NY 11722-3941
+                  <br />
+                  United States
                 </li>
                 <li className="text-emerald-400/80">Available 24/7 · 365 days/year</li>
               </ul>
@@ -510,7 +512,7 @@ export default function AboutPage() {
                 <Link
                   key={link}
                   href={`/${link.toLowerCase().replace(/ /g, "-")}`}
-                  className="text-white/25 text-xs hover:text-[#b4913c] transition-colors font-['Montserrat',sans-serif]"
+                  className="text-white/25 text-xs hover:text-[#cd7f32] transition-colors font-['Montserrat',sans-serif]"
                 >
                   {link}
                 </Link>

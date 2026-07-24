@@ -18,7 +18,7 @@ export default function AirportTransferPage() {
         <div className="grid md:grid-cols-2 gap-12 ">
           <div>
             <h2 className="text-3xl font-light mb-4">Stress-Free Airport Transportation</h2>
-            <div className="w-16 h-px bg-[#b4913c] mb-6" />
+            <div className="w-16 h-px bg-[#cd7f32] mb-6" />
             <p className="text-white/70 leading-relaxed mb-4 font-['Montserrat',sans-serif]">
               Traveling can be stressful enough without worrying about ground transportation. 
               SKNYC Limo provides premium airport transfer services to and from all major 
@@ -31,8 +31,8 @@ export default function AirportTransferPage() {
               luxury with SKNYC Limo.
             </p>
           </div>
-          <div className="bg-[#0d0d15] p-6 border border-[#b4913c]/20">
-            <h3 className="text-xl mb-4 text-[#b4913c]">Service Features</h3>
+          <div className="bg-[#191512] p-6 border border-[#cd7f32]/20">
+            <h3 className="text-xl mb-4 text-[#cd7f32]">Service Features</h3>
             <ul className="space-y-3 text-white/70 font-['Montserrat',sans-serif]">
               <li className="flex items-center gap-3"> Flight tracking included</li>
               <li className="flex items-center gap-3"> 60 minutes complimentary wait time</li>
@@ -56,13 +56,13 @@ export default function AirportTransferPage() {
               { name: "Long Island MacArthur Airport", code: "ISP", time: "75-90 mins from Midtown", image: "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=600&q=80" },
               { name: "Stewart International Airport", code: "SWF", time: "90+ mins from Midtown", image: "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=600&q=80" },
             ].map((airport) => (
-              <div key={airport.code} className="border border-white/8 bg-white/[0.02] overflow-hidden group hover:border-[#b4913c]/40 transition-all">
+              <div key={airport.code} className="border border-white/8 bg-white/[0.02] overflow-hidden group hover:border-[#cd7f32]/40 transition-all">
                 <div className="h-48 overflow-hidden">
                   <img src={airport.image} alt={airport.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl mb-2">{airport.name}</h3>
-                  <p className="text-[#b4913c] text-sm mb-3 font-['Montserrat',sans-serif]">{airport.code}</p>
+                  <p className="text-[#cd7f32] text-sm mb-3 font-['Montserrat',sans-serif]">{airport.code}</p>
                   <p className="text-white/50 text-sm font-['Montserrat',sans-serif]">⏱️ {airport.time}</p>
                 </div>
               </div>
@@ -71,12 +71,12 @@ export default function AirportTransferPage() {
         </div>
 
         {/* Pricing Table */}
-        <div className="bg-[#0d0d15] p-8 border border-[#b4913c]/20">
+        <div className="bg-[#191512] p-8 border border-[#cd7f32]/20">
           <h2 className="text-2xl font-light mb-6 text-center">Sample Rates (One-Way)</h2>
           <div className="overflow-x-auto">
             <table className="w-full">
-              <thead className="border-b border-[#b4913c]/30">
-                <tr className="text-left text-[#b4913c] font-['Montserrat',sans-serif] text-sm">
+              <thead className="border-b border-[#cd7f32]/30">
+                <tr className="text-left text-[#cd7f32] font-['Montserrat',sans-serif] text-sm">
                   <th className="pb-3">Vehicle</th>
                   <th className="pb-3">JFK</th>
                   <th className="pb-3">LGA</th>

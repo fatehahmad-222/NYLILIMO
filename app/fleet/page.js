@@ -79,20 +79,20 @@ export default function FleetPage() {
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {fleetVehicles.map((vehicle) => (
-            <Link key={vehicle.name} href={`/fleet/${vehicle.name.toLowerCase().replace(/ /g, '-')}`} className="group border border-white/8 hover:border-[#b4913c]/40 transition-all overflow-hidden">
+            <Link key={vehicle.name} href={`/fleet/${vehicle.name.toLowerCase().replace(/ /g, '-')}`} className="group border border-white/8 hover:border-[#cd7f32]/40 transition-all overflow-hidden">
               <div className="relative h-64 overflow-hidden">
                 <img src={vehicle.image} alt={vehicle.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute top-4 right-4 bg-[#b4913c] text-[#07070d] px-3 py-1 text-xs font-bold uppercase">{vehicle.category}</div>
+                <div className="absolute top-4 right-4 bg-[#cd7f32] text-[#0e0c0a] px-3 py-1 text-xs font-bold uppercase">{vehicle.category}</div>
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start mb-3">
-                  <h3 className="text-xl group-hover:text-[#b4913c] transition-colors">{vehicle.name}</h3>
+                  <h3 className="text-xl group-hover:text-[#cd7f32] transition-colors">{vehicle.name}</h3>
                   <span className="text-white/40 text-sm">{vehicle.capacity}</span>
                 </div>
                 <p className="text-white/60 text-sm mb-4 font-['Montserrat',sans-serif]">{vehicle.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {vehicle.features.map((f) => (
-                    <span key={f} className="text-xs text-[#b4913c]/70 border border-[#b4913c]/25 px-2 py-1">{f}</span>
+                    <span key={f} className="text-xs text-[#cd7f32]/70 border border-[#cd7f32]/25 px-2 py-1">{f}</span>
                   ))}
                 </div>
               </div>

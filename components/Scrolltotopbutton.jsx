@@ -30,8 +30,8 @@ export default function ScrollToTopButton() {
         transform: visible ? "translateY(0)" : "translateY(12px)",
         width: "44px",
         height: "44px",
-        border: "1px solid rgba(180, 145, 60, 0.5)",
-        background: "rgba(7, 7, 13, 0.85)",
+        border: "1px solid rgba(205, 127, 50, 0.5)",
+        background: "rgba(14, 12, 10, 0.85)",
         backdropFilter: "blur(8px)",
         display: "flex",
         alignItems: "center",
@@ -39,12 +39,12 @@ export default function ScrollToTopButton() {
         cursor: "pointer",
       }}
       onMouseEnter={e => {
-        e.currentTarget.style.borderColor = "#b4913c";
-        e.currentTarget.style.background = "rgba(180, 145, 60, 0.12)";
+        e.currentTarget.style.borderColor = "#cd7f32";
+        e.currentTarget.style.background = "rgba(205, 127, 50, 0.12)";
       }}
       onMouseLeave={e => {
-        e.currentTarget.style.borderColor = "rgba(180, 145, 60, 0.5)";
-        e.currentTarget.style.background = "rgba(7, 7, 13, 0.85)";
+        e.currentTarget.style.borderColor = "rgba(205, 127, 50, 0.5)";
+        e.currentTarget.style.background = "rgba(14, 12, 10, 0.85)";
       }}
     >
       <svg
@@ -56,7 +56,7 @@ export default function ScrollToTopButton() {
       >
         <path
           d="M8 13V3M8 3L3 8M8 3L13 8"
-          stroke="#b4913c"
+          stroke="#cd7f32"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"

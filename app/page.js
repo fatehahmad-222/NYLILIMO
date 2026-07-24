@@ -165,7 +165,7 @@ const stats = [
 
 export default function Home() {
   return (
-    <main className="bg-[#07070d] text-white font-['Cormorant_Garamond',serif] overflow-x-hidden">
+    <main className="bg-[#0e0c0a] text-white font-['Cormorant_Garamond',serif] overflow-x-hidden">
       <Navbar />
 
       {/* ── HERO ── */}
@@ -174,23 +174,23 @@ export default function Home() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1800&q=80')",
+              "url('https://images.unsplash.com/photo-1504215680853-026ed2a45def?w=1800&q=80')",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#07070d]/80 via-[#07070d]/60 to-[#07070d]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#07070d]/70 via-transparent to-[#07070d]/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-[#0e0c0a]/10 to-[#0e0c0a]/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0e0c0a]/50 via-transparent to-[#0e0c0a]/30" />
 
         <div className="absolute left-12 top-1/2 -translate-y-1/2 hidden xl:block">
-          <div className="w-px h-64 bg-gradient-to-b from-transparent via-[#b4913c] to-transparent opacity-50" />
+          <div className="w-px h-64 bg-gradient-to-b from-transparent via-[#cd7f32] to-transparent opacity-50" />
         </div>
 
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto pt-28">
-          <p className="text-[#b4913c] text-sm tracking-[0.4em] uppercase mb-6 font-['Montserrat',sans-serif]">
+          <p className="text-[#cd7f32] text-sm tracking-[0.4em] uppercase mb-6 font-['Montserrat',sans-serif]">
             New York&apos;s Premier Limousine Service
           </p>
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-light leading-none mb-6 tracking-tight">
             <span className="block">Arrive in</span>
-            <span className="text-[#b4913c] italic font-medium">Luxury.</span>
+            <span className="text-[#cd7f32] italic font-medium">Luxury.</span>
           </h1>
           <p className="text-white/60 text-lg md:text-xl font-['Montserrat',sans-serif] font-light tracking-wide max-w-2xl mx-auto mb-12 leading-relaxed">
             From JFK to the Hamptons — world-class chauffeur service that
@@ -200,24 +200,24 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="/booking"
-              className="px-10 py-4 bg-[#b4913c] text-[#07070d] font-bold uppercase tracking-widest text-sm hover:bg-[#caa84d] transition-all duration-300 shadow-[0_0_40px_rgba(180,145,60,0.4)] hover:shadow-[0_0_60px_rgba(180,145,60,0.6)] font-['Montserrat',sans-serif]"
+              className="px-10 py-4 bg-[#cd7f32] text-[#0e0c0a] font-bold uppercase tracking-widest text-sm hover:bg-[#e09545] transition-all duration-300 shadow-[0_0_40px_rgba(205,127,50,0.4)] hover:shadow-[0_0_60px_rgba(205,127,50,0.6)] font-['Montserrat',sans-serif]"
             >
               Book Your Ride
             </Link>
             <a
               href="tel:+19176904576"
-              className="px-10 py-4 border border-[#b4913c]/50 text-[#b4913c] font-medium uppercase tracking-widest text-sm hover:border-[#b4913c] hover:bg-[#b4913c]/10 transition-all duration-300 font-['Montserrat',sans-serif]"
+              className="px-10 py-4 border border-[#cd7f32]/50 text-[#cd7f32] font-medium uppercase tracking-widest text-sm hover:border-[#cd7f32] hover:bg-[#cd7f32]/10 transition-all duration-300 font-['Montserrat',sans-serif]"
             >
               Call Now
             </a>
           </div>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-2 sm:gap-6 justify-center text-white/40 text-sm font-['Montserrat',sans-serif]">
-            <a href="tel:+19176904576" className="hover:text-[#b4913c] transition-colors">
+            <a href="tel:+19176904576" className="hover:text-[#cd7f32] transition-colors">
               +1 917-690-4576
             </a>
             <span className="hidden sm:block opacity-40">·</span>
-            <a href="tel:+15164407666" className="hover:text-[#b4913c] transition-colors">
+            <a href="tel:+15164407666" className="hover:text-[#cd7f32] transition-colors">
               +1 516-440-7666
             </a>
           </div>
@@ -225,11 +225,11 @@ export default function Home() {
       </section>
 
       {/* ── STATS ── */}
-      <section className="border-y border-[#b4913c]/20 bg-[#0a0a10]">
+      <section className="border-y border-[#cd7f32]/20 bg-[#110f0c]">
         <div className="max-w-6xl mx-auto px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
-              <div className="text-4xl md:text-5xl font-light text-[#b4913c] mb-2">
+              <div className="text-4xl md:text-5xl font-light text-[#cd7f32] mb-2">
                 {s.value}
               </div>
               <div className="text-white/50 text-xs tracking-widest uppercase font-['Montserrat',sans-serif]">
@@ -243,11 +243,11 @@ export default function Home() {
       {/* ── SERVICES ── */}
       <section id="services" className="py-28 px-4 max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-[#b4913c] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
+          <p className="text-[#cd7f32] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
             What We Offer
           </p>
           <h2 className="text-5xl md:text-6xl font-light mb-4">Our Services</h2>
-          <div className="w-16 h-px bg-[#b4913c] mx-auto" />
+          <div className="w-16 h-px bg-[#cd7f32] mx-auto" />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -255,16 +255,16 @@ export default function Home() {
             <Link
               key={service.href}
               href={service.href}
-              className="group relative p-8 border border-white/8 bg-white/[0.02] hover:bg-[#b4913c]/5 hover:border-[#b4913c]/40 rounded-sm transition-all duration-300 overflow-hidden"
+              className="group relative p-8 border border-white/8 bg-white/[0.02] hover:bg-[#cd7f32]/5 hover:border-[#cd7f32]/40 rounded-sm transition-all duration-300 overflow-hidden"
             >
-              <div className="absolute top-0 left-0 w-0 group-hover:w-full h-px bg-gradient-to-r from-[#b4913c] to-transparent transition-all duration-500" />
-              <h3 className="text-xl mb-3 text-[#b4913c] group-hover:text-[#b4913c] transition-colors duration-300">
+              <div className="absolute top-0 left-0 w-0 group-hover:w-full h-px bg-gradient-to-r from-[#cd7f32] to-transparent transition-all duration-500" />
+              <h3 className="text-xl mb-3 text-[#cd7f32] group-hover:text-[#cd7f32] transition-colors duration-300">
                 {service.title}
               </h3>
               <p className="text-white/50 text-sm leading-relaxed font-['Montserrat',sans-serif] font-light">
                 {service.desc}
               </p>
-              <div className="mt-6 flex items-center gap-2 text-[#b4913c] text-xs uppercase tracking-widest font-['Montserrat',sans-serif] font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="mt-6 flex items-center gap-2 text-[#cd7f32] text-xs uppercase tracking-widest font-['Montserrat',sans-serif] font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Learn More
                 <svg className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -276,14 +276,14 @@ export default function Home() {
       </section>
 
       {/* ── FEATURED VEHICLES ── */}
-      <section id="fleet" className="py-28 bg-[#09090f]">
+      <section id="fleet" className="py-28 bg-[#13110e]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <p className="text-[#b4913c] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
+            <p className="text-[#cd7f32] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
               Travel In Style
             </p>
             <h2 className="text-5xl md:text-6xl font-light mb-4">Featured Vehicles</h2>
-            <div className="w-16 h-px bg-[#b4913c] mx-auto mb-6" />
+            <div className="w-16 h-px bg-[#cd7f32] mx-auto mb-6" />
             <p className="text-white/50 text-sm font-['Montserrat',sans-serif] max-w-xl mx-auto leading-relaxed">
               Our immaculate fleet is serviced daily and detailed before every ride. Choose your vehicle and ride in uncompromising comfort.
             </p>
@@ -294,7 +294,7 @@ export default function Home() {
               <Link
                 key={v.href}
                 href={v.href}
-                className="group relative overflow-hidden rounded-sm border border-white/8 hover:border-[#b4913c]/40 transition-all duration-500"
+                className="group relative overflow-hidden rounded-sm border border-white/8 hover:border-[#cd7f32]/40 transition-all duration-500"
               >
                 <div className="relative h-56 overflow-hidden">
                   <img
@@ -302,14 +302,14 @@ export default function Home() {
                     alt={v.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#07070d] via-[#07070d]/30 to-transparent" />
-                  <div className="absolute top-4 right-4 bg-[#b4913c] text-[#07070d] text-xs font-bold uppercase tracking-wider px-3 py-1 font-['Montserrat',sans-serif]">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0e0c0a] via-[#0e0c0a]/30 to-transparent" />
+                  <div className="absolute top-4 right-4 bg-[#cd7f32] text-[#0e0c0a] text-xs font-bold uppercase tracking-wider px-3 py-1 font-['Montserrat',sans-serif]">
                     {v.category}
                   </div>
                 </div>
-                <div className="p-6 bg-[#0d0d15]">
+                <div className="p-6 bg-[#191512]">
                   <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-xl group-hover:text-[#b4913c] transition-colors duration-300 leading-tight">
+                    <h3 className="text-xl group-hover:text-[#cd7f32] transition-colors duration-300 leading-tight">
                       {v.name}
                     </h3>
                     <span className="text-white/40 text-xs font-['Montserrat',sans-serif] whitespace-nowrap ml-2 mt-1">
@@ -320,13 +320,13 @@ export default function Home() {
                     {v.features.map((f) => (
                       <span
                         key={f}
-                        className="text-xs text-[#b4913c]/70 border border-[#b4913c]/25 px-2 py-1 font-['Montserrat',sans-serif]"
+                        className="text-xs text-[#cd7f32]/70 border border-[#cd7f32]/25 px-2 py-1 font-['Montserrat',sans-serif]"
                       >
                         {f}
                       </span>
                     ))}
                   </div>
-                  <div className="flex items-center gap-2 text-[#b4913c] text-xs uppercase tracking-widest font-['Montserrat',sans-serif] font-medium">
+                  <div className="flex items-center gap-2 text-[#cd7f32] text-xs uppercase tracking-widest font-['Montserrat',sans-serif] font-medium">
                     View Details
                     <svg className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -340,7 +340,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/fleet"
-              className="inline-flex items-center gap-3 px-10 py-4 border border-[#b4913c]/50 text-[#b4913c] text-sm uppercase tracking-widest font-['Montserrat',sans-serif] hover:bg-[#b4913c]/10 hover:border-[#b4913c] transition-all duration-300"
+              className="inline-flex items-center gap-3 px-10 py-4 border border-[#cd7f32]/50 text-[#cd7f32] text-sm uppercase tracking-widest font-['Montserrat',sans-serif] hover:bg-[#cd7f32]/10 hover:border-[#cd7f32] transition-all duration-300"
             >
               View Full Fleet
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -354,11 +354,11 @@ export default function Home() {
       {/* ── WORLD CLASS ── */}
       <section id="why-us" className="py-28 px-4 max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-[#b4913c] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
+          <p className="text-[#cd7f32] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
             The SKNYC Standard
           </p>
           <h2 className="text-5xl md:text-6xl font-light mb-4">World-Class Experience</h2>
-          <div className="w-16 h-px bg-[#b4913c] mx-auto" />
+          <div className="w-16 h-px bg-[#cd7f32] mx-auto" />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -366,16 +366,16 @@ export default function Home() {
             <Link
               key={item.href}
               href={item.href}
-              className={`group relative p-8 rounded-sm bg-gradient-to-br ${item.color} border border-white/8 hover:border-[#b4913c]/40 transition-all duration-300 overflow-hidden`}
+              className={`group relative p-8 rounded-sm bg-gradient-to-br ${item.color} border border-white/8 hover:border-[#cd7f32]/40 transition-all duration-300 overflow-hidden`}
             >
-              <div className="absolute top-0 right-0 w-24 h-24 rounded-full bg-[#b4913c]/5 -translate-y-8 translate-x-8 group-hover:scale-150 transition-transform duration-500" />
-              <h3 className="text-xl mb-3 group-hover:text-[#b4913c] transition-colors duration-300">
+              <div className="absolute top-0 right-0 w-24 h-24 rounded-full bg-[#cd7f32]/5 -translate-y-8 translate-x-8 group-hover:scale-150 transition-transform duration-500" />
+              <h3 className="text-xl mb-3 group-hover:text-[#cd7f32] transition-colors duration-300">
                 {item.title}
               </h3>
               <p className="text-white/55 text-sm leading-relaxed font-['Montserrat',sans-serif] font-light">
                 {item.desc}
               </p>
-              <div className="mt-6 flex items-center gap-2 text-[#b4913c] text-xs uppercase tracking-widest font-['Montserrat',sans-serif] font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+              <div className="mt-6 flex items-center gap-2 text-[#cd7f32] text-xs uppercase tracking-widest font-['Montserrat',sans-serif] font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                 Explore
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -387,14 +387,14 @@ export default function Home() {
       </section>
 
       {/* ── WHERE WE OPERATE ── */}
-      <section id="coverage" className="py-28 bg-[#09090f]">
+      <section id="coverage" className="py-28 bg-[#13110e]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <p className="text-[#b4913c] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
+            <p className="text-[#cd7f32] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
               Coverage Area
             </p>
             <h2 className="text-5xl md:text-6xl font-light mb-4">Where We Operate</h2>
-            <div className="w-16 h-px bg-[#b4913c] mx-auto mb-4" />
+            <div className="w-16 h-px bg-[#cd7f32] mx-auto mb-4" />
             <p className="text-white/50 text-sm font-['Montserrat',sans-serif] max-w-lg mx-auto">
               Serving the greater New York metropolitan area — from the five boroughs to the surrounding tri-state region.
             </p>
@@ -403,14 +403,14 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-10 items-start">
             <div className="space-y-10">
               <div>
-                <h3 className="text-sm uppercase tracking-[0.3em] text-[#b4913c] mb-5 font-['Montserrat',sans-serif]">
+                <h3 className="text-sm uppercase tracking-[0.3em] text-[#cd7f32] mb-5 font-['Montserrat',sans-serif]">
                   Service Areas
                 </h3>
                 <div className="flex flex-wrap gap-2.5">
                   {areas.map((area) => (
                     <span
                       key={area}
-                      className="px-4 py-2 border border-white/15 text-white/70 text-sm font-['Montserrat',sans-serif] hover:border-[#b4913c]/50 hover:text-[#b4913c] transition-all duration-200 cursor-default"
+                      className="px-4 py-2 border border-white/15 text-white/70 text-sm font-['Montserrat',sans-serif] hover:border-[#cd7f32]/50 hover:text-[#cd7f32] transition-all duration-200 cursor-default"
                     >
                       {area}
                     </span>
@@ -419,16 +419,16 @@ export default function Home() {
               </div>
 
               <div>
-                <h3 className="text-sm uppercase tracking-[0.3em] text-[#b4913c] mb-5 font-['Montserrat',sans-serif]">
+                <h3 className="text-sm uppercase tracking-[0.3em] text-[#cd7f32] mb-5 font-['Montserrat',sans-serif]">
                   Airport Transfers
                 </h3>
                 <div className="space-y-3">
                   {airports.map((airport) => (
                     <div
                       key={airport.code}
-                      className="flex items-center gap-4 p-4 border border-white/8 bg-white/[0.02] hover:border-[#b4913c]/30 transition-all duration-200"
+                      className="flex items-center gap-4 p-4 border border-white/8 bg-white/[0.02] hover:border-[#cd7f32]/30 transition-all duration-200"
                     >
-                      <span className="text-[#b4913c] font-bold text-lg font-['Montserrat',sans-serif] w-12 shrink-0">
+                      <span className="text-[#cd7f32] font-bold text-lg font-['Montserrat',sans-serif] w-12 shrink-0">
                         {airport.code}
                       </span>
                       <span className="text-white/65 text-sm font-['Montserrat',sans-serif]">
@@ -443,10 +443,10 @@ export default function Home() {
 
             <div className="relative">
               <a
-                href="https://maps.google.com/?q=New+York+City,+NY"
+                href="https://maps.google.com/?q=1421+Islip+Ave+STE+1037+Central+Islip+NY+11722"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block relative overflow-hidden rounded-sm border border-[#b4913c]/25 hover:border-[#b4913c]/60 transition-all duration-300 shadow-[0_0_40px_rgba(180,145,60,0.1)] hover:shadow-[0_0_60px_rgba(180,145,60,0.2)]"
+                className="group block relative overflow-hidden rounded-sm border border-[#cd7f32]/25 hover:border-[#cd7f32]/60 transition-all duration-300 shadow-[0_0_40px_rgba(205,127,50,0.1)] hover:shadow-[0_0_60px_rgba(205,127,50,0.2)]"
                 aria-label="Open SKNYC Limo location in Google Maps"
               >
                 <img
@@ -454,9 +454,9 @@ export default function Home() {
                   alt="SKNYC Limo Service Area Map"
                   className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#07070d]/60 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0e0c0a]/60 via-transparent to-transparent" />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="bg-[#b4913c] text-[#07070d] px-6 py-3 font-bold uppercase tracking-widest text-sm font-['Montserrat',sans-serif]">
+                  <div className="bg-[#cd7f32] text-[#0e0c0a] px-6 py-3 font-bold uppercase tracking-widest text-sm font-['Montserrat',sans-serif]">
                     Open in Google Maps
                   </div>
                 </div>
@@ -467,22 +467,23 @@ export default function Home() {
                 </div>
               </a>
 
-              <div className="mt-4 p-5 border border-[#b4913c]/20 bg-[#0d0d15] space-y-3">
-                <p className="text-[#b4913c] text-xs uppercase tracking-widest font-['Montserrat',sans-serif]">
+              <div className="mt-4 p-5 border border-[#cd7f32]/20 bg-[#191512] space-y-3">
+                <p className="text-[#cd7f32] text-xs uppercase tracking-widest font-['Montserrat',sans-serif]">
                   Contact & Address
                 </p>
                 <p className="text-white/70 text-sm font-['Montserrat',sans-serif]">
-                  135 West 50th Street, Suite 1850<br />
-                  New York, NY 10020
+                  1421 Islip Ave STE 1037<br />
+                  Central Islip, NY 11722-3941<br />
+                  United States
                 </p>
                 <div className="flex flex-col gap-1.5">
-                  <a href="tel:+19176904576" className="text-white/70 hover:text-[#b4913c] text-sm font-['Montserrat',sans-serif] transition-colors">
+                  <a href="tel:+19176904576" className="text-white/70 hover:text-[#cd7f32] text-sm font-['Montserrat',sans-serif] transition-colors">
                     +1 917-690-4576
                   </a>
-                  <a href="tel:+15164407666" className="text-white/70 hover:text-[#b4913c] text-sm font-['Montserrat',sans-serif] transition-colors">
+                  <a href="tel:+15164407666" className="text-white/70 hover:text-[#cd7f32] text-sm font-['Montserrat',sans-serif] transition-colors">
                     +1 516-440-7666
                   </a>
-                  <a href="mailto:reservations@sknyclimo.com" className="text-white/70 hover:text-[#b4913c] text-sm font-['Montserrat',sans-serif] transition-colors">
+                  <a href="mailto:reservations@sknyclimo.com" className="text-white/70 hover:text-[#cd7f32] text-sm font-['Montserrat',sans-serif] transition-colors">
                     ✉️ reservations@sknyclimo.com
                   </a>
                 </div>
@@ -501,15 +502,15 @@ export default function Home() {
               "url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1800&q=80')",
           }}
         />
-        <div className="absolute inset-0 bg-[#07070d]/85" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#07070d] via-transparent to-[#07070d]" />
+        <div className="absolute inset-0 bg-[#0e0c0a]/85" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0e0c0a] via-transparent to-[#0e0c0a]" />
 
         <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
-          <p className="text-[#b4913c] text-xs tracking-[0.4em] uppercase mb-6 font-['Montserrat',sans-serif]">
+          <p className="text-[#cd7f32] text-xs tracking-[0.4em] uppercase mb-6 font-['Montserrat',sans-serif]">
             Ready When You Are
           </p>
           <h2 className="text-5xl md:text-6xl font-light mb-6">
-            Book Your Ride <span className="text-[#b4913c] italic">Today</span>
+            Book Your Ride <span className="text-[#cd7f32] italic">Today</span>
           </h2>
           <p className="text-white/55 text-base font-['Montserrat',sans-serif] mb-10 leading-relaxed">
             Experience New York like never before. Instant confirmation, no hidden fees, and the impeccable service of SKNYC Limo.
@@ -517,13 +518,13 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/booking"
-              className="px-12 py-4 bg-[#b4913c] text-[#07070d] font-bold uppercase tracking-widest text-sm hover:bg-[#caa84d] transition-all duration-300 shadow-[0_0_50px_rgba(180,145,60,0.5)] font-['Montserrat',sans-serif]"
+              className="px-12 py-4 bg-[#cd7f32] text-[#0e0c0a] font-bold uppercase tracking-widest text-sm hover:bg-[#e09545] transition-all duration-300 shadow-[0_0_50px_rgba(205,127,50,0.5)] font-['Montserrat',sans-serif]"
             >
               Reserve Now
             </Link>
             <a
               href="tel:+19176904576"
-              className="px-12 py-4 border border-white/30 text-white font-medium uppercase tracking-widest text-sm hover:border-[#b4913c] hover:text-[#b4913c] transition-all duration-300 font-['Montserrat',sans-serif]"
+              className="px-12 py-4 border border-white/30 text-white font-medium uppercase tracking-widest text-sm hover:border-[#cd7f32] hover:text-[#cd7f32] transition-all duration-300 font-['Montserrat',sans-serif]"
             >
               +1 917-690-4576
             </a>
@@ -532,12 +533,12 @@ export default function Home() {
       </section>
 
       {/* ── FOOTER ── */}
-      <footer className="bg-[#05050a] border-t border-[#b4913c]/15">
+      <footer className="bg-[#0a0806] border-t border-[#cd7f32]/15">
         <div className="max-w-7xl mx-auto px-4 py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             <div className="lg:col-span-1">
               <div className="mb-5">
-                <span className="text-3xl font-light tracking-widest text-[#b4913c]">
+                <span className="text-3xl font-light tracking-widest text-[#cd7f32]">
                   SKNYC
                   <span className="text-white/40 text-lg"> LIMO</span>
                 </span>
@@ -552,7 +553,7 @@ export default function Home() {
                     href={`https://${social}.com/sknyclimo`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-9 h-9 border border-white/15 flex items-center justify-center text-white/40 hover:border-[#b4913c]/50 hover:text-[#b4913c] transition-all duration-200 capitalize text-xs font-['Montserrat',sans-serif]"
+                    className="w-9 h-9 border border-white/15 flex items-center justify-center text-white/40 hover:border-[#cd7f32]/50 hover:text-[#cd7f32] transition-all duration-200 capitalize text-xs font-['Montserrat',sans-serif]"
                   >
                     {social[0].toUpperCase()}
                   </a>
@@ -561,13 +562,13 @@ export default function Home() {
             </div>
 
             <div>
-              <h4 className="text-sm uppercase tracking-[0.3em] text-[#b4913c] mb-5 font-['Montserrat',sans-serif]">
+              <h4 className="text-sm uppercase tracking-[0.3em] text-[#cd7f32] mb-5 font-['Montserrat',sans-serif]">
                 Services
               </h4>
               <ul className="space-y-2.5">
                 {services.slice(0, 7).map((s) => (
                   <li key={s.href}>
-                    <Link href={s.href} className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#b4913c] transition-colors">
+                    <Link href={s.href} className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#cd7f32] transition-colors">
                       {s.title}
                     </Link>
                   </li>
@@ -576,13 +577,13 @@ export default function Home() {
             </div>
 
             <div>
-              <h4 className="text-sm uppercase tracking-[0.3em] text-[#b4913c] mb-5 font-['Montserrat',sans-serif]">
+              <h4 className="text-sm uppercase tracking-[0.3em] text-[#cd7f32] mb-5 font-['Montserrat',sans-serif]">
                 Our Fleet
               </h4>
               <ul className="space-y-2.5">
                 {vehicles.map((v) => (
                   <li key={v.href}>
-                    <Link href={v.href} className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#b4913c] transition-colors">
+                    <Link href={v.href} className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#cd7f32] transition-colors">
                       {v.name}
                     </Link>
                   </li>
@@ -591,28 +592,29 @@ export default function Home() {
             </div>
 
             <div>
-              <h4 className="text-sm uppercase tracking-[0.3em] text-[#b4913c] mb-5 font-['Montserrat',sans-serif]">
+              <h4 className="text-sm uppercase tracking-[0.3em] text-[#cd7f32] mb-5 font-['Montserrat',sans-serif]">
                 Contact
               </h4>
               <ul className="space-y-3 text-white/45 text-sm font-['Montserrat',sans-serif]">
                 <li>
-                  <a href="tel:+19176904576" className="hover:text-[#b4913c] transition-colors">
+                  <a href="tel:+19176904576" className="hover:text-[#cd7f32] transition-colors">
                     +1 917-690-4576
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+15164407666" className="hover:text-[#b4913c] transition-colors">
+                  <a href="tel:+15164407666" className="hover:text-[#cd7f32] transition-colors">
                     +1 516-440-7666
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:reservations@sknyclimo.com" className="hover:text-[#b4913c] transition-colors">
+                  <a href="mailto:reservations@sknyclimo.com" className="hover:text-[#cd7f32] transition-colors">
                     ✉️ reservations@sknyclimo.com
                   </a>
                 </li>
                 <li className="leading-relaxed">
-                  135 West 50th Street, Suite 1850<br />
-                  New York, NY 10020
+                  1421 Islip Ave STE 1037<br />
+                  Central Islip, NY 11722-3941<br />
+                  United States
                 </li>
                 <li className="text-emerald-400/80">
                   Available 24/7 · 365 days/year
@@ -630,7 +632,7 @@ export default function Home() {
                 <Link
                   key={link}
                   href={`/${link.toLowerCase().replace(/ /g, "-")}`}
-                  className="text-white/25 text-xs hover:text-[#b4913c] transition-colors font-['Montserrat',sans-serif]"
+                  className="text-white/25 text-xs hover:text-[#cd7f32] transition-colors font-['Montserrat',sans-serif]"
                 >
                   {link}
                 </Link>

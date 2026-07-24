@@ -41,20 +41,20 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#0a0a0f]/95 backdrop-blur-md shadow-[0_2px_30px_rgba(180,145,60,0.15)]"
+          ? "bg-[#0e0c0a]/95 backdrop-blur-md shadow-[0_2px_30px_rgba(205,127,50,0.15)]"
           : "bg-transparent"
       }`}
     >
       {/* Top bar */}
-      <div className="bg-[#0d0d14] border-b border-[#b4913c]/20 py-1.5 px-4 sm:px-6 lg:px-8">
+      <div className="bg-[#191512] border-b border-[#cd7f32]/20 py-1.5 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
           {/* Left: contact info */}
           <div className="flex items-center gap-2.5 text-[12px] text-white/60" style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 300, letterSpacing: '0.02em' }}>
-            <a href="tel:+19176904576" className="hover:text-[#b4913c] transition-colors duration-200">
+            <a href="tel:+19176904576" className="hover:text-[#cd7f32] transition-colors duration-200">
               +1 917-690-4576
             </a>
             <span className="opacity-30">·</span>
-            <a href="tel:+15164407666" className="hover:text-[#b4913c] transition-colors duration-200">
+            <a href="tel:+15164407666" className="hover:text-[#cd7f32] transition-colors duration-200">
               +1 516-440-7666
             </a>
             <span className="opacity-30 hidden sm:block">|</span>
@@ -69,7 +69,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="text-white/50 hover:text-[#b4913c] transition-colors duration-200"
+              className="text-white/50 hover:text-[#cd7f32] transition-colors duration-200"
             >
               <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
@@ -81,7 +81,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="text-white/50 hover:text-[#b4913c] transition-colors duration-200"
+              className="text-white/50 hover:text-[#cd7f32] transition-colors duration-200"
             >
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
@@ -95,7 +95,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter"
-              className="text-white/50 hover:text-[#b4913c] transition-colors duration-200"
+              className="text-white/50 hover:text-[#cd7f32] transition-colors duration-200"
             >
               <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -112,7 +112,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3 group">
             <div className="relative">
               <img
-                src="https://res.cloudinary.com/dgz6utv5q/image/upload/v1780330763/SKNYC-removebg-preview_1_iojxyc.png"
+                src="/LOGO-removebg-preview.png"
                 alt="SKNYC Limo Logo"
                 className="h-20 w-auto object-contain pt-1.5"
                 onError={(e) => {
@@ -121,10 +121,10 @@ export default function Navbar() {
                 }}
               />
               <div
-                className="hidden h-14 w-40 items-center justify-center border border-[#b4913c]/40 rounded"
+                className="hidden h-14 w-40 items-center justify-center border border-[#cd7f32]/40 rounded"
                 style={{ display: "none" }}
               >
-                <span className="text-[#b4913c] font-bold text-xl tracking-widest">
+                <span className="text-[#cd7f32] font-bold text-xl tracking-widest">
                   SKNYC
                 </span>
               </div>
@@ -141,7 +141,7 @@ export default function Navbar() {
                   onMouseEnter={() => setServicesOpen(true)}
                   onMouseLeave={() => setServicesOpen(false)}
                 >
-                  <button className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-white/80 hover:text-[#b4913c] transition-colors duration-200 tracking-wide uppercase">
+                  <button className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-white/80 hover:text-[#cd7f32] transition-colors duration-200 tracking-wide uppercase">
                     {link.label}
                     <svg
                       className={`w-3.5 h-3.5 transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`}
@@ -153,13 +153,13 @@ export default function Navbar() {
                     </svg>
                   </button>
                   {servicesOpen && (
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-64 bg-[#0d0d14] border border-[#b4913c]/25 rounded-lg shadow-2xl overflow-hidden">
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-64 bg-[#191512] border border-[#cd7f32]/25 rounded-lg shadow-2xl overflow-hidden">
                       <div className="p-2">
                         {services.map((s) => (
                           <Link
                             key={s.href}
                             href={s.href}
-                            className="block px-4 py-2.5 text-sm text-white/75 hover:text-[#b4913c] hover:bg-[#b4913c]/10 rounded-md transition-all duration-150 tracking-wide"
+                            className="block px-4 py-2.5 text-sm text-white/75 hover:text-[#cd7f32] hover:bg-[#cd7f32]/10 rounded-md transition-all duration-150 tracking-wide"
                           >
                             {s.label}
                           </Link>
@@ -172,7 +172,7 @@ export default function Navbar() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="px-4 py-2 text-sm font-medium text-white/80 hover:text-[#b4913c] transition-colors duration-200 tracking-wide uppercase"
+                  className="px-4 py-2 text-sm font-medium text-white/80 hover:text-[#cd7f32] transition-colors duration-200 tracking-wide uppercase"
                 >
                   {link.label}
                 </Link>
@@ -184,7 +184,7 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-3">
             <Link
               href="/booking"
-              className="px-6 py-2.5 bg-[#b4913c] text-[#0a0a0f] text-sm font-bold uppercase tracking-widest rounded hover:bg-[#caa84d] transition-all duration-200 shadow-[0_0_20px_rgba(180,145,60,0.3)] hover:shadow-[0_0_30px_rgba(180,145,60,0.5)]"
+              className="px-6 py-2.5 bg-[#cd7f32] text-[#0e0c0a] text-sm font-bold uppercase tracking-widest rounded hover:bg-[#e09545] transition-all duration-200 shadow-[0_0_20px_rgba(205,127,50,0.3)] hover:shadow-[0_0_30px_rgba(205,127,50,0.5)]"
             >
               Book Now
             </Link>
@@ -197,9 +197,9 @@ export default function Navbar() {
             aria-label="Toggle menu"
           >
             <div className="w-6 flex flex-col gap-1.5">
-              <span className={`block h-0.5 bg-[#b4913c] transition-all duration-300 ${mobileOpen ? "rotate-45 translate-y-2" : ""}`} />
-              <span className={`block h-0.5 bg-[#b4913c] transition-all duration-300 ${mobileOpen ? "opacity-0" : ""}`} />
-              <span className={`block h-0.5 bg-[#b4913c] transition-all duration-300 ${mobileOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+              <span className={`block h-0.5 bg-[#cd7f32] transition-all duration-300 ${mobileOpen ? "rotate-45 translate-y-2" : ""}`} />
+              <span className={`block h-0.5 bg-[#cd7f32] transition-all duration-300 ${mobileOpen ? "opacity-0" : ""}`} />
+              <span className={`block h-0.5 bg-[#cd7f32] transition-all duration-300 ${mobileOpen ? "-rotate-45 -translate-y-2" : ""}`} />
             </div>
           </button>
         </div>
@@ -207,7 +207,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-[#0a0a0f]/98 backdrop-blur-md border-t border-[#b4913c]/20 pb-6">
+        <div className="lg:hidden bg-[#0e0c0a]/98 backdrop-blur-md border-t border-[#cd7f32]/20 pb-6">
           <div className="px-4 pt-4 space-y-1">
             {navLinks.map((link) =>
               link.hasDropdown ? (
@@ -227,7 +227,7 @@ export default function Navbar() {
                         <Link
                           key={s.href}
                           href={s.href}
-                          className="block px-4 py-2 text-sm text-white/60 hover:text-[#b4913c]"
+                          className="block px-4 py-2 text-sm text-white/60 hover:text-[#cd7f32]"
                           onClick={() => setMobileOpen(false)}
                         >
                           {s.label}
@@ -240,7 +240,7 @@ export default function Navbar() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="block px-4 py-3 text-white/80 font-medium tracking-wide uppercase text-sm hover:text-[#b4913c]"
+                  className="block px-4 py-3 text-white/80 font-medium tracking-wide uppercase text-sm hover:text-[#cd7f32]"
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
@@ -250,7 +250,7 @@ export default function Navbar() {
             <div className="pt-4 px-4">
               <Link
                 href="/booking"
-                className="block text-center py-3 bg-[#b4913c] text-[#0a0a0f] font-bold uppercase tracking-widest rounded text-sm"
+                className="block text-center py-3 bg-[#cd7f32] text-[#0e0c0a] font-bold uppercase tracking-widest rounded text-sm"
                 onClick={() => setMobileOpen(false)}
               >
                 Book Now
