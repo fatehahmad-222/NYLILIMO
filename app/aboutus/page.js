@@ -7,12 +7,12 @@ const timeline = [
   {
     year: "2009",
     title: "Founded in Manhattan",
-    desc: "SKNYC Limo was born from a single promise: that New York City deserved a limousine service as relentless, refined, and ambitious as the city itself. Our founder, a former luxury hotel concierge who spent a decade curating VIP experiences, launched with two vehicles and an obsession with punctuality.",
+    desc: "NYLI Limo was born from a single promise: that New York City deserved a limousine service as relentless, refined, and ambitious as the city itself. Our founder, a former luxury hotel concierge who spent a decade curating VIP experiences, launched with two vehicles and an obsession with punctuality.",
   },
   {
     year: "2012",
     title: "Corporate Contracts & Growth",
-    desc: "Word spread through Midtown boardrooms. Within three years, Fortune 500 companies and law firms retained SKNYC as their exclusive ground transport partner. We expanded our fleet to 15 vehicles and opened a dedicated corporate accounts division.",
+    desc: "Word spread through Midtown boardrooms. Within three years, Fortune 500 companies and law firms retained NYLI as their exclusive ground transport partner. We expanded our fleet to 15 vehicles and opened a dedicated corporate accounts division.",
   },
   {
     year: "2016",
@@ -27,7 +27,7 @@ const timeline = [
   {
     year: "2024",
     title: "The Standard, Redefined",
-    desc: "Today SKNYC operates the most sophisticated private fleet in the New York metropolitan area. We've served celebrities, heads of state, brides, students heading to prom, and executives closing billion-dollar deals. The vehicle changes. The standard never does.",
+    desc: "Today NYLI operates the most sophisticated private fleet in the New York metropolitan area. We've served celebrities, heads of state, brides, students heading to prom, and executives closing billion-dollar deals. The vehicle changes. The standard never does.",
   },
 ];
 
@@ -58,7 +58,7 @@ const team = [
   {
     name: "Marcus Reid",
     role: "Founder & CEO",
-    bio: "Former VIP concierge at The Plaza Hotel. 20+ years in luxury hospitality. Built SKNYC from two cars and an unshakeable belief that ground transportation could be an experience, not just a transaction.",
+    bio: "Former VIP concierge at The Plaza Hotel. 20+ years in luxury hospitality. Built NYLI from two cars and an unshakeable belief that ground transportation could be an experience, not just a transaction.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
   },
   {
@@ -70,7 +70,7 @@ const team = [
   {
     name: "James Okafor",
     role: "Head Chauffeur & Training Director",
-    bio: "17 years behind the wheel for heads of state, A-list entertainers, and C-suite executives. James wrote our 47-point White Glove Standard and personally trains every chauffeur who joins the SKNYC family.",
+    bio: "17 years behind the wheel for heads of state, A-list entertainers, and C-suite executives. James wrote our 47-point White Glove Standard and personally trains every chauffeur who joins the NYLI family.",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
   },
 ];
@@ -115,7 +115,7 @@ export default function AboutPage() {
           </p>
           <h1 className="text-6xl md:text-7xl font-light leading-none mb-6">
             About{" "}
-            <span className="text-[#cd7f32] italic font-medium">SKNYC</span>
+            <span className="text-[#cd7f32] italic font-medium">NYLI</span>
           </h1>
           <div className="w-20 h-px bg-[#cd7f32] mx-auto mb-8" />
           <p className="text-white/70 text-lg font-['Montserrat',sans-serif] font-light max-w-2xl mx-auto leading-relaxed">
@@ -273,7 +273,7 @@ export default function AboutPage() {
             What Drives Us
           </p>
           <h2 className="text-4xl md:text-5xl font-light mb-4">
-            The SKNYC Standard
+            The NYLI Standard
           </h2>
           <div className="w-16 h-px bg-[#cd7f32] mx-auto" />
         </div>
@@ -362,7 +362,7 @@ export default function AboutPage() {
           </blockquote>
           <div className="w-16 h-px bg-[#cd7f32] mx-auto mb-6" />
           <p className="text-white/40 text-sm font-['Montserrat',sans-serif] tracking-widest uppercase">
-            Marcus Reid — Founder, SKNYC Limo
+            Marcus Reid — Founder, NYLI Limo
           </p>
         </div>
       </section>
@@ -382,7 +382,7 @@ export default function AboutPage() {
               Book Your Ride
             </Link>
             <a
-              href="tel:+19176904576"
+              href="tel:+16314524500"
               className="px-8 py-3 border border-[#cd7f32]/50 text-[#cd7f32] font-medium uppercase tracking-widest text-sm hover:border-[#cd7f32] hover:bg-[#cd7f32]/10 transition-all duration-300 font-['Montserrat',sans-serif]"
             >
               Call Now
@@ -398,7 +398,7 @@ export default function AboutPage() {
             <div className="lg:col-span-1">
               <div className="mb-5">
                 <span className="text-3xl font-light tracking-widest text-[#cd7f32]">
-                  SKNYC
+                  NYLI
                   <span className="text-white/40 text-lg"> LIMO</span>
                 </span>
               </div>
@@ -410,7 +410,7 @@ export default function AboutPage() {
                 {["facebook", "instagram", "twitter"].map((social) => (
                   <a
                     key={social}
-                    href={`https://${social}.com/sknyclimo`}
+                    href={`https://${social}.com/nylilimo`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-9 h-9 border border-white/15 flex items-center justify-center text-white/40 hover:border-[#cd7f32]/50 hover:text-[#cd7f32] transition-all duration-200 capitalize text-xs font-['Montserrat',sans-serif]"
@@ -477,18 +477,13 @@ export default function AboutPage() {
               </h4>
               <ul className="space-y-3 text-white/45 text-sm font-['Montserrat',sans-serif]">
                 <li>
-                  <a href="tel:+19176904576" className="hover:text-[#cd7f32] transition-colors">
-                    +1 917-690-4576
+                  <a href="tel:+16314524500" className="hover:text-[#cd7f32] transition-colors">
+                    +1 631-452-4500
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+15164407666" className="hover:text-[#cd7f32] transition-colors">
-                    +1 516-440-7666
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:reservations@sknyclimo.com" className="hover:text-[#cd7f32] transition-colors">
-                    reservations@sknyclimo.com
+                  <a href="mailto:reservations@nylilimo.com" className="hover:text-[#cd7f32] transition-colors">
+                    reservations@nylilimo.com
                   </a>
                 </li>
                 <li className="leading-relaxed">
@@ -505,7 +500,7 @@ export default function AboutPage() {
 
           <div className="mt-14 pt-8 border-t border-white/8 flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-white/25 text-xs font-['Montserrat',sans-serif]">
-              © {new Date().getFullYear()} SKNYC Limo. All rights reserved. Designed by Nextgen Squad.
+              © {new Date().getFullYear()} NYLI Limo. All rights reserved. Designed by Nextgen Squad.
             </p>
             <div className="flex gap-6">
               {["Privacy Policy", "Terms of Service", "Cancellation Policy"].map((link) => (

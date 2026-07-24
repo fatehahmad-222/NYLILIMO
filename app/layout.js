@@ -12,9 +12,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "SKNYC Limo | New York's Premier Limousine Service",
+  title: "NYLI Limo | New York's Premier Limousine Service",
   description:
-    "World-class limousine and chauffeur service in New York City. Airport transfers, corporate transportation, weddings, events & more. Call +1 917-690-4576.",
+    "World-class limousine and chauffeur service in New York City. Airport transfers, corporate transportation, weddings, events & more. Call +1 631-452-4500.",
   keywords:
     "limo service NYC, limousine New York, airport transfer NYC, JFK limo, chauffeur service Manhattan",
 };

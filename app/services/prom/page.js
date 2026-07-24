@@ -17,7 +17,7 @@ export default function PromPage() {
             <h2 className="text-3xl font-light mb-4">Make Your Prom Night Unforgettable</h2>
             <div className="w-16 h-px bg-[#cd7f32] mb-6" />
             <p className="text-white/70 leading-relaxed mb-4 font-['Montserrat',sans-serif]">
-              Prom night is a milestone celebration. SKNYC Limo provides safe, 
+              Prom night is a milestone celebration. NYLI Limo provides safe, 
               stylish transportation that lets you and your friends arrive in 
               ultimate style. Our professional chauffeurs prioritize safety 
               while ensuring a fun, memorable experience.

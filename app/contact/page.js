@@ -17,7 +17,7 @@ export default function ContactPage() {
             <div className="w-16 h-px bg-[#cd7f32] mb-6" />
             <p className="text-white/70 leading-relaxed mb-6 font-['Montserrat',sans-serif]">
               Whether it's 3 AM for an emergency airport run or noon on Christmas Day, 
-              SKNYC Limo is available 24 hours a day, 365 days a year. Our dispatch 
+              NYLI Limo is available 24 hours a day, 365 days a year. Our dispatch 
               team never sleeps, and our chauffeurs are always ready.
             </p>
             
@@ -26,8 +26,7 @@ export default function ContactPage() {
                 <span className="text-2xl">📞</span>
                 <div>
                   <h3 className="text-lg mb-1">Phone</h3>
-                  <a href="tel:+19176904576" className="text-[#cd7f32] hover:underline">+1 917-690-4576</a><br />
-                  <a href="tel:+15164407666" className="text-[#cd7f32] hover:underline">+1 516-440-7666</a>
+                  <a href="tel:+16314524500" className="text-[#cd7f32] hover:underline">+1 631-452-4500</a>
                 </div>
               </div>
               
@@ -35,7 +34,7 @@ export default function ContactPage() {
                 <span className="text-2xl">✉️</span>
                 <div>
                   <h3 className="text-lg mb-1">Email</h3>
-                  <a href="mailto:reservations@sknyclimo.com" className="text-[#cd7f32] hover:underline">reservations@sknyclimo.com</a>
+                  <a href="mailto:reservations@nylilimo.com" className="text-[#cd7f32] hover:underline">reservations@nylilimo.com</a>
                 </div>
               </div>
               

@@ -21,14 +21,14 @@ export default function AirportTransferPage() {
             <div className="w-16 h-px bg-[#cd7f32] mb-6" />
             <p className="text-white/70 leading-relaxed mb-4 font-['Montserrat',sans-serif]">
               Traveling can be stressful enough without worrying about ground transportation. 
-              SKNYC Limo provides premium airport transfer services to and from all major 
+              NYLI Limo provides premium airport transfer services to and from all major 
               New York metropolitan airports. Our professional chauffeurs monitor your flight 
               in real-time, ensuring we're there when you land - even if your flight is delayed.
             </p>
             <p className="text-white/70 leading-relaxed font-['Montserrat',sans-serif]">
               From business travelers needing efficiency to families requiring extra space, 
               our diverse fleet accommodates every need. Skip the taxi lines and ride in 
-              luxury with SKNYC Limo.
+              luxury with NYLI Limo.
             </p>
           </div>
           <div className="bg-[#191512] p-6 border border-[#cd7f32]/20">

@@ -18,7 +18,7 @@ export default function PointToPointPage() {
             <div className="w-16 h-px bg-[#cd7f32] mb-6" />
             <p className="text-white/70 leading-relaxed mb-4 font-['Montserrat',sans-serif]">
               Need to get from Manhattan to the Hamptons? From Brooklyn to Jersey City? 
-              SKNYC Limo provides premium point-to-point service for any two destinations 
+              NYLI Limo provides premium point-to-point service for any two destinations 
               in the tri-state area. Unlike rideshare apps, we never use surge pricing.
             </p>
             <p className="text-white/70 leading-relaxed font-['Montserrat',sans-serif]">

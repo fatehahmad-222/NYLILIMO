@@ -18,7 +18,7 @@ export default function WeddingPage() {
             <div className="w-16 h-px bg-[#cd7f32] mb-6" />SS
             <p className="text-white/70 leading-relaxed mb-4 font-['Montserrat',sans-serif]">
               Your wedding day is one of the most important days of your life. 
-              SKNYC Limo ensures that every transportation detail is handled 
+              NYLI Limo ensures that every transportation detail is handled 
               with elegance and precision. From the bridal party's arrival at 
               the ceremony to the grand exit at the reception, we add a touch 
               of luxury to your celebration.
@@ -76,7 +76,7 @@ export default function WeddingPage() {
             <a href="/booking" className="px-8 py-3 bg-[#cd7f32] text-[#0e0c0a] font-bold uppercase tracking-widest text-sm hover:bg-[#e09545] transition-all font-['Montserrat',sans-serif]">
               Request Quote
             </a>
-            <a href="tel:+19176904576" className="px-8 py-3 border border-[#cd7f32]/50 text-[#cd7f32] font-medium uppercase tracking-widest text-sm hover:border-[#cd7f32] font-['Montserrat',sans-serif]">
+            <a href="tel:+16314524500" className="px-8 py-3 border border-[#cd7f32]/50 text-[#cd7f32] font-medium uppercase tracking-widest text-sm hover:border-[#cd7f32] font-['Montserrat',sans-serif]">
               Call Now
             </a>
           </div>

@@ -80,7 +80,7 @@ export default function ServiceLayout({
               Book Your Ride
             </Link>
             <a
-              href="tel:+19176904576"
+              href="tel:+16314524500"
               className="px-8 py-3 border border-[#cd7f32]/50 text-[#cd7f32] font-medium uppercase tracking-widest text-sm hover:border-[#cd7f32] hover:bg-[#cd7f32]/10 transition-all duration-300 font-['Montserrat',sans-serif]"
             >
               Call Now
@@ -171,7 +171,7 @@ function FooterComponent() {
           <div className="lg:col-span-1">
             <div className="mb-5">
               <span className="text-3xl font-light tracking-widest text-[#cd7f32]">
-                SKNYC
+                NYLI
                 <span className="text-white/40 text-lg"> LIMO</span>
               </span>
             </div>
@@ -182,7 +182,7 @@ function FooterComponent() {
               {["facebook", "instagram", "twitter"].map((social) => (
                 <a
                   key={social}
-                  href={`https://${social}.com/sknyclimo`}
+                  href={`https://${social}.com/nylilimo`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-9 h-9 border border-white/15 flex items-center justify-center text-white/40 hover:border-[#cd7f32]/50 hover:text-[#cd7f32] transition-all duration-200 capitalize text-xs font-['Montserrat',sans-serif]"
@@ -229,18 +229,13 @@ function FooterComponent() {
             </h4>
             <ul className="space-y-3 text-white/45 text-sm font-['Montserrat',sans-serif]">
               <li>
-                <a href="tel:+19176904576" className="hover:text-[#cd7f32] transition-colors">
-                  +1 917-690-4576
+                <a href="tel:+16314524500" className="hover:text-[#cd7f32] transition-colors">
+                  +1 631-452-4500
                 </a>
               </li>
               <li>
-                <a href="tel:+15164407666" className="hover:text-[#cd7f32] transition-colors">
-                  +1 516-440-7666
-                </a>
-              </li>
-              <li>
-                <a href="mailto:reservations@sknyclimo.com" className="hover:text-[#cd7f32] transition-colors">
-                  reservations@sknyclimo.com
+                <a href="mailto:reservations@nylilimo.com" className="hover:text-[#cd7f32] transition-colors">
+                  reservations@nylilimo.com
                 </a>
               </li>
               <li className="leading-relaxed">
@@ -257,7 +252,7 @@ function FooterComponent() {
 
         <div className="mt-14 pt-8 border-t border-white/8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-white/25 text-xs font-['Montserrat',sans-serif]">
-            © {new Date().getFullYear()} SKNYC Limo. All rights reserved. Designed by Nextgen Squad.
+            © {new Date().getFullYear()} NYLI Limo. All rights reserved. Designed by Nextgen Squad.
           </p>
           <div className="flex gap-6">
             {["Privacy Policy", "Terms of Service", "Cancellation Policy"].map((link) => (

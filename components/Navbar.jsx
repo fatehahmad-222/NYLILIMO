@@ -50,12 +50,8 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
           {/* Left: contact info */}
           <div className="flex items-center gap-2.5 text-[12px] text-white/60" style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 300, letterSpacing: '0.02em' }}>
-            <a href="tel:+19176904576" className="hover:text-[#cd7f32] transition-colors duration-200">
-              +1 917-690-4576
-            </a>
-            <span className="opacity-30">·</span>
-            <a href="tel:+15164407666" className="hover:text-[#cd7f32] transition-colors duration-200">
-              +1 516-440-7666
+            <a href="tel:+16314524500" className="hover:text-[#cd7f32] transition-colors duration-200">
+              +1 631-452-4500
             </a>
             <span className="opacity-30 hidden sm:block">|</span>
             <span className="hidden sm:block text-white/40">Available 24/7 · New York City</span>
@@ -109,26 +105,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative">
-              <img
-                src="/LOGO-removebg-preview.png"
-                alt="SKNYC Limo Logo"
-                className="h-20 w-auto object-contain pt-1.5"
-                onError={(e) => {
-                  e.target.style.display = "none";
-                  e.target.nextSibling.style.display = "flex";
-                }}
-              />
-              <div
-                className="hidden h-14 w-40 items-center justify-center border border-[#cd7f32]/40 rounded"
-                style={{ display: "none" }}
-              >
-                <span className="text-[#cd7f32] font-bold text-xl tracking-widest">
-                  SKNYC
-                </span>
-              </div>
-            </div>
+          <Link href="/" className="flex items-center group">
+            <span className="text-[#cd7f32] font-bold text-2xl tracking-[0.25em] font-['Montserrat',sans-serif]">
+              NYLI LIMO
+            </span>
           </Link>
 
           {/* Desktop nav */}

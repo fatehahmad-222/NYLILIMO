@@ -13,9 +13,9 @@ export default function ChauffeursPage() {
     >
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-light mb-6">The SKNYC Chauffeur Standard</h2>
+          <h2 className="text-3xl font-light mb-6">The NYLI Chauffeur Standard</h2>
           <p className="text-white/70 leading-relaxed mb-6 font-['Montserrat',sans-serif]">
-            Our chauffeurs are the heart of SKNYC Limo. Each driver undergoes rigorous 
+            Our chauffeurs are the heart of NYLI Limo. Each driver undergoes rigorous 
             screening, training, and certification before ever getting behind the wheel 
             of a client vehicle. We don't just hire drivers — we train hospitality 
             professionals who happen to drive.
@@ -40,7 +40,7 @@ export default function ChauffeursPage() {
 
           <div className="bg-[#cd7f32]/10 p-6 border-l-4 border-[#cd7f32]">
             <p className="text-white/80 italic font-['Montserrat',sans-serif]">
-              "SKNYC chauffeurs are the most professional I've experienced. 
+              "NYLI chauffeurs are the most professional I've experienced. 
               From the crisp uniform to the door-to-door service, every detail 
               is perfect."
             </p>

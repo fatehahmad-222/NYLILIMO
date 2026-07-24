@@ -18,7 +18,7 @@ export default function CorporatePage() {
             <h2 className="text-3xl font-light mb-4">Premium Business Travel Solutions</h2>
             <div className="w-16 h-px bg-[#cd7f32] mb-6" />
             <p className="text-white/70 leading-relaxed mb-4 font-['Montserrat',sans-serif]">
-              First impressions matter in business. SKNYC Limo provides executive-level 
+              First impressions matter in business. NYLI Limo provides executive-level 
               transportation that reflects your company's commitment to excellence. 
               From airport transfers for visiting executives to client entertainment 
               and roadshows, we ensure punctuality, discretion, and comfort.
@@ -26,7 +26,7 @@ export default function CorporatePage() {
             <p className="text-white/70 leading-relaxed font-['Montserrat',sans-serif]">
               Our corporate accounts benefit from streamlined billing, dedicated account 
               managers, and priority booking. Join hundreds of businesses that trust 
-              SKNYC Limo for their transportation needs.
+              NYLI Limo for their transportation needs.
             </p>
           </div>
           <div className="bg-[#191512] p-6 border border-[#cd7f32]/20">
@@ -70,7 +70,7 @@ export default function CorporatePage() {
 
         <div className="bg-gradient-to-r from-[#cd7f32]/10 to-transparent p-8 border-l-4 border-[#cd7f32]">
           <p className="text-white/80 italic font-['Montserrat',sans-serif]">
-            "SKNYC has been our exclusive transportation partner for over 3 years. 
+            "NYLI has been our exclusive transportation partner for over 3 years. 
             Their professionalism and reliability are unmatched. Our executives 
             always arrive on time and in style."
           </p>

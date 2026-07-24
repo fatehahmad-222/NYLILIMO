@@ -17,7 +17,7 @@ export default function CorporateAccountsPage() {
             <h2 className="text-3xl font-light mb-4">Transportation Solutions for Business</h2>
             <div className="w-16 h-px bg-[#cd7f32] mb-6" />
             <p className="text-white/70 leading-relaxed mb-4 font-['Montserrat',sans-serif]">
-              SKNYC Limo partners with businesses of all sizes to provide reliable, 
+              NYLI Limo partners with businesses of all sizes to provide reliable, 
               executive-level transportation. Our corporate accounts enjoy priority 
               service, simplified billing, and dedicated account management.
             </p>
@@ -50,7 +50,7 @@ export default function CorporateAccountsPage() {
               Contact Sales
             </Link>
             <a
-              href="tel:+19176904576"
+              href="tel:+16314524500"
               className="px-8 py-3 border border-[#cd7f32]/50 text-[#cd7f32] font-medium uppercase tracking-widest text-sm hover:border-[#cd7f32] hover:bg-[#cd7f32]/10 transition-all font-['Montserrat',sans-serif]"
             >
               Call Now
