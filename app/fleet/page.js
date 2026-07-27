@@ -72,26 +72,27 @@ export default function FleetPage() {
     <ServiceLayout
       title="Our Luxury Fleet"
       description="From executive sedans to stretch limousines — our meticulously maintained fleet covers every occasion."
-      heroImage="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1600&q=80"
       breadcrumbs={[{ name: "Fleet" }]}
     >
-      <div className="max-w-7xl mx-auto px-4 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {fleetVehicles.map((vehicle) => (
-            <div key={vehicle.name} className="group border border-white/8 hover:border-[#cd7f32]/40 transition-all overflow-hidden cursor-default">
+            <div key={vehicle.name} className="group bg-[#f9f8f6] border border-[#e8e6e3] hover:border-[#b8860b]/40 transition-all duration-300 overflow-hidden">
               <div className="relative h-64 overflow-hidden">
-                <img src={vehicle.image} alt={vehicle.name} className="w-full h-full object-cover" />
-                <div className="absolute top-4 right-4 bg-[#cd7f32] text-[#0e0c0a] px-3 py-1 text-xs font-bold uppercase">{vehicle.category}</div>
+                <img src={vehicle.image} alt={vehicle.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <div className="absolute top-4 right-4 bg-[#b8860b] text-white px-3 py-1 text-[10px] font-['Montserrat',sans-serif] font-medium uppercase tracking-wider">
+                  {vehicle.category}
+                </div>
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start mb-3">
-                  <h3 className="text-xl">{vehicle.name}</h3>
-                  <span className="text-white/40 text-sm">{vehicle.capacity}</span>
+                  <h3 className="text-xl text-[#1a1a1a] group-hover:text-[#b8860b] transition-colors duration-300 font-['Cormorant_Garamond',serif]">{vehicle.name}</h3>
+                  <span className="text-[#999999] text-[11px] font-['Montserrat',sans-serif] ml-2 mt-1 font-light">{vehicle.capacity}</span>
                 </div>
-                <p className="text-white/60 text-sm mb-4 font-['Montserrat',sans-serif]">{vehicle.description}</p>
+                <p className="text-[#6b6b6b] text-[13px] mb-4 font-['Montserrat',sans-serif] font-light">{vehicle.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {vehicle.features.map((f) => (
-                    <span key={f} className="text-xs text-[#cd7f32]/70 border border-[#cd7f32]/25 px-2 py-1">{f}</span>
+                    <span key={f} className="text-[10px] text-[#b8860b] border border-[#b8860b]/30 px-2 py-1 font-['Montserrat',sans-serif] font-light">{f}</span>
                   ))}
                 </div>
               </div>

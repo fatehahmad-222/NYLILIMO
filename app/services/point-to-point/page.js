@@ -11,38 +11,50 @@ export default function PointToPointPage() {
         { name: "Point to Point" }
       ]}
     >
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid lg:grid-cols-2 gap-12 mb-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 mb-20">
           <div>
-            <h2 className="text-3xl font-light mb-4">Reliable Point-to-Point Luxury</h2>
-            <div className="w-16 h-px bg-[#cd7f32] mb-6" />
-            <p className="text-white/70 leading-relaxed mb-4 font-['Montserrat',sans-serif]">
+            <h2 className="text-2xl md:text-3xl font-['Cormorant_Garamond',serif] font-light mb-4">Reliable Point-to-Point Luxury</h2>
+            <div className="w-8 h-px bg-[#b8860b] mb-6" />
+            <p className="text-[#6b6b6b] leading-relaxed mb-4 text-[13px] font-light">
               Need to get from Manhattan to the Hamptons? From Brooklyn to Jersey City? 
               NYLI Limo provides premium point-to-point service for any two destinations 
               in the tri-state area. Unlike rideshare apps, we never use surge pricing.
             </p>
-            <p className="text-white/70 leading-relaxed font-['Montserrat',sans-serif]">
-              Whether it's a dinner reservation, business meeting, or night out, 
+            <p className="text-[#6b6b6b] leading-relaxed text-[13px] font-light">
+              Whether it&apos;s a dinner reservation, business meeting, or night out, 
               enjoy consistent luxury with transparent pricing. Book by the trip 
-              and know exactly what you'll pay before you confirm.
+              and know exactly what you&apos;ll pay before you confirm.
             </p>
           </div>
-          <div className="bg-[#191512] p-6 border border-[#cd7f32]/20">
-            <h3 className="text-xl mb-4 text-[#cd7f32]">Why Choose Point-to-Point?</h3>
-            <ul className="space-y-3 text-white/70 font-['Montserrat',sans-serif]">
-              <li className="flex items-center gap-3"> No surge pricing - ever</li>
-              <li className="flex items-center gap-3"> Any two destinations</li>
-              <li className="flex items-center gap-3"> Luxury vehicles guaranteed</li>
-              <li className="flex items-center gap-3"> On-time guarantee</li>
-              <li className="flex items-center gap-3"> Easy online booking</li>
-              <li className="flex items-center gap-3"> Fixed, upfront pricing</li>
+          <div className="border border-[#e8e6e3] p-8">
+            <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-5 text-[#1a1a1a]">Why Choose Point-to-Point?</h3>
+            <ul className="space-y-3 text-[#6b6b6b] text-[12px]">
+              <li className="flex items-center gap-3">
+                <span className="text-[#b8860b]">·</span> No surge pricing - ever
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-[#b8860b]">·</span> Any two destinations
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-[#b8860b]">·</span> Luxury vehicles guaranteed
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-[#b8860b]">·</span> On-time guarantee
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-[#b8860b]">·</span> Easy online booking
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-[#b8860b]">·</span> Fixed, upfront pricing
+              </li>
             </ul>
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-[#cd7f32]/5 to-transparent p-8 rounded-sm">
-          <h3 className="text-xl font-light mb-4 text-center">Popular Routes</h3>
-          <div className="grid sm:grid-cols-2 gap-4">
+        <div className="border border-[#e8e6e3] p-8 lg:p-10 bg-[#f9f8f6]">
+          <h3 className="text-xl font-['Cormorant_Garamond',serif] mb-6 text-center">Popular Routes</h3>
+          <div className="grid sm:grid-cols-2 gap-3">
             {[
               "Manhattan → JFK Airport",
               "Brooklyn → LaGuardia",
@@ -51,8 +63,8 @@ export default function PointToPointPage() {
               "Manhattan → Westchester",
               "Queens → Newark Airport"
             ].map((route) => (
-              <div key={route} className="flex items-center gap-3 text-white/70 text-sm font-['Montserrat',sans-serif]">
-                <span className="text-[#cd7f32]">→</span>
+              <div key={route} className="flex items-center gap-3 text-[#6b6b6b] text-[12px] p-3 border border-[#e8e6e3] bg-white">
+                <span className="text-[#b8860b]">→</span>
                 {route}
               </div>
             ))}

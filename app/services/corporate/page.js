@@ -1,5 +1,4 @@
 import ServiceLayout from "@/components/ServiceLayout";
-import Link from "next/link";
 
 export default function CorporatePage() {
   return (
@@ -12,69 +11,69 @@ export default function CorporatePage() {
         { name: "Corporate Transportation" }
       ]}
     >
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid lg:grid-cols-2 gap-12 mb-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 mb-20">
           <div>
-            <h2 className="text-3xl font-light mb-4">Premium Business Travel Solutions</h2>
-            <div className="w-16 h-px bg-[#cd7f32] mb-6" />
-            <p className="text-white/70 leading-relaxed mb-4 font-['Montserrat',sans-serif]">
+            <h2 className="text-2xl md:text-3xl font-['Cormorant_Garamond',serif] font-light mb-4">Premium Business Travel Solutions</h2>
+            <div className="w-8 h-px bg-[#b8860b] mb-6" />
+            <p className="text-[#6b6b6b] leading-relaxed mb-4 text-[13px] font-light">
               First impressions matter in business. NYLI Limo provides executive-level 
-              transportation that reflects your company's commitment to excellence. 
+              transportation that reflects your company&apos;s commitment to excellence. 
               From airport transfers for visiting executives to client entertainment 
               and roadshows, we ensure punctuality, discretion, and comfort.
             </p>
-            <p className="text-white/70 leading-relaxed font-['Montserrat',sans-serif]">
+            <p className="text-[#6b6b6b] leading-relaxed text-[13px] font-light">
               Our corporate accounts benefit from streamlined billing, dedicated account 
               managers, and priority booking. Join hundreds of businesses that trust 
               NYLI Limo for their transportation needs.
             </p>
           </div>
-          <div className="bg-[#191512] p-6 border border-[#cd7f32]/20">
-            <h3 className="text-xl mb-4 text-[#cd7f32]">Corporate Benefits</h3>
-            <ul className="space-y-3 text-white/70 font-['Montserrat',sans-serif]">
-              <li className="flex items-center gap-3">📊 Monthly consolidated invoicing</li>
-              <li className="flex items-center gap-3">👤 Dedicated account manager</li>
-              <li className="flex items-center gap-3">⚡ Priority booking & dispatch</li>
-              <li className="flex items-center gap-3">📱 Mobile app for easy booking</li>
-              <li className="flex items-center gap-3">💼 Corporate events & roadshows</li>
-              <li className="flex items-center gap-3">🔒 Confidentiality guaranteed</li>
+          <div className="border border-[#e8e6e3] p-8">
+            <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-5 text-[#1a1a1a]">Corporate Benefits</h3>
+            <ul className="space-y-3 text-[#6b6b6b] text-[12px]">
+              <li className="flex items-center gap-3">
+                <span className="text-[#b8860b]">·</span> Monthly consolidated invoicing
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-[#b8860b]">·</span> Dedicated account manager
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-[#b8860b]">·</span> Priority booking &amp; dispatch
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-[#b8860b]">·</span> Mobile app for easy booking
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-[#b8860b]">·</span> Corporate events &amp; roadshows
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-[#b8860b]">·</span> Confidentiality guaranteed
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 mb-20">
           {[
-            {
-              title: "Executive Sedans",
-              desc: "BMW 7 Series, Mercedes S-Class for VIP executives.",
-              icon: "💼"
-            },
-            {
-              title: "Luxury SUVs",
-              desc: "Cadillac Escalade, Lincoln Navigator for groups.",
-              icon: "🚙"
-            },
-            {
-              title: "Executive Vans",
-              desc: "Mercedes Sprinter for team travel.",
-              icon: "🚐"
-            }
+            { title: "Executive Sedans", desc: "BMW 7 Series, Mercedes S-Class for VIP executives.", icon: "💼" },
+            { title: "Luxury SUVs", desc: "Cadillac Escalade, Lincoln Navigator for groups.", icon: "🚙" },
+            { title: "Executive Vans", desc: "Mercedes Sprinter for team travel.", icon: "🚐" }
           ].map((item) => (
-            <div key={item.title} className="p-6 border border-white/8 bg-white/[0.02] text-center">
-              <div className="text-4xl mb-3">{item.icon}</div>
-              <h3 className="text-xl mb-2">{item.title}</h3>
-              <p className="text-white/50 text-sm font-['Montserrat',sans-serif]">{item.desc}</p>
+            <div key={item.title} className="p-8 border border-[#e8e6e3] text-center">
+              <span className="text-2xl mb-4 block opacity-40">{item.icon}</span>
+              <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-2 text-[#1a1a1a]">{item.title}</h3>
+              <p className="text-[#6b6b6b] text-[12px]">{item.desc}</p>
             </div>
           ))}
         </div>
 
-        <div className="bg-gradient-to-r from-[#cd7f32]/10 to-transparent p-8 border-l-4 border-[#cd7f32]">
-          <p className="text-white/80 italic font-['Montserrat',sans-serif]">
-            "NYLI has been our exclusive transportation partner for over 3 years. 
+        <div className="border-l-2 border-[#b8860b] p-8 lg:p-10 bg-[#f9f8f6]">
+          <p className="text-[#6b6b6b] italic text-[13px] leading-relaxed">
+            &quot;NYLI has been our exclusive transportation partner for over 3 years. 
             Their professionalism and reliability are unmatched. Our executives 
-            always arrive on time and in style."
+            always arrive on time and in style.&quot;
           </p>
-          <p className="text-[#cd7f32] mt-4 font-['Montserrat',sans-serif] text-sm">
+          <p className="text-[#b8860b] mt-4 text-[10px] tracking-wider uppercase font-medium">
             — Fortune 500 Executive
           </p>
         </div>

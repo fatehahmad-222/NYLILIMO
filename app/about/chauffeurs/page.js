@@ -5,23 +5,23 @@ export default function ChauffeursPage() {
     <ServiceLayout
       title="Professional Chauffeurs"
       description="Every driver is background-checked, licensed, and trained in VIP hospitality protocols."
-      heroImage="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=1600&q=80"
       breadcrumbs={[
         { name: "About", href: "/about" },
         { name: "Professional Chauffeurs" }
       ]}
     >
-      <div className="max-w-7xl mx-auto px-4 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-light mb-6">The NYLI Chauffeur Standard</h2>
-          <p className="text-white/70 leading-relaxed mb-6 font-['Montserrat',sans-serif]">
-            Our chauffeurs are the heart of NYLI Limo. Each driver undergoes rigorous 
-            screening, training, and certification before ever getting behind the wheel 
-            of a client vehicle. We don't just hire drivers — we train hospitality 
+          <h2 className="text-3xl md:text-4xl font-light mb-6 font-['Cormorant_Garamond',serif]">The NYLI Chauffeur Standard</h2>
+          <div className="w-16 h-px bg-[#b8860b] mb-8" />
+          <p className="text-[#6b6b6b] leading-relaxed mb-6 font-['Montserrat',sans-serif] text-[13px] font-light">
+            Our chauffeurs are the heart of NYLI Limo. Each driver undergoes rigorous
+            screening, training, and certification before ever getting behind the wheel
+            of a client vehicle. We don&apos;t just hire drivers — we train hospitality
             professionals who happen to drive.
           </p>
-          
-          <h3 className="text-2xl font-light mt-10 mb-4">Our Selection Process</h3>
+
+          <h3 className="text-2xl font-light mt-10 mb-6 font-['Cormorant_Garamond',serif]">Our Selection Process</h3>
           <div className="space-y-4 mb-10">
             {[
               "Background check and driving record review",
@@ -31,20 +31,20 @@ export default function ChauffeursPage() {
               "Vehicle familiarization and safety inspection",
               "Ongoing performance reviews and retraining"
             ].map((step, idx) => (
-              <div key={idx} className="flex items-center gap-4 p-4 border-l-2 border-[#cd7f32] bg-white/[0.02]">
-                <span className="text-[#cd7f32] font-bold">{idx + 1}</span>
-                <span className="text-white/70">{step}</span>
+              <div key={idx} className="flex items-center gap-4 p-4 border-l-2 border-[#b8860b] bg-[#f9f8f6]">
+                <span className="text-[#b8860b] font-bold text-sm">{idx + 1}</span>
+                <span className="text-[#6b6b6b] text-[13px] font-['Montserrat',sans-serif] font-light">{step}</span>
               </div>
             ))}
           </div>
 
-          <div className="bg-[#cd7f32]/10 p-6 border-l-4 border-[#cd7f32]">
-            <p className="text-white/80 italic font-['Montserrat',sans-serif]">
-              "NYLI chauffeurs are the most professional I've experienced. 
-              From the crisp uniform to the door-to-door service, every detail 
-              is perfect."
+          <div className="bg-[#f9f8f6] p-6 lg:p-8 border-l-2 border-[#b8860b]">
+            <p className="text-[#6b6b6b] italic font-['Montserrat',sans-serif] text-[13px] leading-relaxed font-light">
+              &quot;NYLI chauffeurs are the most professional I&apos;ve experienced.
+              From the crisp uniform to the door-to-door service, every detail
+              is perfect.&quot;
             </p>
-            <p className="text-[#cd7f32] mt-3 text-sm">— Regular Client</p>
+            <p className="text-[#b8860b] mt-4 text-[11px] font-['Montserrat',sans-serif] tracking-wider uppercase">— Regular Client</p>
           </div>
         </div>
       </div>

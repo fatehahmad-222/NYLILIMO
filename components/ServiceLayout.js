@@ -1,87 +1,72 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Link from "next/link";
-import { useState, useEffect } from "react";
 
-export default function ServiceLayout({ 
-  title, 
-  description, 
-  heroImage, 
+export default function ServiceLayout({
+  title,
+  description,
+  heroImage,
   children,
-  breadcrumbs = []
+  breadcrumbs = [],
 }) {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setVisible(window.scrollY > 300);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
-    <main className="bg-[#0e0c0a] text-white font-['Cormorant_Garamond',serif] overflow-x-hidden">
-      <div><Navbar /></div>
-      
-      {/* Hero Section */}
-      <section className="relative min-h-[600px] flex items-start justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0e0c0a]/65 via-[#0e0c0a]/30 to-[#0e0c0a]/80" />
-        <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-[#0e0c0a]/30" />
-        
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto" style={{ paddingTop: '160px' }}>
-          <h1 className="text-5xl md:text-7xl font-light mb-4 drop-shadow-lg">{title}</h1>
-          <div className="w-20 h-px bg-[#cd7f32] mx-auto mb-6" />
-          <p className="text-white/80 text-lg font-['Montserrat',sans-serif] max-w-2xl mx-auto drop-shadow-md">
+    <main className="bg-white text-[#1a1a1a] font-['Montserrat',sans-serif] overflow-x-hidden">
+      <Navbar />
+
+      {/* Hero */}
+      <section className="pt-32 pb-16 lg:pt-40 lg:pb-20 border-b border-[#e8e6e3]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Breadcrumbs */}
+          <div className="flex items-center justify-center gap-2 text-[11px] text-[#999999] mb-8">
+            <Link href="/" className="hover:text-[#b8860b] transition-colors duration-200">
+              Home
+            </Link>
+            {breadcrumbs.map((crumb, idx) => (
+              <span key={idx} className="flex items-center gap-2">
+                <span className="text-[#e8e6e3]">/</span>
+                {crumb.href ? (
+                  <Link href={crumb.href} className="hover:text-[#b8860b] transition-colors duration-200">
+                    {crumb.name}
+                  </Link>
+                ) : (
+                  <span className="text-[#b8860b]">{crumb.name}</span>
+                )}
+              </span>
+            ))}
+          </div>
+
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-['Cormorant_Garamond',serif] font-light mb-4 leading-tight">{title}</h1>
+          <div className="w-8 h-px bg-[#b8860b] mx-auto my-6" />
+          <p className="text-[#6b6b6b] text-sm font-light leading-relaxed max-w-xl mx-auto">
             {description}
           </p>
         </div>
       </section>
 
-      {/* Breadcrumbs */}
-      <div className="max-w-7xl mx-auto px-4 py-4">
-        <div className="flex items-center gap-2 text-sm font-['Montserrat',sans-serif] text-white/40">
-          <Link href="/" className="hover:text-[#cd7f32] transition-colors">Home</Link>
-          {breadcrumbs.map((crumb, idx) => (
-            <span key={idx}>
-              <span className="mx-2">/</span>
-              {crumb.href ? (
-                <Link href={crumb.href} className="hover:text-[#cd7f32] transition-colors">
-                  {crumb.name}
-                </Link>
-              ) : (
-                <span className="text-[#cd7f32]">{crumb.name}</span>
-              )}
-            </span>
-          ))}
-        </div>
-      </div>
-
-      {/* Main Content */}
+      {/* Content */}
       {children}
 
-      {/* CTA Section */}
-      <section className="py-20 bg-[#13110e]">
-        <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-3xl md:text-4xl font-light mb-4">Ready to Experience Luxury?</h2>
-          <div className="w-16 h-px bg-[#cd7f32] mx-auto mb-8" />
+      {/* CTA */}
+      <section className="py-24 lg:py-28 bg-[#f9f8f6]">
+        <div className="max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <span className="text-[10px] uppercase tracking-[0.3em] text-[#b8860b] font-medium">
+            Ready When You Are
+          </span>
+          <h2 className="text-3xl md:text-4xl font-['Cormorant_Garamond',serif] font-light mt-4 mb-8">
+            Ready to Experience <span className="italic">Luxury?</span>
+          </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/booking"
-              className="px-8 py-3 bg-[#cd7f32] text-[#0e0c0a] font-bold uppercase tracking-widest text-sm hover:bg-[#e09545] transition-all duration-300 font-['Montserrat',sans-serif]"
+              className="inline-flex items-center justify-center px-8 py-3 bg-[#1a1a1a] text-white font-medium uppercase tracking-[0.15em] text-[11px] hover:bg-[#b8860b] transition-all duration-300"
             >
               Book Your Ride
             </Link>
             <a
               href="tel:+16314524500"
-              className="px-8 py-3 border border-[#cd7f32]/50 text-[#cd7f32] font-medium uppercase tracking-widest text-sm hover:border-[#cd7f32] hover:bg-[#cd7f32]/10 transition-all duration-300 font-['Montserrat',sans-serif]"
+              className="inline-flex items-center justify-center px-8 py-3 border border-[#1a1a1a] text-[#1a1a1a] font-medium uppercase tracking-[0.15em] text-[11px] hover:border-[#b8860b] hover:text-[#b8860b] transition-all duration-300"
             >
               Call Now
             </a>
@@ -89,184 +74,7 @@ export default function ServiceLayout({
         </div>
       </section>
 
-      {/* Footer */}
-      <FooterComponent />
-
-      {/* Scroll to Top Button — bottom left */}
-      <button
-        onClick={scrollToTop}
-        aria-label="Scroll to top"
-        style={{
-          position: "fixed",
-          bottom: "2rem",
-          right: "2rem",
-          zIndex: 50,
-          opacity: visible ? 1 : 0,
-          pointerEvents: visible ? "auto" : "none",
-          transition: "opacity 0.3s ease, transform 0.3s ease, background-color 0.2s ease",
-          transform: visible ? "translateY(0)" : "translateY(12px)",
-          width: "44px",
-          height: "44px",
-          border: "1px solid rgba(205, 127, 50, 0.5)",
-          background: "rgba(14, 12, 10, 0.85)",
-          backdropFilter: "blur(8px)",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          cursor: "pointer",
-        }}
-        onMouseEnter={e => {
-          e.currentTarget.style.borderColor = "#cd7f32";
-          e.currentTarget.style.background = "rgba(205, 127, 50, 0.12)";
-        }}
-        onMouseLeave={e => {
-          e.currentTarget.style.borderColor = "rgba(205, 127, 50, 0.5)";
-          e.currentTarget.style.background = "rgba(14, 12, 10, 0.85)";
-        }}
-      >
-        {/* Up arrow SVG */}
-        <svg
-          width="16"
-          height="16"
-          viewBox="0 0 16 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M8 13V3M8 3L3 8M8 3L13 8"
-            stroke="#cd7f32"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </button>
+      <Footer />
     </main>
-  );
-}
-
-function FooterComponent() {
-  const services = [
-    { title: "Airport Transfers", href: "/services/airport-transfer" },
-    { title: "Corporate Transportation", href: "/services/corporate" },
-    { title: "Wedding Limousine", href: "/services/wedding" },
-    { title: "Prom & Homecoming", href: "/services/prom" },
-    { title: "Point to Point", href: "/services/point-to-point" },
-    { title: "Hourly As Directed", href: "/services/hourly" },
-  ];
-
-  const vehicles = [
-    { name: "Cadillac Escalade ESV", href: "/fleet/escalade-esv" },
-    { name: "Lincoln Stretch Limousine", href: "/fleet/lincoln-stretch" },
-    { name: "Mercedes-Benz Sprinter", href: "/fleet/sprinter" },
-    { name: "Rolls-Royce Ghost", href: "/fleet/rolls-royce" },
-    { name: "Party Bus", href: "/fleet/party-bus" },
-    { name: "BMW 7 Series", href: "/fleet/bmw-7" },
-  ];
-
-  return (
-    <footer className="bg-[#0a0806] border-t border-[#cd7f32]/15">
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          <div className="lg:col-span-1">
-            <div className="mb-5">
-              <span className="text-3xl font-light tracking-widest text-[#cd7f32]">
-                NYLI
-                <span className="text-white/40 text-lg"> LIMO</span>
-              </span>
-            </div>
-            <p className="text-white/45 text-sm leading-relaxed font-['Montserrat',sans-serif] mb-6">
-              New York City's premier chauffeur service. Luxury transportation for every occasion.
-            </p>
-            <div className="flex gap-3">
-              {["facebook", "instagram", "twitter"].map((social) => (
-                <a
-                  key={social}
-                  href={`https://${social}.com/nylilimo`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-9 h-9 border border-white/15 flex items-center justify-center text-white/40 hover:border-[#cd7f32]/50 hover:text-[#cd7f32] transition-all duration-200 capitalize text-xs font-['Montserrat',sans-serif]"
-                >
-                  {social[0].toUpperCase()}
-                </a>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <h4 className="text-sm uppercase tracking-[0.3em] text-[#cd7f32] mb-5 font-['Montserrat',sans-serif]">
-              Services
-            </h4>
-            <ul className="space-y-2.5">
-              {services.map((s) => (
-                <li key={s.href}>
-                  <Link href={s.href} className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#cd7f32] transition-colors">
-                    {s.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-sm uppercase tracking-[0.3em] text-[#cd7f32] mb-5 font-['Montserrat',sans-serif]">
-              Our Fleet
-            </h4>
-            <ul className="space-y-2.5">
-              {vehicles.map((v) => (
-                <li key={v.href}>
-                  <Link href={v.href} className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#cd7f32] transition-colors">
-                    {v.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-sm uppercase tracking-[0.3em] text-[#cd7f32] mb-5 font-['Montserrat',sans-serif]">
-              Contact
-            </h4>
-            <ul className="space-y-3 text-white/45 text-sm font-['Montserrat',sans-serif]">
-              <li>
-                <a href="tel:+16314524500" className="hover:text-[#cd7f32] transition-colors">
-                  +1 631-452-4500
-                </a>
-              </li>
-              <li>
-                <a href="mailto:reservations@nylilimo.com" className="hover:text-[#cd7f32] transition-colors">
-                  reservations@nylilimo.com
-                </a>
-              </li>
-              <li className="leading-relaxed">
-                1421 Islip Ave STE 1037<br />
-                Central Islip, NY 11722-3941<br />
-                United States
-              </li>
-              <li className="text-emerald-400/80">
-                Available 24/7 · 365 days/year
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="mt-14 pt-8 border-t border-white/8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-white/25 text-xs font-['Montserrat',sans-serif]">
-            © {new Date().getFullYear()} NYLI Limo. All rights reserved. Designed by Nextgen Squad.
-          </p>
-          <div className="flex gap-6">
-            {["Privacy Policy", "Terms of Service", "Cancellation Policy"].map((link) => (
-              <Link
-                key={link}
-                href={`/${link.toLowerCase().replace(/ /g, "-")}`}
-                className="text-white/25 text-xs hover:text-[#cd7f32] transition-colors font-['Montserrat',sans-serif]"
-              >
-                {link}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
-    </footer>
   );
 }

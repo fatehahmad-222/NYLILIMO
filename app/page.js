@@ -1,11 +1,12 @@
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Link from "next/link";
 import Scrolltotopbutton from "@/components/Scrolltotopbutton";
 
 /* DATA ---------------------------------------------- */
 const services = [
   {
-    icon: "✈️",
+    icon: "✈",
     title: "Airport Transfers",
     desc: "Seamless pickups and drop-offs at JFK, LGA, EWR, HPN, and ISP. Flight tracking included — we wait if you're delayed.",
     href: "/services/airport-transfer",
@@ -35,7 +36,7 @@ const services = [
     href: "/services/point-to-point",
   },
   {
-    icon: "⏱️",
+    icon: "⏱",
     title: "Hourly As Directed",
     desc: "Keep a personal chauffeur at your disposal for the whole evening, event, or business day. Pure flexibility.",
     href: "/services/hourly",
@@ -98,42 +99,36 @@ const worldClass = [
     title: "Professional Chauffeurs",
     desc: "Every driver is background-checked, licensed, and trained in VIP hospitality protocols. Black-suit service, always.",
     icon: "🎩",
-    color: "from-blue-900/40 to-indigo-900/20",
     href: "/about/chauffeurs",
   },
   {
     title: "Flight Tracking",
     desc: "We monitor your flight in real-time. Delayed two hours? We know before you land. No extra charges for wait time.",
     icon: "📡",
-    color: "from-blue-900/40 to-indigo-900/20",
     href: "/services/airport-transfer",
   },
   {
     title: "24/7 Availability",
     desc: "Round-the-clock dispatch and customer support, 365 days a year. We're always just one call away.",
     icon: "🕐",
-    color: "from-blue-900/40 to-indigo-900/20",
     href: "/contact",
   },
   {
     title: "Luxury Fleet",
     desc: "From executive sedans to stretch limousines — our meticulously maintained fleet covers every occasion.",
     icon: "🚘",
-    color: "from-blue-900/40 to-indigo-900/20",
     href: "/fleet",
   },
   {
     title: "Instant Online Booking",
     desc: "Book in under 2 minutes. Instant confirmation, digital receipts, and easy modification up to 24 hours before pickup.",
     icon: "⚡",
-    color: "from-blue-900/40 to-indigo-900/20",
     href: "/booking",
   },
   {
     title: "Corporate Accounts",
     desc: "Streamlined billing, monthly statements, and dedicated account managers for businesses and frequent travelers.",
     icon: "🏢",
-    color: "from-blue-900/40 to-indigo-900/20",
     href: "/corporate-accounts",
   },
 ];
@@ -165,55 +160,42 @@ const stats = [
 
 export default function Home() {
   return (
-    <main className="bg-[#0e0c0a] text-white font-['Cormorant_Garamond',serif] overflow-x-hidden">
+    <main className="bg-white text-[#1a1a1a] font-['Montserrat',sans-serif] overflow-x-hidden">
       <Navbar />
 
       {/* ── HERO ── */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1504215680853-026ed2a45def?w=1800&q=80')",
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-[#0e0c0a]/10 to-[#0e0c0a]/70" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0e0c0a]/50 via-transparent to-[#0e0c0a]/30" />
-
-        <div className="absolute left-12 top-1/2 -translate-y-1/2 hidden xl:block">
-          <div className="w-px h-64 bg-gradient-to-b from-transparent via-[#cd7f32] to-transparent opacity-50" />
-        </div>
-
-        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto pt-28">
-          <p className="text-black text-sm tracking-[0.4em] uppercase mb-6 font-['Montserrat',sans-serif]">
+      <section className="pt-32 pb-20 lg:pt-40 lg:pb-28">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <span className="inline-block text-[10px] uppercase tracking-[0.35em] text-[#b8860b] font-medium mb-6">
             New York&apos;s Premier Limousine Service
-          </p>
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-light leading-none mb-6 tracking-tight">
-            <span className="block">Arrive in</span>
-            <span className="text-[#cd7f32] italic font-medium">Luxury.</span>
+          </span>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-['Cormorant_Garamond',serif] font-light leading-[0.95] mb-8">
+            Arrive in<br />
+            <span className="italic">Luxury.</span>
           </h1>
-          <p className="text-white/60 text-lg md:text-xl font-['Montserrat',sans-serif] font-light tracking-wide max-w-2xl mx-auto mb-12 leading-relaxed">
+          <p className="text-[#6b6b6b] text-sm md:text-base font-light leading-relaxed max-w-xl mx-auto mb-12">
             From JFK to the Hamptons — world-class chauffeur service that
             defines New York City elegance. Available around the clock.
           </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/booking"
-              className="px-10 py-4 bg-[#cd7f32] text-[#0e0c0a] font-bold uppercase tracking-widest text-sm hover:bg-[#e09545] transition-all duration-300 shadow-[0_0_40px_rgba(205,127,50,0.4)] hover:shadow-[0_0_60px_rgba(205,127,50,0.6)] font-['Montserrat',sans-serif]"
+              className="inline-flex items-center justify-center px-10 py-3.5 bg-[#1a1a1a] text-white font-medium uppercase tracking-[0.15em] text-[11px] hover:bg-[#b8860b] transition-all duration-300"
             >
               Book Your Ride
             </Link>
             <a
               href="tel:+16314524500"
-              className="px-10 py-4 border border-[#cd7f32]/50 text-[#cd7f32] font-medium uppercase tracking-widest text-sm hover:border-[#cd7f32] hover:bg-[#cd7f32]/10 transition-all duration-300 font-['Montserrat',sans-serif]"
+              className="inline-flex items-center justify-center px-10 py-3.5 border border-[#1a1a1a] text-[#1a1a1a] font-medium uppercase tracking-[0.15em] text-[11px] hover:border-[#b8860b] hover:text-[#b8860b] transition-all duration-300"
             >
               Call Now
             </a>
           </div>
-
-          <div className="mt-8 flex flex-col sm:flex-row gap-2 sm:gap-6 justify-center text-white/40 text-sm font-['Montserrat',sans-serif]">
-            <a href="tel:+16314524500" className="hover:text-[#cd7f32] transition-colors">
+          <div className="mt-8">
+            <a
+              href="tel:+16314524500"
+              className="text-[#999999] text-[12px] hover:text-[#b8860b] transition-colors duration-300"
+            >
               +1 631-452-4500
             </a>
           </div>
@@ -221,66 +203,72 @@ export default function Home() {
       </section>
 
       {/* ── STATS ── */}
-      <section className="border-y border-[#cd7f32]/20 bg-[#110f0c]">
-        <div className="max-w-6xl mx-auto px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-8">
-          {stats.map((s) => (
-            <div key={s.label} className="text-center">
-              <div className="text-4xl md:text-5xl font-light text-[#cd7f32] mb-2">
-                {s.value}
+      <section className="border-y border-[#e8e6e3]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {stats.map((s, i) => (
+              <div key={s.label} className="text-center">
+                {i > 0 && <div className="hidden md:block absolute" />}
+                <div className="text-3xl md:text-4xl font-['Cormorant_Garamond',serif] font-light text-[#1a1a1a] mb-2">
+                  {s.value}
+                </div>
+                <div className="text-[#999999] text-[10px] tracking-[0.2em] uppercase font-medium">
+                  {s.label}
+                </div>
               </div>
-              <div className="text-white/50 text-xs tracking-widest uppercase font-['Montserrat',sans-serif]">
-                {s.label}
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
       {/* ── SERVICES ── */}
-      <section id="services" className="py-28 px-4 max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <p className="text-[#cd7f32] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
-            What We Offer
-          </p>
-          <h2 className="text-5xl md:text-6xl font-light mb-4">Our Services</h2>
-          <div className="w-16 h-px bg-[#cd7f32] mx-auto" />
-        </div>
+      <section id="services" className="py-24 lg:py-32">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="text-[10px] uppercase tracking-[0.3em] text-[#b8860b] font-medium">
+              What We Offer
+            </span>
+            <h2 className="text-4xl md:text-5xl font-['Cormorant_Garamond',serif] font-light mt-4 mb-6">
+              Our Services
+            </h2>
+            <div className="w-8 h-px bg-[#b8860b] mx-auto" />
+          </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {services.map((service) => (
-            <Link
-              key={service.href}
-              href={service.href}
-              className="group relative p-8 border border-white/8 bg-white/[0.02] hover:bg-[#cd7f32]/5 hover:border-[#cd7f32]/40 rounded-sm transition-all duration-300 overflow-hidden"
-            >
-              <div className="absolute top-0 left-0 w-0 group-hover:w-full h-px bg-gradient-to-r from-[#cd7f32] to-transparent transition-all duration-500" />
-              <h3 className="text-xl mb-3 text-[#cd7f32] group-hover:text-[#cd7f32] transition-colors duration-300">
-                {service.title}
-              </h3>
-              <p className="text-white/50 text-sm leading-relaxed font-['Montserrat',sans-serif] font-light">
-                {service.desc}
-              </p>
-              <div className="mt-6 flex items-center gap-2 text-[#cd7f32] text-xs uppercase tracking-widest font-['Montserrat',sans-serif] font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Learn More
-                <svg className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </Link>
-          ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#e8e6e3]">
+            {services.map((service) => (
+              <Link
+                key={service.href}
+                href={service.href}
+                className="group bg-white p-8 sm:p-10"
+              >
+                <span className="text-xl mb-5 block opacity-40">{service.icon}</span>
+                <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-3 text-[#1a1a1a]">
+                  {service.title}
+                </h3>
+                <p className="text-[#6b6b6b] text-[12px] leading-relaxed font-light mb-6">
+                  {service.desc}
+                </p>
+                <span className="text-[10px] uppercase tracking-[0.2em] text-[#b8860b] font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Learn More →
+                </span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* ── FEATURED VEHICLES ── */}
-      <section id="fleet" className="py-28 bg-[#13110e]">
-        <div className="max-w-7xl mx-auto px-4">
+      <section id="fleet" className="py-24 lg:py-32 bg-[#f9f8f6]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-[#cd7f32] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
+            <span className="text-[10px] uppercase tracking-[0.3em] text-[#b8860b] font-medium">
               Travel In Style
-            </p>
-            <h2 className="text-5xl md:text-6xl font-light mb-4">Featured Vehicles</h2>
-            <div className="w-16 h-px bg-[#cd7f32] mx-auto mb-6" />
-            <p className="text-white/50 text-sm font-['Montserrat',sans-serif] max-w-xl mx-auto leading-relaxed">
+            </span>
+            <h2 className="text-4xl md:text-5xl font-['Cormorant_Garamond',serif] font-light mt-4 mb-6">
+              Featured Vehicles
+            </h2>
+            <div className="w-8 h-px bg-[#b8860b] mx-auto mb-6" />
+            <p className="text-[#6b6b6b] text-[12px] font-light max-w-lg mx-auto leading-relaxed">
               Our immaculate fleet is serviced daily and detailed before every ride. Choose your vehicle and ride in uncompromising comfort.
             </p>
           </div>
@@ -290,43 +278,36 @@ export default function Home() {
               <Link
                 key={v.href}
                 href={v.href}
-                className="group relative overflow-hidden rounded-sm border border-white/8 hover:border-[#cd7f32]/40 transition-all duration-500"
+                className="group bg-white border border-[#e8e6e3] overflow-hidden"
               >
-                <div className="relative h-56 overflow-hidden">
+                <div className="relative h-52 overflow-hidden">
                   <img
                     src={v.image}
                     alt={v.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0e0c0a] via-[#0e0c0a]/30 to-transparent" />
-                  <div className="absolute top-4 right-4 bg-[#cd7f32] text-[#0e0c0a] text-xs font-bold uppercase tracking-wider px-3 py-1 font-['Montserrat',sans-serif]">
+                  <div className="absolute top-4 right-4 bg-[#1a1a1a] text-white text-[9px] font-medium uppercase tracking-[0.1em] px-2.5 py-1">
                     {v.category}
                   </div>
                 </div>
-                <div className="p-6 bg-[#191512]">
-                  <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-xl group-hover:text-[#cd7f32] transition-colors duration-300 leading-tight">
+                <div className="p-6">
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="text-lg font-['Cormorant_Garamond',serif] text-[#1a1a1a] leading-tight">
                       {v.name}
                     </h3>
-                    <span className="text-white/40 text-xs font-['Montserrat',sans-serif] whitespace-nowrap ml-2 mt-1">
+                    <span className="text-[#999999] text-[10px] whitespace-nowrap ml-2 mt-1">
                       {v.capacity}
                     </span>
                   </div>
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-1.5 mt-3">
                     {v.features.map((f) => (
                       <span
                         key={f}
-                        className="text-xs text-[#cd7f32]/70 border border-[#cd7f32]/25 px-2 py-1 font-['Montserrat',sans-serif]"
+                        className="text-[9px] text-[#999999] border border-[#e8e6e3] px-2 py-0.5"
                       >
                         {f}
                       </span>
                     ))}
-                  </div>
-                  <div className="flex items-center gap-2 text-[#cd7f32] text-xs uppercase tracking-widest font-['Montserrat',sans-serif] font-medium">
-                    View Details
-                    <svg className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
                   </div>
                 </div>
               </Link>
@@ -336,11 +317,11 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/fleet"
-              className="inline-flex items-center gap-3 px-10 py-4 border border-[#cd7f32]/50 text-[#cd7f32] text-sm uppercase tracking-widest font-['Montserrat',sans-serif] hover:bg-[#cd7f32]/10 hover:border-[#cd7f32] transition-all duration-300"
+              className="inline-flex items-center gap-2 px-8 py-3 border border-[#1a1a1a] text-[#1a1a1a] text-[11px] uppercase tracking-[0.15em] font-medium hover:border-[#b8860b] hover:text-[#b8860b] transition-all duration-300"
             >
               View Full Fleet
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </Link>
           </div>
@@ -348,176 +329,139 @@ export default function Home() {
       </section>
 
       {/* ── WORLD CLASS ── */}
-      <section id="why-us" className="py-28 px-4 max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <p className="text-[#cd7f32] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
-            The NYLI Standard
-          </p>
-          <h2 className="text-5xl md:text-6xl font-light mb-4">World-Class Experience</h2>
-          <div className="w-16 h-px bg-[#cd7f32] mx-auto" />
-        </div>
+      <section id="why-us" className="py-24 lg:py-32">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="text-[10px] uppercase tracking-[0.3em] text-[#b8860b] font-medium">
+              The NYLI Standard
+            </span>
+            <h2 className="text-4xl md:text-5xl font-['Cormorant_Garamond',serif] font-light mt-4 mb-6">
+              World-Class Experience
+            </h2>
+            <div className="w-8 h-px bg-[#b8860b] mx-auto" />
+          </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {worldClass.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={`group relative p-8 rounded-sm bg-gradient-to-br ${item.color} border border-white/8 hover:border-[#cd7f32]/40 transition-all duration-300 overflow-hidden`}
-            >
-              <div className="absolute top-0 right-0 w-24 h-24 rounded-full bg-[#cd7f32]/5 -translate-y-8 translate-x-8 group-hover:scale-150 transition-transform duration-500" />
-              <h3 className="text-xl mb-3 group-hover:text-[#cd7f32] transition-colors duration-300">
-                {item.title}
-              </h3>
-              <p className="text-white/55 text-sm leading-relaxed font-['Montserrat',sans-serif] font-light">
-                {item.desc}
-              </p>
-              <div className="mt-6 flex items-center gap-2 text-[#cd7f32] text-xs uppercase tracking-widest font-['Montserrat',sans-serif] font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                Explore
-                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
-            </Link>
-          ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {worldClass.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group p-8 border border-[#e8e6e3] hover:border-[#b8860b]/30 transition-all duration-300"
+              >
+                <span className="text-xl mb-5 block opacity-40">{item.icon}</span>
+                <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-3 text-[#1a1a1a]">
+                  {item.title}
+                </h3>
+                <p className="text-[#6b6b6b] text-[12px] leading-relaxed font-light">
+                  {item.desc}
+                </p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* ── WHERE WE OPERATE ── */}
-      <section id="coverage" className="py-28 bg-[#13110e]">
-        <div className="max-w-7xl mx-auto px-4">
+      <section id="coverage" className="py-24 lg:py-32 bg-[#f9f8f6]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-[#cd7f32] text-xs tracking-[0.4em] uppercase mb-4 font-['Montserrat',sans-serif]">
+            <span className="text-[10px] uppercase tracking-[0.3em] text-[#b8860b] font-medium">
               Coverage Area
-            </p>
-            <h2 className="text-5xl md:text-6xl font-light mb-4">Where We Operate</h2>
-            <div className="w-16 h-px bg-[#cd7f32] mx-auto mb-4" />
-            <p className="text-white/50 text-sm font-['Montserrat',sans-serif] max-w-lg mx-auto">
+            </span>
+            <h2 className="text-4xl md:text-5xl font-['Cormorant_Garamond',serif] font-light mt-4 mb-6">
+              Where We Operate
+            </h2>
+            <div className="w-8 h-px bg-[#b8860b] mx-auto mb-6" />
+            <p className="text-[#6b6b6b] text-[12px] font-light max-w-md mx-auto">
               Serving the greater New York metropolitan area — from the five boroughs to the surrounding tri-state region.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-10 items-start">
-            <div className="space-y-10">
-              <div>
-                <h3 className="text-sm uppercase tracking-[0.3em] text-[#cd7f32] mb-5 font-['Montserrat',sans-serif]">
-                  Service Areas
-                </h3>
-                <div className="flex flex-wrap gap-2.5">
-                  {areas.map((area) => (
-                    <span
-                      key={area}
-                      className="px-4 py-2 border border-white/15 text-white/70 text-sm font-['Montserrat',sans-serif] hover:border-[#cd7f32]/50 hover:text-[#cd7f32] transition-all duration-200 cursor-default"
-                    >
-                      {area}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-sm uppercase tracking-[0.3em] text-[#cd7f32] mb-5 font-['Montserrat',sans-serif]">
-                  Airport Transfers
-                </h3>
-                <div className="space-y-3">
-                  {airports.map((airport) => (
-                    <div
-                      key={airport.code}
-                      className="flex items-center gap-4 p-4 border border-white/8 bg-white/[0.02] hover:border-[#cd7f32]/30 transition-all duration-200"
-                    >
-                      <span className="text-[#cd7f32] font-bold text-lg font-['Montserrat',sans-serif] w-12 shrink-0">
-                        {airport.code}
-                      </span>
-                      <span className="text-white/65 text-sm font-['Montserrat',sans-serif]">
-                        {airport.name}
-                      </span>
-                      <div className="ml-auto w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0" />
-                    </div>
-                  ))}
-                </div>
+          <div className="max-w-3xl mx-auto">
+            <div className="mb-14">
+              <h3 className="text-[11px] uppercase tracking-[0.2em] text-[#999999] mb-5 font-medium text-center">
+                Service Areas
+              </h3>
+              <div className="flex flex-wrap justify-center gap-2">
+                {areas.map((area) => (
+                  <span
+                    key={area}
+                    className="px-4 py-2 border border-[#e8e6e3] text-[#6b6b6b] text-[12px] hover:border-[#b8860b] hover:text-[#b8860b] transition-all duration-200 cursor-default bg-white"
+                  >
+                    {area}
+                  </span>
+                ))}
               </div>
             </div>
 
-            <div className="relative">
+            <div>
+              <h3 className="text-[11px] uppercase tracking-[0.2em] text-[#999999] mb-5 font-medium text-center">
+                Airport Transfers
+              </h3>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {airports.map((airport) => (
+                  <div
+                    key={airport.code}
+                    className="flex items-center gap-4 p-4 border border-[#e8e6e3] bg-white hover:border-[#b8860b]/30 transition-all duration-200"
+                  >
+                    <span className="text-[#b8860b] font-medium text-sm font-['Cormorant_Garamond',serif] w-10 shrink-0">
+                      {airport.code}
+                    </span>
+                    <span className="text-[#6b6b6b] text-[12px]">
+                      {airport.name}
+                    </span>
+                    <div className="ml-auto w-1.5 h-1.5 rounded-full bg-[#b8860b] shrink-0" />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-10 text-center">
               <a
                 href="https://maps.google.com/?q=1421+Islip+Ave+STE+1037+Central+Islip+NY+11722"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block relative overflow-hidden rounded-sm border border-[#cd7f32]/25 hover:border-[#cd7f32]/60 transition-all duration-300 shadow-[0_0_40px_rgba(205,127,50,0.1)] hover:shadow-[0_0_60px_rgba(205,127,50,0.2)]"
-                aria-label="Open NYLI Limo location in Google Maps"
+                className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.15em] text-[#b8860b] font-medium hover:opacity-70 transition-opacity duration-200"
               >
-                <img
-                  src="https://res.cloudinary.com/dgz6utv5q/image/upload/v1780331064/mapimglimosknyc_xq64ej.png"
-                  alt="NYLI Limo Service Area Map"
-                  className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0e0c0a]/60 via-transparent to-transparent" />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="bg-[#cd7f32] text-[#0e0c0a] px-6 py-3 font-bold uppercase tracking-widest text-sm font-['Montserrat',sans-serif]">
-                    Open in Google Maps
-                  </div>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 p-5">
-                  <p className="text-white/80 text-sm font-['Montserrat',sans-serif]">
-                    📍 New York City Metropolitan Area
-                  </p>
-                </div>
+                View on Google Maps
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
               </a>
-
-              <div className="mt-4 p-5 border border-[#cd7f32]/20 bg-[#191512] space-y-3">
-                <p className="text-[#cd7f32] text-xs uppercase tracking-widest font-['Montserrat',sans-serif]">
-                  Contact & Address
-                </p>
-                <p className="text-white/70 text-sm font-['Montserrat',sans-serif]">
-                  1421 Islip Ave STE 1037<br />
-                  Central Islip, NY 11722-3941<br />
-                  United States
-                </p>
-                <div className="flex flex-col gap-1.5">
-                  <a href="tel:+16314524500" className="text-white/70 hover:text-[#cd7f32] text-sm font-['Montserrat',sans-serif] transition-colors">
-                    +1 631-452-4500
-                  </a>
-                  <a href="mailto:reservations@nylilimo.com" className="text-white/70 hover:text-[#cd7f32] text-sm font-['Montserrat',sans-serif] transition-colors">
-                    ✉️ reservations@nylilimo.com
-                  </a>
-                </div>
+              <div className="mt-6 text-[#999999] text-[12px] leading-relaxed">
+                <p>1421 Islip Ave STE 1037</p>
+                <p>Central Islip, NY 11722-3941</p>
+                <a href="tel:+16314524500" className="hover:text-[#b8860b] transition-colors">+1 631-452-4500</a>
+                <span className="mx-2">·</span>
+                <a href="mailto:reservations@nylilimo.com" className="hover:text-[#b8860b] transition-colors">reservations@nylilimo.com</a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── CTA BANNER ── */}
-      <section className="relative py-28 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1800&q=80')",
-          }}
-        />
-        <div className="absolute inset-0 bg-[#0e0c0a]/85" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0e0c0a] via-transparent to-[#0e0c0a]" />
-
-        <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
-          <p className="text-[#cd7f32] text-xs tracking-[0.4em] uppercase mb-6 font-['Montserrat',sans-serif]">
+      {/* ── CTA ── */}
+      <section className="py-24 lg:py-32">
+        <div className="max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <span className="text-[10px] uppercase tracking-[0.3em] text-[#b8860b] font-medium">
             Ready When You Are
-          </p>
-          <h2 className="text-5xl md:text-6xl font-light mb-6">
-            Book Your Ride <span className="text-[#cd7f32] italic">Today</span>
+          </span>
+          <h2 className="text-4xl md:text-5xl font-['Cormorant_Garamond',serif] font-light mt-4 mb-6">
+            Book Your Ride <span className="italic">Today</span>
           </h2>
-          <p className="text-white/55 text-base font-['Montserrat',sans-serif] mb-10 leading-relaxed">
+          <p className="text-[#6b6b6b] text-[12px] font-light mb-10 leading-relaxed max-w-md mx-auto">
             Experience New York like never before. Instant confirmation, no hidden fees, and the impeccable service of NYLI Limo.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/booking"
-              className="px-12 py-4 bg-[#cd7f32] text-[#0e0c0a] font-bold uppercase tracking-widest text-sm hover:bg-[#e09545] transition-all duration-300 shadow-[0_0_50px_rgba(205,127,50,0.5)] font-['Montserrat',sans-serif]"
+              className="inline-flex items-center justify-center px-10 py-3.5 bg-[#1a1a1a] text-white font-medium uppercase tracking-[0.15em] text-[11px] hover:bg-[#b8860b] transition-all duration-300"
             >
               Reserve Now
             </Link>
             <a
               href="tel:+16314524500"
-              className="px-12 py-4 border border-white/30 text-white font-medium uppercase tracking-widest text-sm hover:border-[#cd7f32] hover:text-[#cd7f32] transition-all duration-300 font-['Montserrat',sans-serif]"
+              className="inline-flex items-center justify-center px-10 py-3.5 border border-[#1a1a1a] text-[#1a1a1a] font-medium uppercase tracking-[0.15em] text-[11px] hover:border-[#b8860b] hover:text-[#b8860b] transition-all duration-300"
             >
               +1 631-452-4500
             </a>
@@ -525,112 +469,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── FOOTER ── */}
-      <footer className="bg-[#0a0806] border-t border-[#cd7f32]/15">
-        <div className="max-w-7xl mx-auto px-4 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-            <div className="lg:col-span-1">
-              <div className="mb-5">
-                <span className="text-3xl font-light tracking-widest text-[#cd7f32]">
-                  NYLI
-                  <span className="text-white/40 text-lg"> LIMO</span>
-                </span>
-              </div>
-              <p className="text-white/45 text-sm leading-relaxed font-['Montserrat',sans-serif] mb-6">
-                New York City&apos;s premier chauffeur service. Luxury transportation for every occasion.
-              </p>
-              <div className="flex gap-3">
-                {["facebook", "instagram", "twitter"].map((social) => (
-                  <a
-                    key={social}
-                    href={`https://${social}.com/nylilimo`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-9 h-9 border border-white/15 flex items-center justify-center text-white/40 hover:border-[#cd7f32]/50 hover:text-[#cd7f32] transition-all duration-200 capitalize text-xs font-['Montserrat',sans-serif]"
-                  >
-                    {social[0].toUpperCase()}
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <h4 className="text-sm uppercase tracking-[0.3em] text-[#cd7f32] mb-5 font-['Montserrat',sans-serif]">
-                Services
-              </h4>
-              <ul className="space-y-2.5">
-                {services.slice(0, 7).map((s) => (
-                  <li key={s.href}>
-                    <Link href={s.href} className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#cd7f32] transition-colors">
-                      {s.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-sm uppercase tracking-[0.3em] text-[#cd7f32] mb-5 font-['Montserrat',sans-serif]">
-                Our Fleet
-              </h4>
-              <ul className="space-y-2.5">
-                {vehicles.map((v) => (
-                  <li key={v.href}>
-                    <Link href={v.href} className="text-white/45 text-sm font-['Montserrat',sans-serif] hover:text-[#cd7f32] transition-colors">
-                      {v.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-sm uppercase tracking-[0.3em] text-[#cd7f32] mb-5 font-['Montserrat',sans-serif]">
-                Contact
-              </h4>
-              <ul className="space-y-3 text-white/45 text-sm font-['Montserrat',sans-serif]">
-                <li>
-                  <a href="tel:+16314524500" className="hover:text-[#cd7f32] transition-colors">
-                    +1 631-452-4500
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:reservations@nylilimo.com" className="hover:text-[#cd7f32] transition-colors">
-                    ✉️ reservations@nylilimo.com
-                  </a>
-                </li>
-                <li className="leading-relaxed">
-                  1421 Islip Ave STE 1037<br />
-                  Central Islip, NY 11722-3941<br />
-                  United States
-                </li>
-                <li className="text-emerald-400/80">
-                  Available 24/7 · 365 days/year
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-14 pt-8 border-t border-white/8 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-white/25 text-xs font-['Montserrat',sans-serif]">
-              © {new Date().getFullYear()} NYLI Limo. All rights reserved.
-            </p>
-            <div className="flex gap-6">
-              {["Privacy Policy", "Terms of Service", "Cancellation Policy"].map((link) => (
-                <Link
-                  key={link}
-                  href={`/${link.toLowerCase().replace(/ /g, "-")}`}
-                  className="text-white/25 text-xs hover:text-[#cd7f32] transition-colors font-['Montserrat',sans-serif]"
-                >
-                  {link}
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      {/* Scroll to Top */}
+      <Footer />
       <Scrolltotopbutton />
     </main>
   );
