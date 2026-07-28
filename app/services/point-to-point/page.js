@@ -1,5 +1,10 @@
 import ServiceLayout from "@/components/ServiceLayout";
 
+export const metadata = {
+  title: "Point to Point Car Service NYC | Door-to-Door Luxury | NYLI Limo",
+  description: "Door-to-door luxury transportation between any two destinations in NYC. No surge pricing ever. Professional chauffeur service at your command.",
+};
+
 export default function PointToPointPage() {
   return (
     <ServiceLayout

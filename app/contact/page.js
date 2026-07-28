@@ -1,5 +1,10 @@
 import ServiceLayout from "@/components/ServiceLayout";
 
+export const metadata = {
+  title: "Contact Us | NYLI Limo - 24/7 NYC Chauffeur Service",
+  description: "Reach NYLI Limo 24/7. Call +1 631-452-4500, email reservations@nylilimo.com, or visit our Central Islip office. We're always here for you.",
+};
+
 export default function ContactPage() {
   return (
     <ServiceLayout

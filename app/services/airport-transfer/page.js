@@ -1,5 +1,10 @@
 import ServiceLayout from "@/components/ServiceLayout";
 
+export const metadata = {
+  title: "Airport Transfers NYC | JFK, LGA, EWR | NYLI Limo",
+  description: "Premium NYC airport transfer service. Flight tracking, 60-min complimentary wait, no surge pricing. Serving JFK, LGA, EWR, HPN, ISP. Book online.",
+};
+
 export default function AirportTransferPage() {
   return (
     <ServiceLayout

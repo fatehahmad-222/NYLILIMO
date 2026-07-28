@@ -1,5 +1,10 @@
 import ServiceLayout from "@/components/ServiceLayout";
 
+export const metadata = {
+  title: "Wedding Limousine Service NYC | Bridal Transportation | NYLI Limo",
+  description: "Make your grand entrance unforgettable. Bridal packages, decorated vehicles, complimentary champagne service. NYC's premier wedding limousine service.",
+};
+
 export default function WeddingPage() {
   return (
     <ServiceLayout

@@ -1,5 +1,10 @@
 import ServiceLayout from "@/components/ServiceLayout";
 
+export const metadata = {
+  title: "Hourly Chauffeur Service NYC | Private Driver | NYLI Limo",
+  description: "Keep a personal chauffeur at your disposal. Hourly as-directed service for business days, events, or evenings. Total flexibility, pure luxury.",
+};
+
 export default function HourlyPage() {
   return (
     <ServiceLayout

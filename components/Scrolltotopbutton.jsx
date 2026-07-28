@@ -2,42 +2,27 @@
 
 import { useState, useEffect } from "react";
 
-export default function ScrollToTopButton() {
-  const [visible, setVisible] = useState(false);
+export default function Scrolltotopbutton() {
+  const [show, setShow] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setVisible(window.scrollY > 400);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    function handle() {
+      setShow(window.scrollY > 400);
+    }
+    window.addEventListener("scroll", handle, { passive: true });
+    return () => window.removeEventListener("scroll", handle);
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  if (!show) return null;
 
   return (
     <button
-      onClick={scrollToTop}
-      aria-label="Scroll to top"
-      className={`fixed bottom-8 right-8 z-50 w-11 h-11 flex items-center justify-center border border-[#e8e6e3] bg-white hover:border-[#b8860b] hover:bg-[#b8860b] group transition-all duration-300 ${
-        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3 pointer-events-none"
-      }`}
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      area-label="Scroll to top"
+      className="fixed bottom-6 right-6 z-50 p-3 bg-[#8b1a1a] text-white shadow-lg hover:bg-white hover:text-[#0a0a0a] transition-all duration-300"
     >
-      <svg
-        width="14"
-        height="14"
-        viewBox="0 0 16 16"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M8 13V3M8 3L3 8M8 3L13 8"
-          stroke="#1a1a1a"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="group-hover:stroke-white transition-colors duration-300"
-        />
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" />
       </svg>
     </button>
   );

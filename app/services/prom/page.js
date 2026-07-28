@@ -1,5 +1,10 @@
 import ServiceLayout from "@/components/ServiceLayout";
 
+export const metadata = {
+  title: "Prom & Homecoming Limo Service NYC | Safe Luxury | NYLI Limo",
+  description: "Arrive like royalty at prom or homecoming. Safe, stylish, supervised luxury transportation. Packages for groups. NYC's trusted prom limousine service.",
+};
+
 export default function PromPage() {
   return (
     <ServiceLayout

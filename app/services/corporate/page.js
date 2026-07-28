@@ -1,5 +1,10 @@
 import ServiceLayout from "@/components/ServiceLayout";
 
+export const metadata = {
+  title: "Corporate Transportation NYC | Executive Chauffeur Service | NYLI Limo",
+  description: "Executive corporate transportation in NYC. C-suite travel, client entertainment, roadshows. Punctuality guaranteed. Dedicated account managers.",
+};
+
 export default function CorporatePage() {
   return (
     <ServiceLayout

@@ -1,6 +1,12 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import ScrollReveal from "@/components/ScrollReveal";
+
+export const metadata = {
+  title: "About Us | NYLI Limo - NYC's Premier Chauffeur Service Since 2009",
+  description: "Learn the NYLI Limo story. 15+ years, 50K+ rides, 99.4% on-time rate. Founded in Manhattan, serving NYC with uncompromising luxury transportation.",
+};
 
 /* ── STORY DATA ───────────────────────────────────────── */
 
@@ -114,25 +120,28 @@ export default function AboutPage() {
       </section>
 
       {/* ── STATS ── */}
-      <section className="border-b border-[#e8e6e3]">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((s) => (
-              <div key={s.label} className="text-center">
-                <div className="text-3xl md:text-4xl font-['Cormorant_Garamond',serif] font-light text-[#1a1a1a] mb-2">
-                  {s.value}
+      <ScrollReveal>
+        <section className="border-b border-[#e8e6e3]">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              {stats.map((s) => (
+                <div key={s.label} className="text-center">
+                  <div className="text-3xl md:text-4xl font-['Cormorant_Garamond',serif] font-light text-[#1a1a1a] mb-2">
+                    {s.value}
+                  </div>
+                  <div className="text-[#999999] text-[10px] tracking-[0.2em] uppercase font-medium">
+                    {s.label}
+                  </div>
                 </div>
-                <div className="text-[#999999] text-[10px] tracking-[0.2em] uppercase font-medium">
-                  {s.label}
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </ScrollReveal>
 
       {/* ── ORIGIN STORY ── */}
-      <section className="py-24 lg:py-32">
+      <ScrollReveal>
+        <section className="py-24 lg:py-32">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -196,9 +205,11 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      </ScrollReveal>
 
       {/* ── TIMELINE ── */}
-      <section className="py-24 lg:py-32 bg-[#f9f8f6]">
+      <ScrollReveal>
+        <section className="py-24 lg:py-32 bg-[#f9f8f6]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="text-[10px] uppercase tracking-[0.3em] text-[#b8860b] font-medium">
@@ -232,9 +243,11 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      </ScrollReveal>
 
       {/* ── VALUES ── */}
-      <section className="py-24 lg:py-32">
+      <ScrollReveal>
+        <section className="py-24 lg:py-32">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="text-[10px] uppercase tracking-[0.3em] text-[#b8860b] font-medium">
@@ -263,9 +276,11 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      </ScrollReveal>
 
       {/* ── TEAM ── */}
-      <section className="py-24 lg:py-32 bg-[#f9f8f6]">
+      <ScrollReveal>
+        <section className="py-24 lg:py-32 bg-[#f9f8f6]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="text-[10px] uppercase tracking-[0.3em] text-[#b8860b] font-medium">
@@ -306,9 +321,11 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      </ScrollReveal>
 
       {/* ── PHILOSOPHY QUOTE ── */}
-      <section className="py-24 lg:py-32">
+      <ScrollReveal>
+        <section className="py-24 lg:py-32">
         <div className="max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <div className="text-[#b8860b] text-5xl font-['Cormorant_Garamond',serif] font-light mb-6 opacity-30">&ldquo;</div>
           <blockquote className="text-2xl md:text-3xl font-['Cormorant_Garamond',serif] font-light leading-relaxed mb-8 text-[#1a1a1a]">
@@ -322,9 +339,11 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
+      </ScrollReveal>
 
       {/* ── CTA ── */}
-      <section className="py-24 lg:py-28 bg-[#f9f8f6]">
+      <ScrollReveal>
+        <section className="py-24 lg:py-28 bg-[#f9f8f6]">
         <div className="max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <span className="text-[10px] uppercase tracking-[0.3em] text-[#b8860b] font-medium">
             Ready When You Are
@@ -348,6 +367,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      </ScrollReveal>
 
       <Footer />
     </main>
