@@ -20,44 +20,44 @@ export default function PointToPointPage() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 mb-20">
           <div>
             <h2 className="text-2xl md:text-3xl font-['Cormorant_Garamond',serif] font-light mb-4">Reliable Point-to-Point Luxury</h2>
-            <div className="w-8 h-px bg-[#b8860b] mb-6" />
-            <p className="text-[#6b6b6b] leading-relaxed mb-4 text-[13px] font-light">
+            <div className="w-8 h-px bg-[#C79A3C] mb-6" />
+            <p className="text-[#847863] leading-relaxed mb-4 text-[13px] font-light">
               Need to get from Manhattan to the Hamptons? From Brooklyn to Jersey City? 
               NYLI Limo provides premium point-to-point service for any two destinations 
               in the tri-state area. Unlike rideshare apps, we never use surge pricing.
             </p>
-            <p className="text-[#6b6b6b] leading-relaxed text-[13px] font-light">
+            <p className="text-[#847863] leading-relaxed text-[13px] font-light">
               Whether it&apos;s a dinner reservation, business meeting, or night out, 
               enjoy consistent luxury with transparent pricing. Book by the trip 
               and know exactly what you&apos;ll pay before you confirm.
             </p>
           </div>
-          <div className="border border-[#e8e6e3] p-8">
-            <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-5 text-[#1a1a1a]">Why Choose Point-to-Point?</h3>
-            <ul className="space-y-3 text-[#6b6b6b] text-[12px]">
+          <div className="border border-[#D4C9B8] p-8">
+            <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-5 text-[#18110D]">Why Choose Point-to-Point?</h3>
+            <ul className="space-y-3 text-[#847863] text-[12px]">
               <li className="flex items-center gap-3">
-                <span className="text-[#b8860b]">·</span> No surge pricing - ever
+                <span className="text-[#C79A3C]">·</span> No surge pricing - ever
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#b8860b]">·</span> Any two destinations
+                <span className="text-[#C79A3C]">·</span> Any two destinations
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#b8860b]">·</span> Luxury vehicles guaranteed
+                <span className="text-[#C79A3C]">·</span> Luxury vehicles guaranteed
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#b8860b]">·</span> On-time guarantee
+                <span className="text-[#C79A3C]">·</span> On-time guarantee
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#b8860b]">·</span> Easy online booking
+                <span className="text-[#C79A3C]">·</span> Easy online booking
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#b8860b]">·</span> Fixed, upfront pricing
+                <span className="text-[#C79A3C]">·</span> Fixed, upfront pricing
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border border-[#e8e6e3] p-8 lg:p-10 bg-[#f9f8f6]">
+        <div className="border border-[#D4C9B8] p-8 lg:p-10 bg-[#EDE7DB]">
           <h3 className="text-xl font-['Cormorant_Garamond',serif] mb-6 text-center">Popular Routes</h3>
           <div className="grid sm:grid-cols-2 gap-3">
             {[
@@ -68,8 +68,8 @@ export default function PointToPointPage() {
               "Manhattan → Westchester",
               "Queens → Newark Airport"
             ].map((route) => (
-              <div key={route} className="flex items-center gap-3 text-[#6b6b6b] text-[12px] p-3 border border-[#e8e6e3] bg-white">
-                <span className="text-[#b8860b]">→</span>
+              <div key={route} className="flex items-center gap-3 text-[#847863] text-[12px] p-3 border border-[#D4C9B8] bg-[#F6F0E2]">
+                <span className="text-[#C79A3C]">→</span>
                 {route}
               </div>
             ))}

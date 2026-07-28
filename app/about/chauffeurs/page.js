@@ -13,8 +13,8 @@ export default function ChauffeursPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-light mb-6 font-['Cormorant_Garamond',serif]">The NYLI Chauffeur Standard</h2>
-          <div className="w-16 h-px bg-[#b8860b] mb-8" />
-          <p className="text-[#6b6b6b] leading-relaxed mb-6 font-['Montserrat',sans-serif] text-[13px] font-light">
+          <div className="w-16 h-px bg-[#C79A3C] mb-8" />
+          <p className="text-[#847863] leading-relaxed mb-6 font-['Work_Sans',sans-serif] text-[13px] font-light">
             Our chauffeurs are the heart of NYLI Limo. Each driver undergoes rigorous
             screening, training, and certification before ever getting behind the wheel
             of a client vehicle. We don&apos;t just hire drivers — we train hospitality
@@ -31,20 +31,20 @@ export default function ChauffeursPage() {
               "Vehicle familiarization and safety inspection",
               "Ongoing performance reviews and retraining"
             ].map((step, idx) => (
-              <div key={idx} className="flex items-center gap-4 p-4 border-l-2 border-[#b8860b] bg-[#f9f8f6]">
-                <span className="text-[#b8860b] font-bold text-sm">{idx + 1}</span>
-                <span className="text-[#6b6b6b] text-[13px] font-['Montserrat',sans-serif] font-light">{step}</span>
+              <div key={idx} className="flex items-center gap-4 p-4 border-l-2 border-[#C79A3C] bg-[#EDE7DB]">
+                <span className="text-[#C79A3C] font-bold text-sm">{idx + 1}</span>
+                <span className="text-[#847863] text-[13px] font-['Work_Sans',sans-serif] font-light">{step}</span>
               </div>
             ))}
           </div>
 
-          <div className="bg-[#f9f8f6] p-6 lg:p-8 border-l-2 border-[#b8860b]">
-            <p className="text-[#6b6b6b] italic font-['Montserrat',sans-serif] text-[13px] leading-relaxed font-light">
+          <div className="bg-[#EDE7DB] p-6 lg:p-8 border-l-2 border-[#C79A3C]">
+            <p className="text-[#847863] italic font-['Work_Sans',sans-serif] text-[13px] leading-relaxed font-light">
               &quot;NYLI chauffeurs are the most professional I&apos;ve experienced.
               From the crisp uniform to the door-to-door service, every detail
               is perfect.&quot;
             </p>
-            <p className="text-[#b8860b] mt-4 text-[11px] font-['Montserrat',sans-serif] tracking-wider uppercase">— Regular Client</p>
+            <p className="text-[#C79A3C] mt-4 text-[11px] font-['Work_Sans',sans-serif] tracking-wider uppercase">— Regular Client</p>
           </div>
         </div>
       </div>

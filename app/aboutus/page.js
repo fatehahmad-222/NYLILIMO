@@ -89,29 +89,29 @@ const stats = [
 
 export default function AboutPage() {
   return (
-    <main className="bg-white text-[#1a1a1a] font-['Montserrat',sans-serif] overflow-x-hidden">
+    <main className="bg-[#F6F0E2] text-[#18110D] font-['Work_Sans',sans-serif] overflow-x-hidden">
       <Navbar />
 
       {/* ── HERO ── */}
-      <section className="pt-32 pb-16 lg:pt-40 lg:pb-20 border-b border-[#e8e6e3]">
+      <section className="pt-32 pb-16 lg:pt-40 lg:pb-20 bg-[#18110D]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex items-center justify-center gap-2 text-[11px] text-[#999999] mb-8">
-            <Link href="/" className="hover:text-[#b8860b] transition-colors duration-200">
+          <div className="flex items-center justify-center gap-2 text-[11px] text-[#F6F0E2]/60 mb-8">
+            <Link href="/" className="hover:text-[#C79A3C] transition-colors duration-200">
               Home
             </Link>
-            <span className="text-[#e8e6e3]">/</span>
-            <span className="text-[#b8860b]">About Us</span>
+            <span className="text-[#F6F0E2]/20">/</span>
+            <span className="text-[#C79A3C]">About Us</span>
           </div>
 
-          <span className="inline-block text-[10px] uppercase tracking-[0.3em] text-[#b8860b] font-medium mb-4">
+          <span className="inline-block text-[11px] tracking-[0.38em] text-[#C79A3C] font-semibold uppercase mb-4">
             Our Story
           </span>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-['Cormorant_Garamond',serif] font-light leading-none mb-6">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-['Cormorant_Garamond',serif] font-light leading-none mb-6 text-[#F6F0E2]">
             About{" "}
             <span className="italic">NYLI</span>
           </h1>
-          <div className="w-8 h-px bg-[#b8860b] mx-auto my-6" />
-          <p className="text-[#6b6b6b] text-sm font-light max-w-xl mx-auto leading-relaxed">
+          <div className="w-8 h-px bg-[#C79A3C] mx-auto my-6" />
+          <p className="text-[#F6F0E2]/60 text-sm font-light max-w-xl mx-auto leading-relaxed">
             Fifteen years. Fifty thousand rides. One unwavering standard. This
             is the story of how a single promise became New York City&apos;s most
             trusted name in luxury transportation.
@@ -121,15 +121,15 @@ export default function AboutPage() {
 
       {/* ── STATS ── */}
       <ScrollReveal>
-        <section className="border-b border-[#e8e6e3]">
+        <section className="border-b border-[#18110D]/5">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((s) => (
                 <div key={s.label} className="text-center">
-                  <div className="text-3xl md:text-4xl font-['Cormorant_Garamond',serif] font-light text-[#1a1a1a] mb-2">
+                  <div className="text-3xl md:text-4xl font-['Cormorant_Garamond',serif] font-light text-[#18110D] mb-2">
                     {s.value}
                   </div>
-                  <div className="text-[#999999] text-[10px] tracking-[0.2em] uppercase font-medium">
+                  <div className="text-[#847863] text-[10px] tracking-[0.2em] uppercase font-medium">
                     {s.label}
                   </div>
                 </div>
@@ -145,7 +145,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-[10px] uppercase tracking-[0.3em] text-[#b8860b] font-medium">
+              <span className="text-[11px] tracking-[0.38em] text-[#C79A3C] font-semibold uppercase">
                 Where It All Began
               </span>
               <h2 className="text-3xl md:text-4xl font-['Cormorant_Garamond',serif] font-light mt-4 mb-6 leading-tight">
@@ -153,7 +153,7 @@ export default function AboutPage() {
                 <br />
                 <span className="italic">Deserves Better.</span>
               </h2>
-              <div className="space-y-5 text-[#6b6b6b] text-[13px] leading-relaxed font-light">
+              <div className="space-y-5 text-[#847863] text-sm leading-relaxed font-light">
                 <p>
                   In 2009, our founder Marcus Reid stood outside JFK Terminal 4
                   watching a client — a woman who had just flown fourteen hours
@@ -182,22 +182,22 @@ export default function AboutPage() {
               <img
                 src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&q=80"
                 alt="Luxury vehicle on NYC street"
-                className="absolute top-0 right-0 w-3/4 h-72 object-cover border border-[#e8e6e3]"
+                className="absolute top-0 right-0 w-3/4 h-72 object-cover border border-[#18110D]/10"
               />
               <img
                 src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&q=80"
                 alt="New York City skyline"
-                className="absolute bottom-0 left-0 w-2/3 h-64 object-cover border border-[#e8e6e3]"
+                className="absolute bottom-0 left-0 w-2/3 h-64 object-cover border border-[#18110D]/10"
               />
               {/* Quote block */}
-              <div className="absolute bottom-16 right-4 bg-[#1a1a1a] px-6 py-5">
-                <p className="text-xl font-['Cormorant_Garamond',serif] text-white font-light">
+              <div className="absolute bottom-16 right-4 bg-[#18110D] px-6 py-5">
+                <p className="text-xl font-['Cormorant_Garamond',serif] text-[#F6F0E2] font-light">
                   &quot;No one waits
                 </p>
-                <p className="text-xl font-['Cormorant_Garamond',serif] text-white font-light italic">
+                <p className="text-xl font-['Cormorant_Garamond',serif] text-[#F6F0E2] font-light italic">
                   in the rain.&quot;
                 </p>
-                <p className="text-[10px] mt-2 text-white/40">
+                <p className="text-[10px] mt-2 text-[#F6F0E2]/40">
                   — Marcus Reid, Founder
                 </p>
               </div>
@@ -209,32 +209,32 @@ export default function AboutPage() {
 
       {/* ── TIMELINE ── */}
       <ScrollReveal>
-        <section className="py-24 lg:py-32 bg-[#f9f8f6]">
+        <section className="py-24 lg:py-32 bg-[#F0EAD6]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-[10px] uppercase tracking-[0.3em] text-[#b8860b] font-medium">
+            <span className="text-[11px] tracking-[0.38em] text-[#C79A3C] font-semibold uppercase">
               Fifteen Years of Excellence
             </span>
             <h2 className="text-3xl md:text-4xl font-['Cormorant_Garamond',serif] font-light mt-4 mb-6">
               Our Journey
             </h2>
-            <div className="w-8 h-px bg-[#b8860b] mx-auto" />
+            <div className="w-8 h-px bg-[#C79A3C] mx-auto" />
           </div>
 
           <div className="space-y-0">
             {timeline.map((item, idx) => (
               <div
                 key={item.year}
-                className="flex gap-8 py-8 border-b border-[#e8e6e3] last:border-0"
+                className="flex gap-8 py-8 border-b border-[#18110D]/10 last:border-0"
               >
                 <div className="w-16 shrink-0">
-                  <span className="text-[#b8860b] text-[11px] font-medium tracking-wider">
+                  <span className="text-[#C79A3C] text-[11px] font-medium tracking-wider">
                     {item.year}
                   </span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-2 text-[#1a1a1a]">{item.title}</h3>
-                  <p className="text-[#6b6b6b] text-[12px] leading-relaxed font-light">
+                  <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-2 text-[#18110D]">{item.title}</h3>
+                  <p className="text-[#847863] text-sm leading-relaxed font-light">
                     {item.desc}
                   </p>
                 </div>
@@ -250,25 +250,25 @@ export default function AboutPage() {
         <section className="py-24 lg:py-32">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-[10px] uppercase tracking-[0.3em] text-[#b8860b] font-medium">
+            <span className="text-[11px] tracking-[0.38em] text-[#C79A3C] font-semibold uppercase">
               What Drives Us
             </span>
             <h2 className="text-3xl md:text-4xl font-['Cormorant_Garamond',serif] font-light mt-4 mb-6">
               The NYLI Standard
             </h2>
-            <div className="w-8 h-px bg-[#b8860b] mx-auto" />
+            <div className="w-8 h-px bg-[#C79A3C] mx-auto" />
           </div>
 
           <div className="grid sm:grid-cols-2 gap-6">
             {values.map((v) => (
               <div
                 key={v.title}
-                className="p-8 border border-[#e8e6e3] hover:border-[#b8860b]/30 transition-all duration-300"
+                className="p-8 border border-[#18110D]/10 hover:border-[#C79A3C]/30 transition-all duration-300"
               >
-                <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-3 text-[#1a1a1a]">
+                <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-3 text-[#18110D]">
                   {v.title}
                 </h3>
-                <p className="text-[#6b6b6b] text-[12px] leading-relaxed font-light">
+                <p className="text-[#847863] text-sm leading-relaxed font-light">
                   {v.desc}
                 </p>
               </div>
@@ -280,23 +280,23 @@ export default function AboutPage() {
 
       {/* ── TEAM ── */}
       <ScrollReveal>
-        <section className="py-24 lg:py-32 bg-[#f9f8f6]">
+        <section className="py-24 lg:py-32 bg-[#F0EAD6]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-[10px] uppercase tracking-[0.3em] text-[#b8860b] font-medium">
+            <span className="text-[11px] tracking-[0.38em] text-[#C79A3C] font-semibold uppercase">
               The People Behind the Promise
             </span>
             <h2 className="text-3xl md:text-4xl font-['Cormorant_Garamond',serif] font-light mt-4 mb-6">
               Meet the Team
             </h2>
-            <div className="w-8 h-px bg-[#b8860b] mx-auto" />
+            <div className="w-8 h-px bg-[#C79A3C] mx-auto" />
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {team.map((member) => (
               <div
                 key={member.name}
-                className="bg-white border border-[#e8e6e3] overflow-hidden"
+                className="bg-[#F6F0E2] border border-[#18110D]/10 overflow-hidden"
               >
                 <div className="relative h-72 overflow-hidden">
                   <img
@@ -306,13 +306,13 @@ export default function AboutPage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-1 text-[#1a1a1a]">
+                  <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-1 text-[#18110D]">
                     {member.name}
                   </h3>
-                  <p className="text-[#b8860b] text-[10px] tracking-[0.2em] uppercase font-medium mb-4">
+                  <p className="text-[#C79A3C] text-[10px] tracking-[0.2em] uppercase font-medium mb-4">
                     {member.role}
                   </p>
-                  <p className="text-[#6b6b6b] text-[12px] leading-relaxed font-light">
+                  <p className="text-[#847863] text-sm leading-relaxed font-light">
                     {member.bio}
                   </p>
                 </div>
@@ -327,14 +327,14 @@ export default function AboutPage() {
       <ScrollReveal>
         <section className="py-24 lg:py-32">
         <div className="max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <div className="text-[#b8860b] text-5xl font-['Cormorant_Garamond',serif] font-light mb-6 opacity-30">&ldquo;</div>
-          <blockquote className="text-2xl md:text-3xl font-['Cormorant_Garamond',serif] font-light leading-relaxed mb-8 text-[#1a1a1a]">
+          <div className="text-[#C79A3C] text-5xl font-['Cormorant_Garamond',serif] font-light mb-6 opacity-30">&ldquo;</div>
+          <blockquote className="text-2xl md:text-3xl font-['Cormorant_Garamond',serif] font-light leading-relaxed mb-8 text-[#18110D]">
             Luxury isn&apos;t the vehicle. It&apos;s the certainty that someone
             thought of everything{" "}
             <span className="italic">before you had to.</span>
           </blockquote>
-          <div className="w-8 h-px bg-[#b8860b] mx-auto mb-6" />
-          <p className="text-[#999999] text-[10px] tracking-[0.2em] uppercase font-medium">
+          <div className="w-8 h-px bg-[#C79A3C] mx-auto mb-6" />
+          <p className="text-[#847863] text-[10px] tracking-[0.2em] uppercase font-medium">
             Marcus Reid — Founder, NYLI Limo
           </p>
         </div>
@@ -343,24 +343,24 @@ export default function AboutPage() {
 
       {/* ── CTA ── */}
       <ScrollReveal>
-        <section className="py-24 lg:py-28 bg-[#f9f8f6]">
+        <section className="py-24 lg:py-28 bg-[#4A0812]">
         <div className="max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <span className="text-[10px] uppercase tracking-[0.3em] text-[#b8860b] font-medium">
+          <span className="text-[11px] tracking-[0.38em] text-[#C79A3C] font-semibold uppercase">
             Ready When You Are
           </span>
-          <h2 className="text-3xl md:text-4xl font-['Cormorant_Garamond',serif] font-light mt-4 mb-8">
+          <h2 className="text-3xl md:text-4xl font-['Cormorant_Garamond',serif] font-light mt-4 mb-8 text-[#F6F0E2]">
             Ready to Experience <span className="italic">the Standard?</span>
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/booking"
-              className="inline-flex items-center justify-center px-8 py-3 bg-[#1a1a1a] text-white font-medium uppercase tracking-[0.15em] text-[11px] hover:bg-[#b8860b] transition-all duration-300"
+              className="inline-flex items-center justify-center px-8 py-3 bg-[#C79A3C] text-[#4A0812] font-medium uppercase tracking-[0.15em] text-[11px] hover:bg-[#E6C878] transition-all duration-300"
             >
               Book Your Ride
             </Link>
             <a
               href="tel:+16314524500"
-              className="inline-flex items-center justify-center px-8 py-3 border border-[#1a1a1a] text-[#1a1a1a] font-medium uppercase tracking-[0.15em] text-[11px] hover:border-[#b8860b] hover:text-[#b8860b] transition-all duration-300"
+              className="inline-flex items-center justify-center px-8 py-3 border border-[#C79A3C] text-[#C79A3C] font-medium uppercase tracking-[0.15em] text-[11px] hover:bg-[#C79A3C] hover:text-[#4A0812] transition-all duration-300"
             >
               Call Now
             </a>

@@ -84,65 +84,72 @@ const fleet = [
 
 export default function FleetPage() {
   return (
-    <main className="font-['Montserrat',sans-serif] overflow-x-hidden bg-[#0a0a0a] text-[#e5e5e5]">
+    <main className="font-['Work_Sans',sans-serif] overflow-x-hidden bg-[#18110D] text-[#F6F0E2]">
       <Navbar />
 
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#111111] to-[#0a0a0a]" />
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#8b1a1a]/5 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#18110D] via-[#1E1510] to-[#18110D]" />
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#7C0F1E]/15 to-transparent" />
+        <div className="absolute top-1/3 left-1/4 w-64 h-64 bg-[#7C0F1E]/10 blur-3xl rounded-full" />
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-          <span className="text-[10px] tracking-[0.4em] text-[#8b1a1a] font-medium uppercase">The Fleet</span>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-['Cormorant_Garamond',serif] font-light text-white mt-6 mb-6 leading-tight">
-            Choose Your<br /><span className="italic">Ride.</span>
+          <span className="text-[11px] tracking-[0.4em] text-[#7C0F1E] font-medium uppercase animate-fade-in-up">The Fleet</span>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-['Cormorant_Garamond',serif] font-light mt-6 mb-6 leading-tight animate-fade-in-up stagger-2">
+            <span className="text-gradient">Choose Your</span><br /><span className="italic text-[#F6F0E2]">Ride.</span>
           </h1>
-          <p className="text-[#555555] text-sm font-light max-w-xl mx-auto leading-relaxed">
+          <p className="text-[#F6F0E2]/60 text-sm md:text-base font-light max-w-xl mx-auto leading-relaxed animate-fade-in-up stagger-3">
             Every vehicle in our fleet is meticulously maintained, detailed before every ride, and driven by a white-glove-trained chauffeur.
           </p>
         </div>
       </section>
 
       {fleet.map((v, idx) => (
-        <section key={v.name} className={`${v.highlight ? "bg-[#111111]" : "bg-[#0a0a0a]"} ${idx === fleet.length - 1 ? "" : "border-b border-[#1e1e1e]"}`}>
+        <section key={v.name} className={`${v.highlight ? "bg-gradient-to-b from-[#1E1510] to-[#15100D]" : "bg-[#18110D]"} ${idx === fleet.length - 1 ? "" : "border-b border-[#F6F0E2]/10"}`}>
           <div className={`max-w-7xl mx-auto px-6 py-16 lg:py-20 ${v.highlight ? "lg:py-28" : ""}`}>
             <div className={`grid lg:grid-cols-2 gap-10 lg:gap-16 items-center ${idx % 2 === 1 ? "lg:grid-flow-dense" : ""}`}>
               <div className={idx % 2 === 1 ? "lg:col-start-2" : ""}>
-                <span className="text-[9px] tracking-[0.3em] text-[#8b1a1a] font-medium uppercase">{v.category}</span>
-                <h2 className={`font-['Cormorant_Garamond',serif] text-white mt-2 mb-4 ${v.highlight ? "text-4xl md:text-5xl" : "text-3xl md:text-4xl"}`}>
+                <span className="text-[10px] tracking-[0.3em] text-[#7C0F1E] font-medium uppercase">{v.category}</span>
+                <h2 className={`font-['Cormorant_Garamond',serif] text-[#F6F0E2] mt-2 mb-4 ${v.highlight ? "text-4xl md:text-5xl" : "text-3xl md:text-4xl"}`}>
                   {v.name}
                 </h2>
                 <div className={`flex gap-6 mb-5 ${v.highlight ? "mb-8" : ""}`}>
-                  <div className="flex items-center gap-2 text-[#555555] text-[12px]">
-                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" /></svg>
+                  <div className="flex items-center gap-2 text-[#F6F0E2]/70 text-[13px]">
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" /></svg>
                     Up to {v.capacity} passengers
                   </div>
                 </div>
-                <p className="text-[#555555] text-[13px] font-light leading-relaxed mb-4">
-                  <span className="text-[#888888]">Best for:</span> {v.suit}
+                <p className="text-[#F6F0E2]/70 text-[14px] font-light leading-relaxed mb-4">
+                  <span className="text-[#F6F0E2]/80">Best for:</span> {v.suit}
                 </p>
                 <div className={`flex flex-wrap gap-2 ${v.highlight ? "mb-10" : "mb-8"}`}>
                   {v.specs.map((s) => (
-                    <span key={s} className="text-[9px] text-[#8b1a1a] border border-[#8b1a1a]/20 px-2.5 py-1 tracking-wider">{s}</span>
+                    <span key={s} className="text-[10px] text-[#7C0F1E] border border-[#4A0812]/30 px-2.5 py-1 tracking-wider hover:bg-[#7C0F1E]/15 transition-colors duration-300">{s}</span>
                   ))}
                 </div>
-                <Link href="/booking" className={`inline-flex items-center justify-center gap-2 text-[11px] font-medium uppercase tracking-[0.2em] transition-all duration-300 ${v.highlight ? "px-8 py-3.5 bg-[#8b1a1a] text-white hover:bg-white hover:text-[#0a0a0a]" : "text-[#8b1a1a] hover:text-white"}`}>
+                <Link href="/booking" className={`inline-flex items-center justify-center gap-2 text-[12px] font-medium uppercase tracking-[0.2em] transition-all duration-300 ${v.highlight ? "px-8 py-3.5 bg-[#4A0812] text-white hover:bg-white hover:text-[#18110D]" : "text-[#7C0F1E] hover:text-white"}`}>
                   Book This Vehicle →
                 </Link>
               </div>
               <div className={`relative ${v.highlight ? "lg:-my-28" : ""}`}>
-                <div className={`aspect-[4/3] overflow-hidden bg-[#111111] ${v.highlight ? "border border-[#1e1e1e]" : ""}`}>
-                  <img src={v.image} alt={v.name} className="w-full h-full object-cover hover:scale-105 transition-all duration-1000" />
+                <div className={`aspect-[4/3] overflow-hidden bg-[#1E1510] ${v.highlight ? "border border-[#F6F0E2]/10" : ""} transition-all duration-500 hover:border-[#4A0812]/40`}>
+                  <img src={v.image} alt={v.name} className="w-full h-full object-cover hover:scale-110 transition-all duration-1000" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#18110D]/20 to-transparent transition-opacity duration-500" />
                 </div>
+                {v.highlight && (
+                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-[#7C0F1E]/15 blur-2xl rounded-full -z-10" />
+                )}
               </div>
             </div>
           </div>
         </section>
       ))}
 
-      <section className="py-20 lg:py-24 bg-[#8b1a1a]">
-        <div className="max-w-3xl mx-auto text-center px-6">
+      <section className="py-24 lg:py-28 bg-gradient-to-r from-[#4A0812] via-[#4A0812] to-[#4A0812] relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/5 blur-3xl rounded-full" />
+        <div className="relative z-10 max-w-3xl mx-auto text-center px-6">
           <h2 className="text-3xl md:text-4xl font-['Cormorant_Garamond',serif] font-light text-white mb-6 leading-tight">Not Sure Which Vehicle?</h2>
-          <p className="text-white/70 text-[13px] font-light mb-8 max-w-sm mx-auto">Call us. We&apos;ll match you with the perfect ride for your occasion.</p>
-          <a href="tel:+16314524500" className="inline-flex items-center gap-2 px-10 py-3.5 bg-[#0a0a0a] text-white text-[11px] font-medium uppercase tracking-[0.2em] hover:bg-white hover:text-[#0a0a0a] transition-all duration-500">
+          <p className="text-white/80 text-[14px] font-light mb-8 max-w-sm mx-auto">Call us. We&apos;ll match you with the perfect ride for your occasion.</p>
+          <a href="tel:+16314524500" className="inline-flex items-center gap-2 px-10 py-3.5 bg-[#18110D] text-[#F6F0E2] text-[12px] font-medium uppercase tracking-[0.2em] hover:bg-white hover:text-[#18110D] transition-all duration-500">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg>
             +1 631-452-4500
           </a>

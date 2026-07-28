@@ -20,39 +20,39 @@ export default function CorporatePage() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 mb-20">
           <div>
             <h2 className="text-2xl md:text-3xl font-['Cormorant_Garamond',serif] font-light mb-4">Premium Business Travel Solutions</h2>
-            <div className="w-8 h-px bg-[#b8860b] mb-6" />
-            <p className="text-[#6b6b6b] leading-relaxed mb-4 text-[13px] font-light">
+            <div className="w-8 h-px bg-[#C79A3C] mb-6" />
+            <p className="text-[#847863] leading-relaxed mb-4 text-[13px] font-light">
               First impressions matter in business. NYLI Limo provides executive-level 
               transportation that reflects your company&apos;s commitment to excellence. 
               From airport transfers for visiting executives to client entertainment 
               and roadshows, we ensure punctuality, discretion, and comfort.
             </p>
-            <p className="text-[#6b6b6b] leading-relaxed text-[13px] font-light">
+            <p className="text-[#847863] leading-relaxed text-[13px] font-light">
               Our corporate accounts benefit from streamlined billing, dedicated account 
               managers, and priority booking. Join hundreds of businesses that trust 
               NYLI Limo for their transportation needs.
             </p>
           </div>
-          <div className="border border-[#e8e6e3] p-8">
-            <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-5 text-[#1a1a1a]">Corporate Benefits</h3>
-            <ul className="space-y-3 text-[#6b6b6b] text-[12px]">
+          <div className="border border-[#D4C9B8] p-8">
+            <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-5 text-[#18110D]">Corporate Benefits</h3>
+            <ul className="space-y-3 text-[#847863] text-[12px]">
               <li className="flex items-center gap-3">
-                <span className="text-[#b8860b]">·</span> Monthly consolidated invoicing
+                <span className="text-[#C79A3C]">·</span> Monthly consolidated invoicing
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#b8860b]">·</span> Dedicated account manager
+                <span className="text-[#C79A3C]">·</span> Dedicated account manager
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#b8860b]">·</span> Priority booking &amp; dispatch
+                <span className="text-[#C79A3C]">·</span> Priority booking &amp; dispatch
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#b8860b]">·</span> Mobile app for easy booking
+                <span className="text-[#C79A3C]">·</span> Mobile app for easy booking
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#b8860b]">·</span> Corporate events &amp; roadshows
+                <span className="text-[#C79A3C]">·</span> Corporate events &amp; roadshows
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#b8860b]">·</span> Confidentiality guaranteed
+                <span className="text-[#C79A3C]">·</span> Confidentiality guaranteed
               </li>
             </ul>
           </div>
@@ -64,21 +64,21 @@ export default function CorporatePage() {
             { title: "Luxury SUVs", desc: "Cadillac Escalade, Lincoln Navigator for groups.", icon: "🚙" },
             { title: "Executive Vans", desc: "Mercedes Sprinter for team travel.", icon: "🚐" }
           ].map((item) => (
-            <div key={item.title} className="p-8 border border-[#e8e6e3] text-center">
+            <div key={item.title} className="p-8 border border-[#D4C9B8] text-center">
               <span className="text-2xl mb-4 block opacity-40">{item.icon}</span>
-              <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-2 text-[#1a1a1a]">{item.title}</h3>
-              <p className="text-[#6b6b6b] text-[12px]">{item.desc}</p>
+              <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-2 text-[#18110D]">{item.title}</h3>
+              <p className="text-[#847863] text-[12px]">{item.desc}</p>
             </div>
           ))}
         </div>
 
-        <div className="border-l-2 border-[#b8860b] p-8 lg:p-10 bg-[#f9f8f6]">
-          <p className="text-[#6b6b6b] italic text-[13px] leading-relaxed">
+        <div className="border-l-2 border-[#C79A3C] p-8 lg:p-10 bg-[#EDE7DB]">
+          <p className="text-[#847863] italic text-[13px] leading-relaxed">
             &quot;NYLI has been our exclusive transportation partner for over 3 years. 
             Their professionalism and reliability are unmatched. Our executives 
             always arrive on time and in style.&quot;
           </p>
-          <p className="text-[#b8860b] mt-4 text-[10px] tracking-wider uppercase font-medium">
+          <p className="text-[#C79A3C] mt-4 text-[10px] tracking-wider uppercase font-medium">
             — Fortune 500 Executive
           </p>
         </div>

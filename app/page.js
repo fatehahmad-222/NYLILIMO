@@ -3,28 +3,27 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Scrolltotopbutton from "@/components/Scrolltotopbutton";
 
+const fleet = [
+  { slug: "rolls-royce-ghost", name: "Rolls-Royce Ghost", tag: "Ultra Luxury", cap: "Up to 3 passengers", url: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80", href: "/fleet" },
+  { slug: "cadillac-escalade", name: "Cadillac Escalade ESV", tag: "SUV", cap: "Up to 6 passengers", url: "https://images.unsplash.com/photo-1683778547049-8d969766b441?w=800&q=80", href: "/fleet" },
+  { slug: "lincoln-stretch", name: "Lincoln Stretch Limousine", tag: "Stretch Limo", cap: "Up to 10 passengers", url: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80", href: "/fleet" },
+  { slug: "mercedes-sprinter", name: "Mercedes-Benz Sprinter", tag: "Luxury Van", cap: "Up to 14 passengers", url: "https://images.unsplash.com/photo-1578557904035-f68542b3770e?w=800&q=80", href: "/fleet" },
+  { slug: "bmw-7-series", name: "BMW 7 Series", tag: "Executive Sedan", cap: "Up to 3 passengers", url: "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80", href: "/fleet" },
+];
+
+const services = [
+  { slug: "airport", icon: "01", title: "Airport Transfer", desc: "JFK, LGA, EWR & Islip. Flight-tracked with curb-side pickup.", href: "/services/airport-transfer" },
+  { slug: "corporate", icon: "02", title: "Corporate", desc: "Executive transport for meetings, roadshows & client hospitality.", href: "/services/corporate" },
+  { slug: "wedding", icon: "03", title: "Wedding", desc: "Champagne toasts, red-carpet arrivals — your day, flawlessly.", href: "/services/wedding" },
+  { slug: "prom", icon: "04", title: "Prom", desc: "Arrive in style. Party buses & luxury sedans for your big night.", href: "/services/prom" },
+  { slug: "point-to-point", icon: "05", title: "Point to Point", desc: "Direct, private transfers anywhere in the tri-state area.", href: "/services/point-to-point" },
+  { slug: "hourly", icon: "06", title: "Hourly", desc: "By-the-hour chauffeur service for errands, tours & on-demand.", href: "/services/hourly" },
+];
+
 export const metadata = {
   title: "NYLI Limo | New York's Premier Chauffeur Service",
   description: "World-class limousine service in New York City. Airport transfers, corporate transportation, weddings & events. +1 631-452-4500.",
 };
-
-const fleet = [
-  { name: "Rolls-Royce Ghost", tag: "Ultra Luxury", cap: "3 pax", url: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=900&q=80", href: "/fleet/rolls-royce" },
-  { name: "Cadillac Escalade ESV", tag: "SUV", cap: "6 pax", url: "https://images.unsplash.com/photo-1683778547049-8d969766b441?w=900&q=80", href: "/fleet/escalade-esv" },
-  { name: "Lincoln Stretch Limousine", tag: "Stretch Limo", cap: "10 pax", url: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=900&q=80", href: "/fleet/lincoln-stretch" },
-  { name: "Mercedes-Benz Sprinter", tag: "Luxury Van", cap: "14 pax", url: "https://images.unsplash.com/photo-1578557904035-f68542b3770e?w=900&q=80", href: "/fleet/sprinter" },
-  { name: "BMW 7 Series", tag: "Executive Sedan", cap: "3 pax", url: "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=900&q=80", href: "/fleet/bmw-7" },
-  { name: "Party Bus", tag: "Party", cap: "20 pax", url: "https://images.unsplash.com/photo-1764717727512-226b456d928a?w=900&q=80", href: "/fleet/party-bus" },
-];
-
-const services = [
-  { icon: "✈", title: "Airport Transfers", desc: "JFK, LGA, EWR, HPN, ISP. Flight tracking.", href: "/services/airport-transfer" },
-  { icon: "💼", title: "Corporate Travel", desc: "Executive transport for business.", href: "/services/corporate" },
-  { icon: "💍", title: "Weddings", desc: "Bridal packages, champagne service.", href: "/services/wedding" },
-  { icon: "🎓", title: "Prom & Events", desc: "Arrive in style, arrive safe.", href: "/services/prom" },
-  { icon: "📍", title: "Point to Point", desc: "Door-to-door. No surge pricing.", href: "/services/point-to-point" },
-  { icon: "⏱", title: "Hourly Service", desc: "Your chauffeur, your schedule.", href: "/services/hourly" },
-];
 
 const testimonials = [
   { quote: "They tracked my flight for four hours after a delay and were waiting with a warm smile. That's not service. That's clairvoyance.", name: "Victoria Chen", role: "Frequent Flyer" },
@@ -34,175 +33,210 @@ const testimonials = [
 
 export default function Home() {
   return (
-    <main className="font-['Montserrat',sans-serif] overflow-x-hidden bg-[#0a0a0a] text-[#e5e5e5]">
+    <main className="font-['Work_Sans',sans-serif] overflow-x-hidden bg-[#F6F0E2] text-[#18110D]">
       <Navbar />
 
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1920&q=80" alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/70 to-[#0a0a0a]/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent" />
-        </div>
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <span className="inline-block text-[10px] tracking-[0.4em] text-[#c41e1e] font-medium mb-6 uppercase">New York Since 2009</span>
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-['Cormorant_Garamond',serif] font-light text-white leading-[0.9] mb-8 tracking-tight">
-            The Road<br /><span className="italic">to Luxury.</span>
+      {/* HERO */}
+      <section className="relative min-h-screen flex items-end overflow-hidden bg-[#18110D]">
+        <img
+          src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1920&q=80"
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover opacity-55"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#18110D] via-[#18110D]/35 to-[#18110D]/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#7C0F1E]/35 to-transparent" />
+
+        <div className="relative z-10 max-w-[1240px] mx-auto px-6 pb-24 w-full">
+          <span className="inline-block text-[11px] tracking-[0.38em] text-[#C79A3C] font-semibold uppercase animate-fade-in-up stagger-1">
+            New York Since 2009
+          </span>
+          <h1 className="font-['Cormorant_Garamond',serif] font-light leading-[0.88] text-[56px] md:text-[96px] lg:text-[128px] my-6 text-[#F6F0E2] animate-fade-in-up stagger-2">
+            The Road<br />
+            <span className="italic text-[#E6C878]">to Luxury.</span>
           </h1>
-          <p className="text-white/40 text-sm md:text-base font-light max-w-lg mx-auto mb-12 leading-relaxed">
-            Every journey is a statement. From Manhattan boardrooms to Hamptons weekends.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/booking" className="px-12 py-4 bg-[#8b1a1a] text-white text-[11px] font-medium uppercase tracking-[0.2em] hover:bg-white hover:text-[#0a0a0a] transition-all duration-500">
-              Book Your Ride
-            </Link>
-            <a href="tel:+16314524500" className="px-12 py-4 border border-white/20 text-white text-[11px] font-medium uppercase tracking-[0.2em] hover:border-[#8b1a1a] hover:text-[#8b1a1a] transition-all duration-500">
-              +1 631-452-4500
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-28 lg:py-36 border-b border-[#1e1e1e]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-12 lg:gap-16">
-            {[
-              { num: "01", title: "Choose", desc: "Browse our fleet of luxury vehicles. Every car is immaculate and chauffeur-ready." },
-              { num: "02", title: "Book", desc: "Tell us where and when. Instant confirmation. No calls, no hidden fees." },
-              { num: "03", title: "Arrive", desc: "Your chauffeur arrives early, dressed in black. The rest is pure comfort." },
-            ].map((s) => (
-              <div key={s.num} className="text-center group">
-                <div className="text-6xl md:text-7xl font-['Cormorant_Garamond',serif] font-light text-[#1e1e1e] mb-6 transition-colors duration-500 group-hover:text-[#8b1a1a]/20">{s.num}</div>
-                <h3 className="text-xl font-['Cormorant_Garamond',serif] mb-4 text-white">{s.title}</h3>
-                <p className="text-[#555555] text-[13px] font-light leading-relaxed max-w-xs mx-auto">{s.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-28 lg:py-36 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 mb-16">
-          <div className="flex items-end justify-between">
-            <div>
-              <span className="text-[10px] tracking-[0.3em] text-[#8b1a1a] font-medium uppercase">The Fleet</span>
-              <h2 className="text-4xl md:text-5xl font-['Cormorant_Garamond',serif] font-light mt-4 text-white">Select Your Ride</h2>
+          <div className="flex flex-wrap items-end justify-between gap-6 mt-10 animate-fade-in-up stagger-3">
+            <p className="text-[#F6F0E2]/75 text-base font-light max-w-sm leading-relaxed">
+              Every journey is a statement. From Manhattan boardrooms to Hamptons weekends.
+            </p>
+            <div className="flex gap-4 flex-wrap animate-fade-in-up stagger-4">
+              <Link
+                href="/booking"
+                className="inline-flex items-center gap-2 px-11 py-4 bg-[#C79A3C] text-[#4A0812] text-[12px] font-bold uppercase tracking-[0.2em] transition-all duration-300 hover:bg-[#E6C878] hover:-translate-y-1"
+              >
+                Book Your Ride &rarr;
+              </Link>
+              <a
+                href="tel:+16314524500"
+                className="inline-flex items-center gap-2 px-11 py-4 border border-white/40 text-[#F6F0E2] text-[12px] font-semibold uppercase tracking-[0.2em] hover:border-[#C79A3C] hover:text-[#E6C878] transition-all duration-300"
+              >
+                +1 631-452-4500
+              </a>
             </div>
-            <Link href="/fleet" className="hidden md:inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] font-medium text-[#8b1a1a] hover:text-white transition-colors">
-              View All →
-            </Link>
           </div>
         </div>
-        <div className="flex overflow-x-auto gap-6 px-6 pb-4 snap-x snap-mandatory scrollbar-none">
+      </section>
+
+      {/* PROCESS - oxblood band */}
+      <section className="bg-[#4A0812] pt-20 pb-24 px-6" style={{ clipPath: "polygon(0 8%, 100% 0, 100% 100%, 0 100%)" }}>
+        <div className="max-w-[1080px] mx-auto grid md:grid-cols-3 pt-8">
+          {[
+            { num: "01", title: "Choose", desc: "Browse our fleet of luxury vehicles, every one immaculate." },
+            { num: "02", title: "Book", desc: "Instant confirmation. No calls, no hidden fees." },
+            { num: "03", title: "Arrive", desc: "Your chauffeur arrives early, dressed in black." },
+          ].map((s, i) => (
+            <div
+              key={s.num}
+              className={`text-center px-6 ${i < 2 ? "md:border-r md:border-white/15" : ""}`}
+            >
+              <div className="font-['Cormorant_Garamond',serif] italic text-[64px] text-[#E6C878]">{s.num}</div>
+              <h3 className="font-['Cormorant_Garamond',serif] text-2xl text-[#F6F0E2] mt-2 mb-2.5">{s.title}</h3>
+              <p className="text-[#F6F0E2]/60 text-sm font-light leading-relaxed">{s.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* FLEET */}
+      <section id="fleet" className="pt-24 pb-16 -mt-10">
+        <div className="max-w-[1240px] mx-auto mb-11 px-6 flex items-end justify-between">
+          <div>
+            <span className="text-[11px] tracking-[0.3em] text-[#7C0F1E] font-semibold uppercase">The Fleet</span>
+            <h2 className="font-['Cormorant_Garamond',serif] font-light text-5xl mt-3">Select Your Ride</h2>
+          </div>
+          <Link href="/fleet" className="text-[#7C0F1E] text-[12px] uppercase tracking-[0.15em] font-semibold hover:text-[#4A0812] transition-colors">
+            View All &rarr;
+          </Link>
+        </div>
+        <div className="flex overflow-x-auto snap-x snap-mandatory scrollbar-none">
           {fleet.map((v) => (
-            <Link key={v.name} href={v.href} className="group flex-shrink-0 w-[85vw] md:w-[45vw] lg:w-[30vw] snap-center">
-              <div className="relative h-[50vh] md:h-[60vh] overflow-hidden bg-[#111111]">
-                <img src={v.url} alt={v.name} className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-60" />
-                <div className="absolute top-6 left-6 bg-[#0a0a0a]/80 backdrop-blur-sm text-white text-[9px] font-medium uppercase tracking-[0.15em] px-3 py-1.5 border border-[#1e1e1e]">{v.tag}</div>
-              </div>
-              <div className="mt-4 flex items-center justify-between">
-                <h3 className="text-lg font-['Cormorant_Garamond',serif] text-white group-hover:text-[#8b1a1a] transition-colors duration-300">{v.name}</h3>
-                <span className="text-[#555555] text-[11px]">{v.cap}</span>
+            <Link key={v.slug} href={v.href} className="group flex-shrink-0 w-[380px] snap-center relative overflow-hidden h-[520px]">
+              <img src={v.url} alt={v.name} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#18110D]/95 via-[#18110D]/10 to-transparent px-6 pt-8 pb-6">
+                <span className="inline-block text-[10px] uppercase tracking-[0.15em] text-[#E6C878] border border-[#C79A3C] px-3 py-1.5 mb-3">
+                  {v.tag}
+                </span>
+                <h3 className="font-['Cormorant_Garamond',serif] text-2xl text-[#F6F0E2]">{v.name}</h3>
+                <p className="text-[#F6F0E2]/60 text-[13px] mt-1">{v.cap}</p>
               </div>
             </Link>
           ))}
         </div>
-        <div className="text-center mt-8 md:hidden">
-          <Link href="/fleet" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] font-medium text-[#8b1a1a] hover:text-white transition-colors">
-            View Full Fleet →
-          </Link>
-        </div>
       </section>
 
-      <section id="services" className="py-28 lg:py-36 border-y border-[#1e1e1e]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <span className="text-[10px] tracking-[0.3em] text-[#8b1a1a] font-medium uppercase">Services</span>
-            <h2 className="text-4xl md:text-5xl font-['Cormorant_Garamond',serif] font-light mt-4 text-white">Every Occasion</h2>
-            <div className="w-8 h-px bg-[#8b1a1a] mx-auto mt-6" />
+      {/* SERVICES */}
+      <section id="services" className="py-24 px-6">
+        <div className="max-w-[900px] mx-auto">
+          <div className="mb-5">
+            <span className="text-[11px] tracking-[0.3em] text-[#7C0F1E] font-semibold uppercase">Services</span>
+            <h2 className="font-['Cormorant_Garamond',serif] font-light text-5xl my-3">Every Occasion</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {services.map((s) => (
-              <Link key={s.href} href={s.href} className="group border border-[#1e1e1e] p-8 hover:border-[#8b1a1a]/30 transition-all duration-500 hover:bg-[#111111]">
-                <span className="text-2xl mb-4 block opacity-40 group-hover:opacity-70 transition-opacity duration-300">{s.icon}</span>
-                <h3 className="text-lg font-['Cormorant_Garamond',serif] text-white mb-2 group-hover:text-[#8b1a1a] transition-colors duration-300">{s.title}</h3>
-                <p className="text-[#555555] text-[12px] font-light leading-relaxed">{s.desc}</p>
+          <div>
+            {services.map((s, i) => (
+              <Link
+                key={s.slug}
+                href={s.href}
+                className={`group grid grid-cols-[56px_1fr_auto] items-center py-7 border-b border-[#18110D]/10 transition-all duration-300 hover:pl-3 hover:border-[#7C0F1E] ${
+                  i === services.length - 1 ? "border-none" : ""
+                }`}
+              >
+                <span className="font-['Cormorant_Garamond',serif] italic text-2xl text-[#C79A3C]">{s.icon}</span>
+                <div>
+                  <h3 className="font-['Cormorant_Garamond',serif] text-xl mb-1">{s.title}</h3>
+                  <p className="text-[#847863] text-[13px] m-0">{s.desc}</p>
+                </div>
+                <span className="text-[#7C0F1E] text-xl opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+                  &rarr;
+                </span>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-28 lg:py-36">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <span className="text-[10px] tracking-[0.3em] text-[#8b1a1a] font-medium uppercase">Testimonials</span>
-            <h2 className="text-4xl md:text-5xl font-['Cormorant_Garamond',serif] font-light mt-4 text-white">Trusted by Thousands</h2>
-            <div className="w-8 h-px bg-[#8b1a1a] mx-auto mt-6" />
+      {/* TESTIMONIALS - dark section */}
+      <section className="bg-[#18110D] py-24 px-6">
+        <div className="max-w-[1080px] mx-auto">
+          <div className="text-center mb-14">
+            <span className="text-[11px] tracking-[0.38em] text-[#C79A3C] font-semibold uppercase">Testimonials</span>
+            <h2 className="font-['Cormorant_Garamond',serif] font-light text-5xl mt-3 text-[#F6F0E2]">Trusted by Thousands</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-5">
             {testimonials.map((t) => (
-              <div key={t.name} className="border border-[#1e1e1e] p-8 hover:border-[#2a2a2a] transition-all duration-500">
-                <svg className="w-5 h-5 text-[#8b1a1a]/20 mb-5" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-                <p className="text-[#888888] text-[13px] font-light leading-relaxed mb-6">{t.quote}</p>
-                <p className="text-white text-sm font-['Cormorant_Garamond',serif]">{t.name}</p>
-                <p className="text-[#555555] text-[10px] tracking-[0.1em] uppercase mt-1">{t.role}</p>
+              <div key={t.name} className="bg-[#FFFDF8] p-9 border-t-[3px] border-[#C79A3C] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
+                <div className="font-['Cormorant_Garamond',serif] text-[44px] text-[#E6C878] leading-[0.5] mb-3.5">&ldquo;</div>
+                <p className="text-[#4A4038] text-sm font-light leading-relaxed mb-5">{t.quote}</p>
+                <p className="font-['Cormorant_Garamond',serif] text-lg m-0">{t.name}</p>
+                <p className="text-[#847863] text-[11px] tracking-[0.1em] uppercase mt-0.5">{t.role}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-28 lg:py-36 bg-[#111111]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            <div>
-              <span className="text-[10px] tracking-[0.3em] text-[#8b1a1a] font-medium uppercase">Why NYLI</span>
-              <h2 className="text-4xl md:text-5xl font-['Cormorant_Garamond',serif] font-light mt-4 mb-10 text-white leading-tight">
-                The Standard<br /><span className="italic">Never Wavers.</span>
-              </h2>
-              <div className="grid sm:grid-cols-2 gap-6">
-                {[
-                  { title: "15+ Years", desc: "Serving NYC since 2009" },
-                  { title: "50K+ Rides", desc: "Zero missed flights" },
-                  { title: "4.9★ Rating", desc: "Across all platforms" },
-                  { title: "100% On-Time", desc: "Guaranteed punctuality" },
-                ].map((s) => (
-                  <div key={s.title} className="border-l border-[#8b1a1a]/30 pl-4">
-                    <div className="text-2xl font-['Cormorant_Garamond',serif] text-white">{s.title}</div>
-                    <div className="text-[#555555] text-[11px] mt-1">{s.desc}</div>
-                  </div>
-                ))}
-              </div>
+      {/* ABOUT / COVERAGE - oxblood */}
+      <section id="about" className="bg-[#4A0812] py-28 px-6 relative overflow-hidden">
+        <div className="absolute -top-20 -right-20 w-[340px] h-[340px] border border-[#C79A3C]/20 rounded-full" />
+        <div className="max-w-[1080px] mx-auto grid lg:grid-cols-2 gap-16 items-center relative">
+          <div>
+            <span className="text-[11px] tracking-[0.38em] text-[#C79A3C] font-semibold uppercase">Why NYLI</span>
+            <h2 className="font-['Cormorant_Garamond',serif] font-light text-5xl my-4 mb-9 text-[#F6F0E2] leading-tight">
+              The Standard <span className="italic text-[#E6C878]">Never Wavers.</span>
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-7">
+              {[
+                { title: "15+ Years", desc: "Serving NYC since 2009" },
+                { title: "50K+ Rides", desc: "Zero missed flights" },
+                { title: "4.9★ Rating", desc: "Across all platforms" },
+                { title: "100% On-Time", desc: "Guaranteed punctuality" },
+              ].map((s) => (
+                <div key={s.title} className="border-t-2 border-[#C79A3C] pt-4">
+                  <div className="font-['Cormorant_Garamond',serif] text-[30px] text-[#F6F0E2]">{s.title}</div>
+                  <div className="text-[#F6F0E2]/60 text-[13px]">{s.desc}</div>
+                </div>
+              ))}
             </div>
-            <div className="border border-[#1e1e1e] p-8 lg:p-10 bg-[#0a0a0a]">
-              <span className="text-[10px] tracking-[0.3em] text-[#8b1a1a] font-medium uppercase">Coverage</span>
-              <div className="flex flex-wrap gap-2 mt-6">
-                {["Manhattan", "Brooklyn", "Queens", "Bronx", "Staten Island", "Long Island", "Hamptons", "New Jersey", "Connecticut", "Westchester"].map((a) => (
-                  <span key={a} className="px-3 py-1.5 border border-[#1e1e1e] text-[#555555] text-[10px] hover:border-[#8b1a1a] hover:text-[#8b1a1a] transition-all duration-300 cursor-default">{a}</span>
-                ))}
-              </div>
-              <div className="mt-8 pt-6 border-t border-[#1e1e1e] text-[#555555] text-[12px] font-light leading-relaxed">
-                <p>1421 Islip Ave STE 1037, Central Islip, NY</p>
-                <a href="tel:+16314524500" className="text-[#8b1a1a] hover:text-white transition-colors mt-2 inline-block">+1 631-452-4500</a>
-              </div>
+          </div>
+
+          <div id="contact" className="border border-white/20 p-10">
+            <span className="text-[11px] tracking-[0.38em] text-[#C79A3C] font-semibold uppercase">Coverage</span>
+            <div className="flex flex-wrap gap-2 mt-5">
+              {["Manhattan", "Brooklyn", "Queens", "Bronx", "Staten Island", "Long Island", "Hamptons", "New Jersey", "Connecticut", "Westchester"].map((a) => (
+                <span
+                  key={a}
+                  className="px-4.5 py-2 border border-white/25 text-[#F6F0E2] text-[12px] hover:border-[#C79A3C] hover:text-[#E6C878] hover:bg-[#C79A3C]/10 transition-all duration-300 cursor-default"
+                >
+                  {a}
+                </span>
+              ))}
+            </div>
+            <div className="mt-7 pt-5 border-t border-white/20 text-[#F6F0E2]/70 text-[13px]">
+              <p className="mb-2">1421 Islip Ave STE 1037, Central Islip, NY</p>
+              <a href="tel:+16314524500" className="text-[#E6C878] font-semibold">+1 631-452-4500</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-20 lg:py-24 bg-[#8b1a1a]">
-        <div className="max-w-3xl mx-auto text-center px-6">
-          <h2 className="text-4xl md:text-5xl font-['Cormorant_Garamond',serif] font-light text-white mb-6 leading-tight">Ready to Ride?</h2>
-          <p className="text-white/70 text-[13px] font-light mb-10 max-w-sm mx-auto">One call or click. Instant confirmation. No hidden fees.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/booking" className="px-10 py-3.5 bg-[#0a0a0a] text-white text-[11px] font-medium uppercase tracking-[0.2em] hover:bg-white hover:text-[#0a0a0a] transition-all duration-500">
-              Book Now
-            </Link>
-            <a href="tel:+16314524500" className="px-10 py-3.5 border border-white/40 text-white text-[11px] font-medium uppercase tracking-[0.2em] hover:bg-white hover:text-[#0a0a0a] transition-all duration-500">
-              +1 631-452-4500
-            </a>
-          </div>
+      {/* CTA */}
+      <section id="book" className="py-24 px-6 text-center bg-[#F6F0E2]">
+        <span className="text-[11px] tracking-[0.3em] text-[#7C0F1E] font-semibold uppercase">Ready When You Are</span>
+        <h2 className="font-['Cormorant_Garamond',serif] font-light text-6xl my-4">
+          Ready to <span className="italic text-[#7C0F1E]">Ride?</span>
+        </h2>
+        <p className="text-[#847863] text-sm mb-10">One call or click. Instant confirmation. No hidden fees.</p>
+        <div className="flex gap-4 justify-center flex-wrap">
+          <Link
+            href="/booking"
+            className="inline-flex items-center gap-2 px-11 py-4 bg-[#C79A3C] text-[#4A0812] text-[12px] font-bold uppercase tracking-[0.2em] transition-all duration-300 hover:bg-[#E6C878] hover:-translate-y-1"
+          >
+            Book Now &rarr;
+          </Link>
+          <a
+            href="tel:+16314524500"
+            className="px-11 py-4 border border-[#18110D] text-[#18110D] text-[12px] font-semibold uppercase tracking-[0.2em]"
+          >
+            +1 631-452-4500
+          </a>
         </div>
       </section>
 
@@ -211,3 +245,4 @@ export default function Home() {
     </main>
   );
 }
+

@@ -8,10 +8,10 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-10 mb-12">
           <Link href="/" className="group">
-            <span className="text-white text-2xl tracking-[0.25em] font-light font-['Cormorant_Garamond',serif] group-hover:text-[#8b1a1a] transition-colors duration-300">
+            <span className="text-[#f0f0f0] text-2xl tracking-[0.25em] font-light font-['Cormorant_Garamond',serif] group-hover:text-[#c41e1e] transition-colors duration-300">
               NYLI
             </span>
-            <span className="text-[#555555] text-lg tracking-[0.1em] font-light font-['Cormorant_Garamond',serif] ml-1">
+            <span className="text-[#888888] text-lg tracking-[0.1em] font-light font-['Cormorant_Garamond',serif] ml-1">
               LIMO
             </span>
           </Link>
@@ -24,7 +24,7 @@ export default function Footer() {
               { label: "Contact", href: "/contact" },
               { label: "Book", href: "/booking" },
             ].map((l) => (
-              <Link key={l.href} href={l.href} className="text-[#555555] text-[11px] uppercase tracking-[0.2em] font-medium hover:text-[#8b1a1a] transition-colors duration-300">
+              <Link key={l.href} href={l.href} className="text-[#a0a0a0] text-[12px] uppercase tracking-[0.2em] font-medium hover:text-[#c41e1e] transition-colors duration-300">
                 {l.label}
               </Link>
             ))}
@@ -38,7 +38,7 @@ export default function Footer() {
               { label: "Instagram", type: "instagram" },
               { label: "Twitter", path: "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" },
             ].map((s) => (
-              <a key={s.label} href={`https://${s.label.toLowerCase()}.com/nylilimo`} target="_blank" rel="noopener noreferrer" aria-label={s.label} className="text-[#555555] hover:text-[#8b1a1a] transition-colors duration-300">
+              <a key={s.label} href={`https://${s.label.toLowerCase()}.com/nylilimo`} target="_blank" rel="noopener noreferrer" aria-label={s.label} className="text-[#888888] hover:text-[#c41e1e] transition-colors duration-300">
                 {s.type === "instagram" ? (
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
                 ) : (
@@ -46,11 +46,11 @@ export default function Footer() {
                 )}
               </a>
             ))}
-            <a href="tel:+16314524500" className="text-[#555555] text-[11px] font-['Montserrat',sans-serif] hover:text-[#8b1a1a] transition-colors duration-300 hidden sm:block">
+            <a href="tel:+16314524500" className="text-[#a0a0a0] text-[12px] font-['Montserrat',sans-serif] hover:text-[#c41e1e] transition-colors duration-300 hidden sm:block">
               +1 631-452-4500
             </a>
           </div>
-          <p className="text-[#333333] text-[10px] tracking-[0.05em]">
+          <p className="text-[#555555] text-[11px] tracking-[0.05em]">
             © {new Date().getFullYear()} NYLI Limo
           </p>
         </div>

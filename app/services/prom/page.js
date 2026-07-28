@@ -20,39 +20,39 @@ export default function PromPage() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 mb-20">
           <div>
             <h2 className="text-2xl md:text-3xl font-['Cormorant_Garamond',serif] font-light mb-4">Make Your Prom Night Unforgettable</h2>
-            <div className="w-8 h-px bg-[#b8860b] mb-6" />
-            <p className="text-[#6b6b6b] leading-relaxed mb-4 text-[13px] font-light">
+            <div className="w-8 h-px bg-[#C79A3C] mb-6" />
+            <p className="text-[#847863] leading-relaxed mb-4 text-[13px] font-light">
               Prom night is a milestone celebration. NYLI Limo provides safe, 
               stylish transportation that lets you and your friends arrive in 
               ultimate style. Our professional chauffeurs prioritize safety 
               while ensuring a fun, memorable experience.
             </p>
-            <p className="text-[#6b6b6b] leading-relaxed text-[13px] font-light">
+            <p className="text-[#847863] leading-relaxed text-[13px] font-light">
               From stretch limousines to party buses, we have options for groups 
               of all sizes. All our drivers undergo background checks and are 
               trained in youth safety protocols, giving parents peace of mind.
             </p>
           </div>
-          <div className="border border-[#e8e6e3] p-8">
-            <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-5 text-[#1a1a1a]">Prom Package Features</h3>
-            <ul className="space-y-3 text-[#6b6b6b] text-[12px]">
+          <div className="border border-[#D4C9B8] p-8">
+            <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-5 text-[#18110D]">Prom Package Features</h3>
+            <ul className="space-y-3 text-[#847863] text-[12px]">
               <li className="flex items-center gap-3">
-                <span className="text-[#b8860b]">·</span> Premium sound system with Bluetooth
+                <span className="text-[#C79A3C]">·</span> Premium sound system with Bluetooth
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#b8860b]">·</span> LED mood lighting
+                <span className="text-[#C79A3C]">·</span> LED mood lighting
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#b8860b]">·</span> Photo-friendly interior
+                <span className="text-[#C79A3C]">·</span> Photo-friendly interior
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#b8860b]">·</span> Complimentary non-alcoholic beverages
+                <span className="text-[#C79A3C]">·</span> Complimentary non-alcoholic beverages
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#b8860b]">·</span> Professional, vetted chauffeurs
+                <span className="text-[#C79A3C]">·</span> Professional, vetted chauffeurs
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#b8860b]">·</span> GPS tracking for parents
+                <span className="text-[#C79A3C]">·</span> GPS tracking for parents
               </li>
             </ul>
           </div>
@@ -64,18 +64,18 @@ export default function PromPage() {
             { capacity: "10-14 Students", vehicle: "Lincoln Stretch / Sprinter", price: "$650+", features: "Most popular choice" },
             { capacity: "15-25 Students", vehicle: "Party Bus", price: "$850+", features: "Ultimate party experience" }
           ].map((pkg) => (
-            <div key={pkg.capacity} className="p-8 border border-[#e8e6e3] text-center">
-              <div className="text-2xl font-['Cormorant_Garamond',serif] text-[#b8860b] mb-3">{pkg.capacity}</div>
-              <h3 className="text-base mb-3 text-[#1a1a1a] font-['Cormorant_Garamond',serif]">{pkg.vehicle}</h3>
-              <div className="text-xl text-[#1a1a1a] mb-3 font-['Cormorant_Garamond',serif]">{pkg.price}</div>
-              <p className="text-[#6b6b6b] text-[11px]">{pkg.features}</p>
+            <div key={pkg.capacity} className="p-8 border border-[#D4C9B8] text-center">
+              <div className="text-2xl font-['Cormorant_Garamond',serif] text-[#C79A3C] mb-3">{pkg.capacity}</div>
+              <h3 className="text-base mb-3 text-[#18110D] font-['Cormorant_Garamond',serif]">{pkg.vehicle}</h3>
+              <div className="text-xl text-[#18110D] mb-3 font-['Cormorant_Garamond',serif]">{pkg.price}</div>
+              <p className="text-[#847863] text-[11px]">{pkg.features}</p>
             </div>
           ))}
         </div>
 
-        <div className="border border-[#e8e6e3] p-8 lg:p-10 bg-[#f9f8f6]">
+        <div className="border border-[#D4C9B8] p-8 lg:p-10 bg-[#EDE7DB]">
           <h3 className="text-lg font-['Cormorant_Garamond',serif] mb-4 text-center">Safety First</h3>
-          <p className="text-[#6b6b6b] text-center max-w-2xl mx-auto text-[12px]">
+          <p className="text-[#847863] text-center max-w-2xl mx-auto text-[12px]">
             All our chauffeurs are fully licensed, insured, and background-checked. 
             We maintain the highest safety standards and vehicles are inspected 
             before every event. Parents can track the journey in real-time.

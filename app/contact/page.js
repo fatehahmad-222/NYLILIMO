@@ -16,48 +16,48 @@ export default function ContactPage() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           <div>
             <h2 className="text-3xl md:text-4xl font-light mb-4 font-['Cormorant_Garamond',serif]">We&apos;re Always Here for You</h2>
-            <div className="w-16 h-px bg-[#b8860b] mb-6" />
-            <p className="text-[#6b6b6b] leading-relaxed mb-8 font-['Montserrat',sans-serif] text-[13px] font-light">
+            <div className="w-16 h-px bg-[#C79A3C] mb-6" />
+            <p className="text-[#847863] leading-relaxed mb-8 font-['Work_Sans',sans-serif] text-[13px] font-light">
               Whether it&apos;s 3 AM for an emergency airport run or noon on Christmas Day,
               NYLI Limo is available 24 hours a day, 365 days a year. Our dispatch
               team never sleeps, and our chauffeurs are always ready.
             </p>
 
             <div className="space-y-6">
-              <div className="flex items-start gap-4 p-4 bg-[#f9f8f6] border border-[#e8e6e3]">
-                <span className="text-2xl">📞</span>
+              <div className="flex items-start gap-4 p-4 bg-[#EDE7DB] border border-[#D4C9B8]">
+                <span className="text-[#C79A3C] text-[10px] font-bold tracking-[0.2em]">PHONE</span>
                 <div>
-                  <h3 className="text-lg mb-1 text-[#1a1a1a] font-['Cormorant_Garamond',serif]">Phone</h3>
-                  <a href="tel:+16314524500" className="text-[#b8860b] hover:underline text-[13px] font-['Montserrat',sans-serif] font-light">+1 631-452-4500</a>
+                  <h3 className="text-lg mb-1 text-[#18110D] font-['Cormorant_Garamond',serif]">Phone</h3>
+                  <a href="tel:+16314524500" className="text-[#C79A3C] hover:underline text-[13px] font-['Work_Sans',sans-serif] font-light">+1 631-452-4500</a>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 bg-[#f9f8f6] border border-[#e8e6e3]">
-                <span className="text-2xl">✉️</span>
+              <div className="flex items-start gap-4 p-4 bg-[#EDE7DB] border border-[#D4C9B8]">
+                <span className="text-[#C79A3C] text-[10px] font-bold tracking-[0.2em]">EMAIL</span>
                 <div>
-                  <h3 className="text-lg mb-1 text-[#1a1a1a] font-['Cormorant_Garamond',serif]">Email</h3>
-                  <a href="mailto:reservations@nylilimo.com" className="text-[#b8860b] hover:underline text-[13px] font-['Montserrat',sans-serif] font-light">reservations@nylilimo.com</a>
+                  <h3 className="text-lg mb-1 text-[#18110D] font-['Cormorant_Garamond',serif]">Email</h3>
+                  <a href="mailto:reservations@nylilimo.com" className="text-[#C79A3C] hover:underline text-[13px] font-['Work_Sans',sans-serif] font-light">reservations@nylilimo.com</a>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 bg-[#f9f8f6] border border-[#e8e6e3]">
-                <span className="text-2xl">📍</span>
+              <div className="flex items-start gap-4 p-4 bg-[#EDE7DB] border border-[#D4C9B8]">
+                <span className="text-[#C79A3C] text-[10px] font-bold tracking-[0.2em]">ADDRESS</span>
                 <div>
-                  <h3 className="text-lg mb-1 text-[#1a1a1a] font-['Cormorant_Garamond',serif]">Address</h3>
-                  <p className="text-[#6b6b6b] text-[13px] font-['Montserrat',sans-serif] font-light">1421 Islip Ave STE 1037<br />Central Islip, NY 11722-3941<br />United States</p>
+                  <h3 className="text-lg mb-1 text-[#18110D] font-['Cormorant_Garamond',serif]">Address</h3>
+                  <p className="text-[#847863] text-[13px] font-['Work_Sans',sans-serif] font-light">1421 Islip Ave STE 1037<br />Central Islip, NY 11722-3941<br />United States</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-[#f9f8f6] p-8 border border-[#e8e6e3]">
-            <h3 className="text-xl mb-6 text-[#b8860b] font-['Cormorant_Garamond',serif]">Send Us a Message</h3>
+          <div className="bg-[#EDE7DB] p-8 border border-[#D4C9B8]">
+            <h3 className="text-xl mb-6 text-[#C79A3C] font-['Cormorant_Garamond',serif]">Send Us a Message</h3>
             <form className="space-y-4">
-              <input type="text" placeholder="Your Name" className="w-full p-3 bg-white border border-[#e8e6e3] text-[#1a1a1a] placeholder-[#999999] focus:border-[#b8860b] outline-none font-['Montserrat',sans-serif] text-[13px] font-light transition-colors duration-200" />
-              <input type="email" placeholder="Email Address" className="w-full p-3 bg-white border border-[#e8e6e3] text-[#1a1a1a] placeholder-[#999999] focus:border-[#b8860b] outline-none font-['Montserrat',sans-serif] text-[13px] font-light transition-colors duration-200" />
-              <input type="tel" placeholder="Phone Number" className="w-full p-3 bg-white border border-[#e8e6e3] text-[#1a1a1a] placeholder-[#999999] focus:border-[#b8860b] outline-none font-['Montserrat',sans-serif] text-[13px] font-light transition-colors duration-200" />
-              <textarea rows="4" placeholder="Message" className="w-full p-3 bg-white border border-[#e8e6e3] text-[#1a1a1a] placeholder-[#999999] focus:border-[#b8860b] outline-none font-['Montserrat',sans-serif] text-[13px] font-light transition-colors duration-200 resize-none"></textarea>
-              <button className="w-full p-4 bg-[#b8860b] text-white font-['Montserrat',sans-serif] font-medium uppercase tracking-[0.15em] text-[12px] hover:bg-[#1a1a1a] transition-all duration-300">
+              <input type="text" placeholder="Your Name" className="w-full p-3 bg-[#F6F0E2] border border-[#D4C9B8] text-[#18110D] placeholder-[#847863] focus:border-[#C79A3C] outline-none font-['Work_Sans',sans-serif] text-[13px] font-light transition-colors duration-200" />
+              <input type="email" placeholder="Email Address" className="w-full p-3 bg-[#F6F0E2] border border-[#D4C9B8] text-[#18110D] placeholder-[#847863] focus:border-[#C79A3C] outline-none font-['Work_Sans',sans-serif] text-[13px] font-light transition-colors duration-200" />
+              <input type="tel" placeholder="Phone Number" className="w-full p-3 bg-[#F6F0E2] border border-[#D4C9B8] text-[#18110D] placeholder-[#847863] focus:border-[#C79A3C] outline-none font-['Work_Sans',sans-serif] text-[13px] font-light transition-colors duration-200" />
+              <textarea rows="4" placeholder="Message" className="w-full p-3 bg-[#F6F0E2] border border-[#D4C9B8] text-[#18110D] placeholder-[#847863] focus:border-[#C79A3C] outline-none font-['Work_Sans',sans-serif] text-[13px] font-light transition-colors duration-200 resize-none"></textarea>
+              <button className="w-full p-4 bg-[#C79A3C] text-[#4A0812] font-['Work_Sans',sans-serif] font-medium uppercase tracking-[0.15em] text-[12px] hover:bg-[#4A0812] transition-all duration-300">
                 Send Message
               </button>
             </form>
@@ -73,7 +73,7 @@ export default function ContactPage() {
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
-            className="border border-[#e8e6e3]"
+            className="border border-[#D4C9B8]"
           />
         </div>
       </div>
