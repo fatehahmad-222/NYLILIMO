@@ -125,32 +125,36 @@ export default function Home() {
 
       {/* SERVICES */}
       <section id="services" className="py-24 px-6">
-        <div className="max-w-[900px] mx-auto">
-          <div className="mb-5">
-            <span className="text-[11px] tracking-[0.3em] text-[#7C0F1E] font-semibold uppercase">Services</span>
-            <h2 className="font-['Cormorant_Garamond',serif] font-light text-5xl my-3">Every Occasion</h2>
-          </div>
-          <div>
-            {services.map((s, i) => (
-              <Link
-                key={s.slug}
-                href={s.href}
-                className={`group grid grid-cols-[56px_1fr_auto] items-center py-7 border-b border-[#18110D]/10 transition-all duration-300 hover:pl-3 hover:border-[#7C0F1E] ${
-                  i === services.length - 1 ? "border-none" : ""
-                }`}
-              >
-                <span className="font-['Cormorant_Garamond',serif] italic text-2xl text-[#C79A3C]">{s.icon}</span>
-                <div>
-                  <h3 className="font-['Cormorant_Garamond',serif] text-xl mb-1">{s.title}</h3>
-                  <p className="text-[#847863] text-[13px] m-0">{s.desc}</p>
+          <div className="max-w-[1100px] mx-auto">
+            <div className="mb-5">
+              <span className="text-[11px] tracking-[0.3em] text-[#7C0F1E] font-semibold uppercase">Services</span>
+              <h2 className="font-['Cormorant_Garamond',serif] font-light text-5xl my-3">Every Occasion</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+              {[services.slice(0, 3), services.slice(3, 6)].map((col, ci) => (
+                <div key={ci}>
+                  {col.map((s, i) => (
+                    <Link
+                      key={s.slug}
+                      href={s.href}
+                      className={`group grid grid-cols-[56px_1fr_auto] items-center py-7 border-b border-[#18110D]/10 transition-all duration-300 hover:pl-3 hover:border-[#7C0F1E] ${
+                        i === col.length - 1 ? "border-none" : ""
+                      }`}
+                    >
+                      <span className="font-['Cormorant_Garamond',serif] italic text-2xl text-[#C79A3C]">{s.icon}</span>
+                      <div>
+                        <h3 className="font-['Cormorant_Garamond',serif] text-xl mb-1">{s.title}</h3>
+                        <p className="text-[#847863] text-[13px] m-0">{s.desc}</p>
+                      </div>
+                      <span className="text-[#7C0F1E] text-xl opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+                        &rarr;
+                      </span>
+                    </Link>
+                  ))}
                 </div>
-                <span className="text-[#7C0F1E] text-xl opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                  &rarr;
-                </span>
-              </Link>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
       </section>
 
       {/* TESTIMONIALS - dark section */}
